@@ -1,6 +1,4 @@
--target localplay
--chaptername Azamwm2051
--gamename icavehexamacf_export
+-target legacy
 -persistent Data
 -gamesPath Data\Games
 -assetsPath Data\Assets
