@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BranchingTree</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        #prescriptionImage {
+            position: absolute;
+            z-index: 0;
+            align-self: center;
+            left: 160px;
+            top: 350px;
+            width: 45%;
+            height: 25%;
+        }
+
+        #backgroundImage {
+            position: absolute;
+            z-index: 0;
+            align-self: center;
+            width:1000px;
+            height:350px;
+        }
+
+        #currentScore {
+            position: absolute;
+            z-index: 2;
+            align-self: center;
+            left: 160px;
+            top: 170px;
+            color: #000
+        }
+
+        #previousNav {
+            position: absolute;
+            z-index:1;
+            left: 350px;
+            top: 140px;
+            width:5%;
+            height: 5%;
+        }
+
+        #nextNav {
+            position: absolute;
+            z-index:1;
+            left: 350px;
+            top: 190px;
+            width:5%;
+            height: 5%;
+        }
+
+         .upNavImageClass{
+            position: absolute;
+            z-index:1;
+            display: inline;
+        }
+
+        .downNavImageClass{
+            position: absolute;
+            z-index:1;
+            display: inline;
+        }
+
+        .leftNavImageClass{
+            position: absolute;
+            z-index:1;
+            display: inline;
+        }
+
+        .rightNavImageClass{
+            position: absolute;
+            z-index:1;
+            display: inline;
+        }
+
+        #menuItem {
+            position: absolute;
+            z-index: 1;
+            align-self: center;
+            left: 120px;
+            top: 125px;
+            color: #fff
+        }
+
+        #branchingEntryID {
+            position: absolute;
+            z-index: 1;
+            align-self: left;
+            color: #fff
+        }
+
+        .scoreClass {
+            position: relative;
+            z-index: 1;
+            align-self: center;
+            color: #fff
+        }
+
+        .nodeNavClass{
+            position: relative;
+            z-index: 1;
+            top:0px;
+        }
+
+        #sliderightNavID {
+            position: absolute;
+            left: 575px;
+            top: 170px;
+            width:45px;
+            height:45px;
+            z-index: 1;
+        }
+
+        #slideleftNavID {
+            position: absolute;
+            left: 480px;
+            top: 170px;
+            width:45px;
+            height:45px;
+            z-index: 1;
+        }
+
+        #slideupNavID {
+            position: absolute;
+            left: 525px;
+            top: 135px;
+            width:45px;
+            height:45px;
+            z-index: 1;
+        }
+
+        #slidedownNavID {
+            position: absolute;
+            left: 525px;
+            top: 205px;
+            width:45px;
+            height:45px;
+            z-index: 1;
+        }
+
+        #initButtonNavID {
+            position: absolute;
+            left: 630px;
+            top: 133px;
+            width:45px;
+            height:45px;
+        }
+
+        #okButtonNavID {
+            position: absolute;
+            left: 630px;
+            top: 200px;
+            width:45px;
+            height:45px;
+        }
+
+        #startstopButtonNavID {
+            position: absolute;
+            left: 745px;
+            top: 200px;
+            width:45px;
+            height:45px;
+        }
+
+        #confirmationButtonID {
+            position: absolute;
+            left: 320px;
+            top: 155px;
+            z-index: 1;
+        }
+
+        #confirmationBGID {
+            position: absolute;
+            z-index:0;
+            left: 15px;
+            top: 0px;
+            width:120%;
+            height:100%;
+        }
+
+        #yesNav {
+            position: absolute;
+            z-index:3;
+            left: 62px;
+            top: 8px;
+            width:30%;
+            height:30%;
+        }
+
+        #noNav {
+            position: absolute;
+            z-index:3;
+            left: 62px;
+            top: 37px;
+            width:30%;
+            height:30%;
+        }
+
+        ul#displayEntryList {
+			list-style: none;
+			padding-left: 0;
+			padding-top: 0;
+			padding-bottom: 0;
+        }
+		
+		ul#confirmationListID {
+            list-style-type: none;
+        }
+
+        li.branchNode{
+            padding-bottom: 3px;
+        }
+
+        .listContents{
+            position: relative;
+            z-index:2;
+        }
+
+        #mlcContainer{
+            position: relative;
+            font-family: sans-serif;    
+            background-position: center;
+            background-repeat: no-repeat;   
+            background-size: cover;
+            resize: both;
+            width:100%;
+            height:100%;            
+        }
+    </style>
+    <script type="text/javascript" src="javascript/utils/xml2json.min.js"></script>
+    <!--<script type="text/javascript" src="javascript/jquery/jquery-min.js"></script> -->
+    <script>
+        var hasCyclicUpdate = false;
+        var treeNode = {};
+        var firstBranch;
+        var lastBranch;
+        var branchNodes = [];
+        var currentNode;
+        var currentBranch;
+        var treeObject;
+        var doc;
+        var currentIndex;
+        var correctAnswerFeedback;
+        var confirmationButtonActive = false;
+        var numberOfListEntries;
+        var maxHighlightingCursorPos = 1;
+        var currScale = 1;
+        var backgroundXPos = 0;
+        var backgroundYPos = 0;
+        var offset = 30;
+
+        $(document).ready(function () {
+            $("#menuItem").focus(function(){
+                console.log("====+++" + firstListItem.find("a").text());
+            });
+
+            debugger;
+
+			SetBackground();
+            minigameControl.GameObject.GameActions = [];
+            //currentXml = Utils.convertXMLStringToXMLObject(xmlTest);
+            InitBranchingListEntry();
+            InitializeMinigame(currentXMLList, document);
+            
+            SetImageSettings("prescriptionImage", "prescriptionImage");
+
+            var question = $(currentXMLList).find("Question").text();
+            minigameControl.showInstruction(question);
+            SetTrigger();
+
+            SetConfirmationButtonPosition();
+            SetMenuItemPosition();
+        });
+
+        function SetMenuItemPosition(){
+            var menuItemWidth = $("#menuItem").width();
+            var menuItemHeight = $("#menuItem").height();
+            var listItemLeft = ($("#branchingEntryID").position().left + (menuItemWidth/4));
+            var listItemTop = ($("#branchingEntryID").position().top - menuItemHeight);
+            $("#menuItem").css({"left" : listItemLeft, "top" : listItemTop});
+        }
+    
+		function SetBackground(){
+            var bgWidth = 1024;//$("#mlcContainer").width();
+            var bgHeight = 768;//$("#mlcContainer").height();
+
+            var background = $(currentXMLList).find("background").find("path").text();
+            var width = $(currentXMLList).find("background").find("width").text();
+            var height = $(currentXMLList).find("background").find("height").text();
+            var xPos = $(currentXMLList).find("background").find("xPos").text();
+            var yPos = $(currentXMLList).find("background").find("yPos").text();
+
+            currScale = Math.min($(this).width()/bgWidth,$(this).height()/bgHeight);
+            var newWidth = parseFloat(width)*currScale;
+            var newHeight = parseFloat(height)*currScale;
+
+            if(background != "undefined"){
+                $("#backgroundImage").attr("src", encodeURI(background));
+            }
+
+            if(width != "undefined"){
+                $("#backgroundImage").css("width", newWidth + "px");
+            }
+            if(height != "undefined"){
+                $("#backgroundImage").css("height", newHeight + "px");
+            }
+
+            if(xPos != "undefined"){
+                $("#backgroundImage").css("left", xPos + "px");
+            }
+            if(yPos != "undefined"){
+                $("#backgroundImage").css("top", yPos + "px");
+            }
+        }
+
+        function SetImageSettings(buttonImageXmlElement, imageID){
+           var buttonImagePath = $(currentXMLList).find(buttonImageXmlElement).find("path").text();
+           var width = $(currentXMLList).find(buttonImageXmlElement).find("width").text();
+           var height = $(currentXMLList).find(buttonImageXmlElement).find("height").text();
+           var left = $(currentXMLList).find(buttonImageXmlElement).find("xPos").text();
+           var top = $(currentXMLList).find(buttonImageXmlElement).find("yPos").text();
+            
+            if(buttonImagePath != "undefined"){
+                $("#" + imageID).attr("src", encodeURI(buttonImagePath));
+            }
+
+            if(width != "undefined"){
+                $("#" + imageID).css("width", (parseFloat(width) * currScale) + "px");
+            } else {
+                //$("#" + imageID).css("width", $("#" + imageID).width() * currScale + "px");
+            }
+
+            if(height != "undefined"){
+                $("#" + imageID).css("height", (parseFloat(height) * currScale) + "px");
+            } else {
+                //$("#" + imageID).css("height", $("#" + imageID).height() * currScale + "px");
+            }
+
+            if(left != "undefined"){
+                $("#" + imageID).css("left", ((parseFloat(left) * currScale)) + "px");
+            } else {
+                $("#" + imageID).css("left", ($("#" + imageID).position().left * currScale) + "px");
+            }
+
+            if(top != "undefined"){
+                console.log("right");
+                $("#" + imageID).css("top", ((parseFloat(top) * currScale)) + "px");
+            } else {
+                $("#" + imageID).css("top", ($("#" + imageID).position().top * currScale) + "px");
+            }
+        }
+
+        function InitializeMinigame(xmlDoc, document) {
+            var x2js = new X2JS();
+            treeObject = x2js.xml2json(xmlDoc);
+
+            firstBranch = treeObject.Tree.FirstBranch - 1;
+            lastBranch = treeObject.Tree.LastBranch - 1;
+            branchNodes = treeObject.Tree.Nodes;
+            correctAnswers = treeObject.Tree.Correct;
+            correctAnswerFeedback = treeObject.CorrectFeedback;
+
+            InitBranchWithFirstNodes();
+        }
+
+        function ResetButtonPressed(){
+            InitBranchWithFirstNodes();
+            minigameControl.GameObject.GameActions.push({"buttonPressed" : "ResetButton", "currentNode" : currentNode.NodeName, "time" : LoggingUtils.createTimestampNow()});
+        }
+
+        function InitBranchWithFirstNodes() {
+            currentBranch = branchNodes[firstBranch];
+            currentIndex = 0;
+            UpdateCurrentBranchAndNode();
+        }
+
+        function NavigateToLastBranch() {
+            if (currentNode.ActivateButton === "true") {
+                currentBranch = branchNodes[lastBranch];
+                currentIndex = 0;
+                UpdateCurrentBranchAndNode();
+
+                minigameControl.GameObject.GameActions.push({"buttonPressed" : "OkButton", "currentNode" : currentNode.NodeName, "time" : LoggingUtils.createTimestampNow()});
+            }
+        }
+
+        function ParseTree(currentXMLNode) {
+            var nodes = currentXMLNode.find("Nodes");
+        }
+
+        function Navigate(direction) {
+            var nextBranch = GetNextBranch(direction);
+            var tempCurrentBranch = currentBranch;
+            if (nextBranch) {
+                try{
+                    currentBranch = branchNodes[nextBranch - 1];
+                    if(!currentBranch){
+                        currentBranch = tempCurrentBranch;
+                    }
+
+                    if(direction === "left"){
+                        if(parent.currentAnswers === parent.correctAnswers){
+                            minigameControl.GameObject.GameActions.push({"buttonPressed" : "SubmitButton", "event" : "correctSelection", "currentNode" : currentNode.NodeName, "time" : LoggingUtils.createTimestampNow()});
+                            Submit();
+                        }
+                    }
+
+                    UpdateCurrentBranchAndNode();
+
+                    minigameControl.GameObject.GameActions.push({"buttonPressed" : direction, "currentNode" : currentNode.NodeName, "time" : LoggingUtils.createTimestampNow()});
+                } catch(err){
+                    currentBranch = tempCurrentBranch;
+                }
+            }
+        }
+
+        function UpdateCurrentBranchAndNode() {
+            SetCurrentNode();
+            DisplayCurrentNode();
+        }
+
+        function SetCurrentNode() {
+            if(!currentBranch)
+                return;
+            if (Array.isArray(currentBranch.Node)) {
+                currentIndex = currentBranch.FirstNode - 1;
+                currentNode = currentBranch.Node[currentIndex];
+            } else {
+                currentNode = currentBranch.Node;
+            }
+
+            currentAnswers = currentNode.NodeName;
+        }
+
+        function SetNextNode() {
+            var prevIndex = currentIndex;
+            if (Array.isArray(currentBranch.Node)) {
+                var totalNodesInBranch = currentBranch.Node.length;
+                if (hasCyclicUpdate) {
+                    currentIndex = (currentIndex + 1) % totalNodesInBranch;
+                } else {
+                    currentIndex = currentIndex + 1;
+                    currentIndex = (currentIndex == totalNodesInBranch) ? currentIndex - 1 : currentIndex;
+                }
+
+                if(currentBranch.Node[currentIndex].NodeName == null || currentBranch.Node[currentIndex].NodeName==""){
+                    currentIndex = prevIndex;
+                } else {
+                    currentNode = currentBranch.Node[currentIndex];
+                    DisplayCurrentNode();
+                }
+            }
+        }
+
+        function SetPrevNode() {
+            var prevIndex = currentIndex;
+            if (Array.isArray(currentBranch.Node)) {
+                var totalNodesInBranch = currentBranch.Node.length;
+                if (hasCyclicUpdate) {
+                    currentIndex = currentIndex - 1;
+                    currentIndex = (currentIndex < 0) ? totalNodesInBranch - 1 : currentIndex;
+                } else {
+                    currentIndex = currentIndex - 1;
+                    currentIndex = (currentIndex < 0) ? 0 : currentIndex;
+                }
+
+                if(currentBranch.Node[currentIndex].NodeName == null || currentBranch.Node[currentIndex].NodeName==""){
+                    currentIndex = prevIndex;
+                } else {
+                    currentNode = currentBranch.Node[currentIndex];
+                    DisplayCurrentNode();
+                }
+            }
+        }
+
+        function GetPreviousNode(index){
+            var previousNode;
+
+            if (Array.isArray(currentBranch.Node)) {
+                console.log("DISPLAY PREVIOUSNODE");
+                var totalNodesInBranch = currentBranch.Node.length;
+                var previousIndex = index;
+                if (hasCyclicUpdate) {
+                    previousIndex = (previousIndex < 0) ? totalNodesInBranch - 1 : previousIndex;
+                } else {
+                    previousIndex = (previousIndex < 0) ? currentIndex : previousIndex;
+                }
+
+                if(previousIndex != currentIndex){
+                    previousNode = currentBranch.Node[previousIndex];
+                } else {
+                    previousNode = null;
+                }
+            } else {
+                previousNode = null;
+            }
+
+            return previousNode;
+        }
+
+        function GetNextNode(index){
+            var nextNode;
+
+            if (Array.isArray(currentBranch.Node)) {
+                console.log("DISPLAY NEXTNODE" + currentIndex);
+                var totalNodesInBranch = currentBranch.Node.length;
+                var nextIndex = index;
+                if (hasCyclicUpdate) {
+                    nextIndex = nextIndex % totalNodesInBranch;
+                } else {
+                    nextIndex = (nextIndex == totalNodesInBranch) ? currentIndex : nextIndex;
+                }
+
+                if(nextIndex != currentIndex){
+                    nextNode = currentBranch.Node[nextIndex];
+                } else {
+                    nextNode = null;
+                }
+            } else {
+                nextNode = null;
+            }
+
+            return nextNode;
+        }
+
+        function DisplayCurrentNode() {
+            if(!currentBranch)
+                return;
+
+            var menuItemElement = document.getElementById("menuItem");
+            menuItemElement.innerHTML = currentBranch.Display;
+            
+            debugger;
+            UpdateListItemsWithCurrentValues(); 
+            SetActivateButton();
+        }
+
+        function UpdateListItemsWithCurrentValues(){
+            var listElement = $("#displayEntryList").children("li.branchNode");
+            var isCurrentItemHighlighted = false;
+            var currentHightlightingItem = maxHighlightingCursorPos;
+            var isCurrentItemFocused = false;
+            var currentElementNode = null;
+            
+            for (i = 0; i < numberOfListEntries; i += 1) {
+                var currentItem = listElement.eq(i);
+                
+                // first item in branch
+                if(((currentIndex | i) == 0)){
+                    isCurrentItemFocused = true;
+                    currentElementNode = currentNode;
+
+                    isCurrentItemHighlighted = true;
+                    currentHightlightingItem = 0;
+                } else {
+                    if(i < currentHightlightingItem){
+                        isCurrentItemFocused = false;
+                        var previousIndex = currentIndex - (i + 1);
+                        currentElementNode = GetPreviousNode(previousIndex);
+                    } else if(i > currentHightlightingItem){
+                        var nextIndex = currentIndex + i;
+                        if(currentIndex > 0){
+                            nextIndex = currentIndex + (i - 1);
+                        }
+
+                        isCurrentItemFocused = false;
+                        currentElementNode = GetNextNode(nextIndex);
+                    } else {
+                        if(isCurrentItemHighlighted === false){
+                            isCurrentItemFocused = true;
+                            currentElementNode = currentNode;
+                        } else {
+                            isCurrentItemFocused = true;
+                            currentElementNode = null;
+                        }
+                    }
+                }
+
+                SetSelectedItemAndDisplay(currentItem, isCurrentItemFocused, currentElementNode);
+                UpdateNavIconsForCurrentNode(currentElementNode, currentItem);
+            }
+        }
+
+        function UpdateNavIconsForCurrentNode(node, currentItem){
+
+            var leftNavImage = currentItem.find(".leftNavImageClass");
+            var rightNavImage = currentItem.find(".rightNavImageClass");
+            var upNavImage = currentItem.find(".upNavImageClass");
+            var downNavImage = currentItem.find(".downNavImageClass");
+            if(node == null){
+                upNavImage.hide();
+                downNavImage.hide();
+                leftNavImage.hide();
+                rightNavImage.hide();
+            } else {
+                if(node.LeftBranch != null && node.LeftBranch != ""){
+                    upNavImage.hide();
+                    downNavImage.hide();
+                    leftNavImage.show();
+                    rightNavImage.hide();
+                } else if(node.RightBranch != null && node.RightBranch != ""){
+                    console.log("RightBranch");
+                    upNavImage.hide();
+                    downNavImage.show();
+                    leftNavImage.hide();
+                    rightNavImage.show();
+                } else if(node.UpBranch != null && node.UpBranch != ""){
+                    console.log("UpBranch");
+                    upNavImage.show();
+                    downNavImage.hide();
+                    leftNavImage.hide();
+                    rightNavImage.hide();
+                } else if(node.DownBranch != null && node.DownBranch != ""){
+                    console.log("DownBranch");
+                    upNavImage.hide();
+                    downNavImage.show();
+                    leftNavImage.hide();
+                    rightNavImage.hide();
+                } else {
+                    console.log("DOWNL");
+                    upNavImage.hide();
+                    downNavImage.show();
+                    leftNavImage.hide();
+                    rightNavImage.hide();
+                }
+            }
+        }
+
+        function GetNextBranch(direction) {
+            var nextBranch;
+            if (direction === 'left' && confirmationButtonActive == false) {
+                nextBranch = currentNode.LeftBranch;
+            } else if (direction === 'right' && confirmationButtonActive == false) {
+                nextBranch = currentNode.RightBranch;
+            } else if (direction === 'up') {
+                if(confirmationButtonActive == false){
+                    nextBranch = currentNode.UpBranch;
+                    if (!nextBranch) {
+                        SetPrevNode();
+                    }
+                } else {
+                    minigameControl.GameObject.GameActions.push({"buttonPressed" : "up", "event" : "hasConfirmationActive", "currentNode" : currentNode.NodeName, "time" : LoggingUtils.createTimestampNow()});
+                    nextBranch = currentNode.LeftBranch;
+                }
+            } else if (direction === 'down') {
+                if(confirmationButtonActive == false){
+                    nextBranch = currentNode.DownBranch;
+                    if (!nextBranch) {
+                        SetNextNode();
+                    }
+                }
+            }
+
+            return nextBranch;
+        }
+
+        function InitBranchingListEntry(){
+
+            numberOfListEntries = $(currentXMLList).find("numberOfEntries").text();
+            var fontColor = $(currentXMLList).find("fontColor").text();
+            var upNavImage = $(currentXMLList).find("navImage").find("upImagePath").text();
+            debugger;
+            if(upNavImage == "undefined"){
+                upNavImage = "images/minigames/slideshow_arrow_up_white.png";
+            }
+
+            var downNavImage = $(currentXMLList).find("navImage").find("downImagePath").text();
+            if(downNavImage == "undefined"){
+                downNavImage = "images/minigames/slideshow_arrow_down_white.png";
+            }
+
+            var leftNavImage = $(currentXMLList).find("navImage").find("leftImagePath").text();
+            if(leftNavImage == "undefined"){
+                leftNavImage = "images/minigames/slideshow_arrow_left_white.png";
+            }
+
+            var rightNavImage = $(currentXMLList).find("navImage").find("rightImagePath").text();
+            if(rightNavImage == "undefined"){
+                rightNavImage = "images/minigames/slideshow_arrow_right_white.png";
+            }
+
+            var navImageWidth = $(currentXMLList).find("navImage").find("width").text();
+            var navImageHeight = $(currentXMLList).find("navImage").find("height").text();
+
+            if(navImageWidth == "undefined"){
+                navImageWidth = 10;
+            }
+
+            if(navImageHeight == "undefined"){
+                navImageHeight = 10;
+            }
+
+            var a = '<ul id=\"displayEntryList\">';
+            var b = '</ul>'
+            m = [];
+            var intItem = 246;
+            var innerHTML = a;
+            for (i = 0; i < numberOfListEntries; i += 1) {
+                innerHTML = innerHTML +
+                '<li class="branchNode"><div>' +
+                    '<div class=\"nodeNavClass\">' +
+                        '<img class="upNavImageClass" src=\"' + encodeURI(upNavImage) + '\" width=\"' +
+                            (parseInt(navImageWidth) * currScale) +
+                            'px\" height=\"' + (parseInt(navImageHeight) * currScale) + 'px\" \/>' +
+                        '<img class="downNavImageClass" src=\"' + encodeURI(downNavImage) + '\" width=\"' +
+                            (parseInt(navImageWidth) * currScale) +
+                            'px\" height=\"' + (parseInt(navImageHeight) * currScale) + 'px\" \/>' +
+                        '<img class="leftNavImageClass" src=\"' + encodeURI(leftNavImage) + '\" width=\"' +
+                            (parseInt(navImageWidth) * currScale) +
+                            'px\" height=\"' + (parseInt(navImageHeight) * currScale) + 'px\" \/>' +
+                        '<img class="rightNavImageClass" src=\"' + encodeURI(rightNavImage) + '\" width=\"' +
+                            (parseInt(navImageWidth) * currScale) +
+                            'px\" height=\"' + (parseInt(navImageHeight) * currScale) + 'px\" \/>' +
+                    '</div>' +
+                    '<a class=\"scoreClass\" style=\"color:' + fontColor + '\" >' + intItem + '</a>' +
+                '</div></li>';
+
+                intItem++;
+            }
+
+            document.getElementById("branchingEntryID").innerHTML = innerHTML + b;
+            SetBranchPosition();
+        }
+
+        function SetBranchPosition(){
+            var digitPosX = $(currentXMLList).find("listComponent").find("xPos").text();
+            var digitPosY = $(currentXMLList).find("listComponent").find("yPos").text();
+            var arrowOffset = $(currentXMLList).find("listComponent").find("arrowOffset").text();
+			
+			var navImageWidth = $(currentXMLList).find("navImage").find("width").text();
+			if(navImageWidth == "undefined"){
+                navImageWidth = 10;
+            }
+			
+			$("#branchingEntryID").css("left", ((parseFloat(digitPosX)) * currScale)  + "px");
+            $("#branchingEntryID").css("top", ((parseFloat(digitPosY) - 10) * currScale) + "px");
+            $(".nodeNavClass").css("left", ((parseFloat(arrowOffset) + backgroundXPos) * currScale) + "px");
+            $(".branchNode").css("width", ((parseInt(arrowOffset) + backgroundXPos + (parseInt(navImageWidth))) * currScale) + "px");
+
+            var currentPadding = parseInt(parseInt($(".branchNode").css("padding-bottom")) * currScale);
+            $(".branchNode").css("padding-bottom", currentPadding + "px");
+            $(".confirmationListItem").css("padding-top", currentPadding + "px");
+            $(".confirmationListItem").css("padding-bottom", currentPadding + "px");
+        }
+
+        function SetTrigger(){
+            var trigger = $(currentXMLList).find("trigger");
+            var upTrigger = trigger.find("upBtnTrigger");
+            SetTriggerPosAndScale($("#slideupNavID"), upTrigger);
+
+            var downTrigger = trigger.find("downBtnTrigger");
+            SetTriggerPosAndScale($("#slidedownNavID"), downTrigger);
+
+            var leftTrigger = trigger.find("leftBtnTrigger");
+            SetTriggerPosAndScale($("#slideleftNavID"), leftTrigger);
+
+            var rightTrigger = trigger.find("rightBtnTrigger");
+            SetTriggerPosAndScale($("#sliderightNavID"), rightTrigger);
+
+            var okTrigger = trigger.find("okBtnTrigger");
+            SetTriggerPosAndScale($("#okButtonNavID"), okTrigger);
+
+            var resetTrigger = trigger.find("resetBtnTrigger");
+            SetTriggerPosAndScale($("#initButtonNavID"), resetTrigger);
+
+            var startstopTrigger = trigger.find("startstopBtnTrigger");
+            SetTriggerPosAndScale($("#startstopButtonNavID"), startstopTrigger);
+        }
+
+        function SetTriggerPosAndScale(triggerID, trigger){
+            var digitPosX = trigger.find("xPos").text();
+            triggerID.css("left", ((parseFloat(digitPosX) * currScale) + backgroundXPos) + "px");
+
+            var digitPosY = trigger.find("yPos").text();
+            triggerID.css("top", ((parseFloat(digitPosY) * currScale) + backgroundYPos) + "px");
+
+            var width = trigger.find("width").text();
+            triggerID.css("width", ((parseInt(width) * currScale) + "px"));
+
+            var height = trigger.find("height").text();
+            triggerID.css("height", ((parseInt(height) * currScale) + "px"));
+        }
+
+        function SetSelectedItemAndDisplay(selectedItem, isFocused, node){
+
+            var textNode = selectedItem.find(".scoreClass");
+            if(isFocused){
+                var selectedNodeColor = $(currentXMLList).find("selectedNodeColor").text();
+                var selectedNodeFontColor = $(currentXMLList).find("selectedNodeFontColor").text();
+
+                selectedItem.css("background", selectedNodeColor);
+                textNode.css("color", selectedNodeFontColor);
+            } else {
+                var fontColor = $(currentXMLList).find("fontColor").text();
+                var defaultColor = "rgba(0,0,0,1.0)";
+                selectedItem.css("background", defaultColor);
+                textNode.css("color", fontColor);
+            }
+            
+            if(node != null){
+                if(node.NodeName==""){
+                    textNode[0].innerHTML = ".";
+                } else {
+                    textNode[0].innerHTML = node.NodeName;
+                }
+            } else {
+                textNode[0].innerHTML = "";
+            }
+        }
+
+        function SetConfirmationButtonPosition(){
+            var listItem = $("#displayEntryList").children("li");
+            var listWidth = listItem.width();
+            var branchingDiv = $("#branchingEntryID").position();
+            var midIndex = parseInt(numberOfListEntries/2);
+            var originalWidth = $("#confirmationButtonID").width() * currScale
+            var originalHeight = $("#confirmationButtonID").height() * currScale;
+            var midListItem = GetListItem(listItem, midIndex);
+            var midListEntryItem = midListItem.find("div");
+            var position = midListEntryItem.position();
+
+            var confirmationBtnTop = (branchingDiv.top) + 7;// + (position.top * currScale)) - ((originalHeight * currScale)/2);
+            var confirmationBtnLeft = (branchingDiv.left + (listWidth - originalWidth) * currScale);
+            $("#confirmationButtonID").css({
+                "top" : confirmationBtnTop, 
+                "left" : confirmationBtnLeft
+            });
+
+            $("#confirmationButtonID").css({"width" : originalWidth/*, "height" : originalHeight*/});
+        }
+
+        function GetListItem(list, index){
+            var currentSelectedItem;
+            $(list).each(function(i){
+                if(i == index){
+                    currentSelectedItem = $(this);
+                    return false;
+                }
+            });
+
+            return currentSelectedItem;
+        }
+
+        function Submit() {
+            currentAnswers = currentNode.NodeName;
+            
+            minigameControl.GameObject.GameActions.push({"buttonPressed" : "SubmitButton", "currentNode" : currentNode.NodeName, "time" : LoggingUtils.createTimestampNow()});
+            $("#submitBtnID").mousedown();
+        }
+
+        function SetActivateButton(){
+            if(currentNode.ConfirmationButton && currentNode.ConfirmationButton == "true"){
+                $("#confirmationButtonID").show();
+                confirmationButtonActive = true;
+
+                minigameControl.GameObject.GameActions.push({"buttonShown" : "ConfirmationButton", "currentNode" : currentNode.NodeName, "time" : LoggingUtils.createTimestampNow()});
+            } else {
+                $("#confirmationButtonID").hide();
+                confirmationButtonActive = false;
+            }
+        }
+
+        function getTotal() {
+            return 1;
+        }
+
+        function getScore() {
+            return 1;
+        }
+
+        function showAnswer(ans) {
+            var currentScoreElement = document.getElementById("currentScore");
+            currentScoreElement.innerHTML = ans;
+        }
+
+        function showCorrectAnswer() {
+            showAnswer(currentAnswers);
+        }
+
+        function getCorrectAnswer() {
+            return correctAnswers;
+        }
+
+        function getAnswer() {
+            return currentAnswers;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="mlcContainer">
+        <img id="backgroundImage" src="images/minigames/empty.png">
+        <div>
+            <div id="menuItem">456</div>
+        </div>
+
+        <div id="branchingEntryID"></div>
+
+        <div id="confirmationButtonID">
+            <img id="confirmationBGID" src="images/minigames/listbox.png"/>
+            <ul id="confirmationListID">
+                <li class="confirmationListItem">
+                    <a class="listContents">Yes</a>
+                    <img id="yesNav" src="images/minigames/slideshow_arrow_up_white.png"/>
+                </li>
+                <li class="confirmationListItem">
+                    <a class="listContents">No</a>
+                    <img id="noNav" src="images/minigames/slideshow_arrow_down_white.png"/>
+                </li>
+            </ul>
+        </div>
+
+        <img id="slideleftNavID" src="images/minigames/empty.png" onmousedown="Navigate('left')" />
+        <img id="sliderightNavID" src="images/minigames/empty.png" onmousedown="Navigate('right')" />
+        <img id="slideupNavID" src="images/minigames/empty.png" onmousedown="Navigate('up')" />
+        <img id="slidedownNavID" src="images/minigames/empty.png"  onmousedown="Navigate('down')" />
+        <img id="initButtonNavID" src="images/minigames/empty.png"  onmousedown="ResetButtonPressed()" />
+
+        <img id="okButtonNavID" src="images/minigames/empty.png"  onmousedown="NavigateToLastBranch()" />
+        <img id="startstopButtonNavID" src="images/minigames/empty.png"  onmousedown="Submit()" />
+        <img id="prescriptionImage" src="images/minigames/empty.png"/>
+    </div>
+</body>
+
+</html>
