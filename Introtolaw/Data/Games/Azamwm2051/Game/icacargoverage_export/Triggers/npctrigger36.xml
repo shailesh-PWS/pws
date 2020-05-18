@@ -1,9 +1,0 @@
-<trigger>
-  <event type="0">
-    <logic>
-      <action>
-        <property>ShowMediaAction|minigame|slide0300intro_mg_14.xml</property>
-      </action>
-    </logic>
-  </event>
-</trigger>
