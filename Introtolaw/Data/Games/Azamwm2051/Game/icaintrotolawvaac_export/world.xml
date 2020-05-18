@@ -1,0 +1,21 @@
+<world>
+  <global>
+    <ui inventorybutton="true" objectivebutton="true" takepicturebutton="true" authbutton="true" authimagebutton="true"/>
+    <scoresystem>minigame</scoresystem>
+  </global>
+  <terrain>
+    <asset name="Playware_Pack/Environments/blackroom" pos="3.3900000000000206|0|-1.4400000000000206" rot="0|0|0" scale="1|1|1"/>
+  </terrain>
+  <playerspawn pos="3.5730273437499704|0|-1.4132617187499932" rot="0|0|0" model="Playware_Pack/Characters/blackfigure" name="SGT3 Toh" scale="1|1|1" controller="RailSystem"/>
+  <items/>
+  <triggers/>
+  <npcs>
+    <npc id="0">
+      <data>
+        <instances>
+          <instance pos="3.651111111111078|0|-1.375555555555536" rot="0|0|0" scale="1" radius="0.60" model="Common/Misc/Icon" showModel="false"/>
+        </instances>
+      </data>
+    </npc>
+  </npcs>
+</world>
