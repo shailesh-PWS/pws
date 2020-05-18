@@ -1,0 +1,190 @@
+<NpcInfo>
+  <npc id="0" name="Finance Manager" prefab="Playware_Pack/Characters/R_noncustomfemale_05">
+    <trigger>media|npctrigger0</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>false</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="1" name="Warehouse Manager" prefab="Playware_Pack/Characters/R_noncustomfemale_13">
+    <trigger>media|npctrigger1</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>false</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="2" name="Procurement Manager" prefab="Playware_Pack/Characters/R_noncustommale_15">
+    <trigger>media|npctrigger2</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>false</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="3" name="Transport Manager" prefab="Playware_Pack/Characters/R_noncustommale_01">
+    <trigger>media|npctrigger3</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>false</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="4" name="Invis" prefab="APS_Pack/Characters/R_noncustom_malechild03B">
+    <trigger>media|npctrigger4</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>false</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="5" name="Invis" prefab="APS_Pack/Characters/R_noncustom_malechild03B">
+    <trigger>media|npctrigger5</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="8" name="Transport Manager" prefab="Playware_Pack/Characters/R_noncustommale_01">
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>false</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="9" name="Procurement Manager" prefab="Playware_Pack/Characters/R_noncustommale_15">
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>false</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="10" name="Warehouse Manager" prefab="Playware_Pack/Characters/R_noncustomfemale_13">
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>false</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="11" name="Finance Manager" prefab="Playware_Pack/Characters/R_noncustomfemale_05">
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>false</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="12" name="Invis" prefab="APS_Pack/Characters/R_noncustom_malechild03B">
+    <trigger>media|npctrigger12</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="13" name="Invis" prefab="APS_Pack/Characters/R_noncustom_malechild03B">
+    <trigger>media|npctrigger13</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="14" name="Invis" prefab="APS_Pack/Characters/R_noncustom_malechild03B">
+    <trigger>media|npctrigger14</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="15" name="Invis" prefab="APS_Pack/Characters/R_noncustom_malechild03B">
+    <trigger>media|npctrigger15</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="16" name="Invis" prefab="APS_Pack/Characters/R_noncustom_malechild03B">
+    <trigger>media|npctrigger16</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="17" name="Invis" prefab="APS_Pack/Characters/R_noncustom_malechild03B">
+    <trigger>media|npctrigger17</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+</NpcInfo>

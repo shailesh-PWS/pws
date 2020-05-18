@@ -1,0 +1,47 @@
+<xml>
+  <class>menu</class>
+  <closeOption>1</closeOption>
+  <disableOption>1</disableOption>
+  <description/>
+  <resize>fit</resize>
+  <width>1024</width>
+  <height>576</height>
+  <path>Minigames/images/IMG28.jpg</path>
+  <triggers>
+    <trigger>
+      <linkageID><![CDATA[Finance 1 Warehouse Wrong_mg_31.xml]]></linkageID>
+      <xPos><![CDATA[0.8904452226113057]]></xPos>
+      <yPos><![CDATA[0.28029751798851965]]></yPos>
+      <width><![CDATA[0.08717995361317021]]></width>
+      <height><![CDATA[0.33292909693588807]]></height>
+    </trigger>
+    <trigger>
+      <linkageID><![CDATA[Procurement 1_mg_28.xml]]></linkageID>
+      <xPos><![CDATA[0.5755150302423939]]></xPos>
+      <yPos><![CDATA[0.41741450400194025]]></yPos>
+      <width><![CDATA[0.1670835417708854]]></width>
+      <height><![CDATA[0.5339154337456544]]></height>
+    </trigger>
+    <trigger>
+      <linkageID><![CDATA[MLO1_mg_30.xml]]></linkageID>
+      <xPos><![CDATA[0.1862294783755514]]></xPos>
+      <yPos><![CDATA[0.33697146091034036]]></yPos>
+      <width><![CDATA[0.06780663058802128]]></width>
+      <height><![CDATA[0.42202279893281586]]></height>
+    </trigger>
+    <trigger>
+      <linkageID><![CDATA[Warehouse Wrong_mg_32.xml]]></linkageID>
+      <xPos><![CDATA[0.02237482377552413]]></xPos>
+      <yPos><![CDATA[0.4303500687201875]]></yPos>
+      <width><![CDATA[0.08395106644231205]]></width>
+      <height><![CDATA[0.4119977362761743]]></height>
+    </trigger>
+    <trigger>
+      <linkageID><![CDATA[Transport 1_mg_27.xml]]></linkageID>
+      <xPos><![CDATA[0.25972076947564693]]></xPos>
+      <yPos><![CDATA[0.3896030398577087]]></yPos>
+      <width><![CDATA[0.15739688025831097]]></width>
+      <height><![CDATA[0.4995553399628102]]></height>
+    </trigger>
+  </triggers>
+</xml>

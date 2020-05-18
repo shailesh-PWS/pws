@@ -1,0 +1,1391 @@
+<xml>
+  <ObjectiveItem>
+    <item id="0">
+      <name>TeleToOffice</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Added when FM 1 exists makes TeleToOffice Portal visible]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="1">
+      <name>TMI</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when TM I dialogue is completed locks TM I unlocks FM I]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="2">
+      <name>FMI</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when FM I dialogue is completed locks FM I triggers TeleToOffice add item]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="3">
+      <name>ChairmanI</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when Chairman I dialogue is completed locks Chairman I unlocks WM I]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="4">
+      <name>FM0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete FM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="5">
+      <name>WMI</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given whenWM I dialogue is completed locks WM I unlocks PM I]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="6">
+      <name>Chairman0PrePlan</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when Chairman 0 dialogue yes option is chosen unlocks First Situation Update minigame]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="7">
+      <name>WM0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete WM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="8">
+      <name>PMI</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when PM I dialogue is completed locks PM I unlocks TM I]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="9">
+      <name>PM0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete PM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="10">
+      <name>TM0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete TM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="11">
+      <name>Intro</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when Into is complete locks Intro unlocks PCM 1]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="12">
+      <name>Chairman0Planning</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when Chairman 2 dialogue yes option is chosen unlocks First Situation Update minigame]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="13">
+      <name>Phase0Planning</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="14">
+      <name>ConfirmWarehouseHQ0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="15">
+      <name>Warehouse0Wrong</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="16">
+      <name>ConfirmWarehouseA0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="17">
+      <name>Phase0Setup</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="18">
+      <name>TM0_Air</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete TM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="19">
+      <name>TM0_Land</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete TM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="20">
+      <name>TM0_Sea</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete TM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="21">
+      <name>TM0_Rail</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete TM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="22">
+      <name>MLO0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete MLO 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="23">
+      <name>SitUpdate1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="24">
+      <name>Phase1Planning</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="25">
+      <name>Phase1Planned</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="26">
+      <name>FM1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete FM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="27">
+      <name>TM1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete TM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="28">
+      <name>WM1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete WM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="29">
+      <name>PM1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete PM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="30">
+      <name>MLO1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete MLO 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="31">
+      <name>SitUpdate2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete MLO 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="32">
+      <name>Phase2Planning</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="33">
+      <name>Phase2Planned</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="34">
+      <name>FM2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete FM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="35">
+      <name>MLO2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete MLO 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="36">
+      <name>PM2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete PM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="37">
+      <name>TM2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete TM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="38">
+      <name>WM2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete WM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="39">
+      <name>SitUpdate3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="40">
+      <name>Phase3Planning</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="41">
+      <name>Phase3Planned</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="42">
+      <name>FM3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete FM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="43">
+      <name>MLO3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete MLO 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="44">
+      <name>PM3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete PM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="45">
+      <name>TM3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete TM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="46">
+      <name>WM3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete WM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="47">
+      <name>SitUpdate4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="48">
+      <name>FM2D</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete FM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="49">
+      <name>Phase4Planning</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="50">
+      <name>Phase4Planned</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="51">
+      <name>FM4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete FM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="52">
+      <name>MLO4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete MLO 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="53">
+      <name>PM4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete PM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="54">
+      <name>TM4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete TM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="55">
+      <name>WM4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Given when complete WM 0]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="56">
+      <name>SitUpdate5</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="57">
+      <name>ChooseHQ0</name>
+      <theme/>
+      <image/>
+      <value>2</value>
+      <isScorable>true</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="58">
+      <name>ChooseWarehouseA0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="59">
+      <name>ChooseLocalSupplier0</name>
+      <theme/>
+      <image/>
+      <value>2</value>
+      <isScorable>true</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="60">
+      <name>ChooseRegionalSupplier0</name>
+      <theme/>
+      <image/>
+      <value>2</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="61">
+      <name>ChooseTruck0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="62">
+      <name>ChooseContainer0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="63">
+      <name>ChooseWarehouseHQ0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="64">
+      <name>ChooseOverseasSupplier0</name>
+      <theme/>
+      <image/>
+      <value>2</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="65">
+      <name>ConfirmHQ0</name>
+      <theme/>
+      <image/>
+      <value>2</value>
+      <isScorable>true</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="66">
+      <name>ConfirmLocalSupplier0</name>
+      <theme/>
+      <image/>
+      <value>2</value>
+      <isScorable>true</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="67">
+      <name>ConfirmRegionalSupplier0</name>
+      <theme/>
+      <image/>
+      <value>2</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="68">
+      <name>ConfirmOverseasSupplier0</name>
+      <theme/>
+      <image/>
+      <value>2</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="69">
+      <name>ConfirmTruck0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="70">
+      <name>ConfirmContainer0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="71">
+      <name>Choose1Bat1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="72">
+      <name>Choose2Bat1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="73">
+      <name>Choose3Bat1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="74">
+      <name>ChoosePackA1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="75">
+      <name>ChoosePackB1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="76">
+      <name>ChoosePackC1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="77">
+      <name>Confirm1Bat1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="78">
+      <name>Confirm2Bat1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="79">
+      <name>Confirm3Bat1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="80">
+      <name>ConfirmPackA1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="81">
+      <name>ConfirmPackB1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="82">
+      <name>ConfirmPackC1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="83">
+      <name>Confirm1Bat2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="84">
+      <name>Confirm2Bat2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="85">
+      <name>Confirm3Bat2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="86">
+      <name>ConfirmPackA2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="87">
+      <name>ConfirmPackB2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="88">
+      <name>ConfirmPackC2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="89">
+      <name>Choose1Bat3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="90">
+      <name>Choose2Bat3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="91">
+      <name>Choose3Bat3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="92">
+      <name>ChoosePackA3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="93">
+      <name>ChoosePackB3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="94">
+      <name>Confirm1Bat3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="95">
+      <name>Confirm2Bat3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="96">
+      <name>Confirm3Bat3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="97">
+      <name>ConfirmPackA3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="98">
+      <name>ConfirmPackB3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="99">
+      <name>Choose1Bat4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="100">
+      <name>Choose2Bat4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="101">
+      <name>Confirm1Bat4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="102">
+      <name>Confirm2Bat4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="103">
+      <name>ChoosePackA4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="104">
+      <name>ChoosePackB4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="105">
+      <name>ConfirmPackA4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="106">
+      <name>ConfirmPackB4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="107">
+      <name>ChoosePassengerHelicopter0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="108">
+      <name>ConfirmPassengerHelicopter0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="109">
+      <name>ChooseTransportHelicopter0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="110">
+      <name>ConfirmTransportHelicopter0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="111">
+      <name>ChoosePassengerTrain0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="112">
+      <name>ConfirmPassengerTrain0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="113">
+      <name>ChooseCargoTrain0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="114">
+      <name>ConfirmCargoTrain0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="115">
+      <name>ChooseFishingBoat0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="116">
+      <name>ConfirmFishingBoat0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="117">
+      <name>ChooseFerry0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="118">
+      <name>ConfirmFerry0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="119">
+      <name>Choose3Bat4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="120">
+      <name>Confirm3Bat4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="121">
+      <name>ChoosePackC3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="122">
+      <name>ConfirmPackC3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="123">
+      <name>PrincipalFunds</name>
+      <theme/>
+      <image/>
+      <value>100000</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="124">
+      <name>StartingLSK</name>
+      <theme/>
+      <image/>
+      <value>8000</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="125">
+      <name>EndReward</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+  </ObjectiveItem>
+  <PropItem/>
+</xml>

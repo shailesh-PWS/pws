@@ -1,0 +1,55 @@
+<trigger>
+  <event type="1">
+    <logic>
+      <condition>
+        <property>InventoryCondition|41|1|0</property>
+        <property>InventoryCondition|47|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|SitUpdate4_mg_16.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|48|-1|1</property>
+        <property>InventoryCondition|49|-1|1</property>
+        <property>InventoryCondition|47|1|0</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|Control Room 4_No Donation_mg_17.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|50|-1|1</property>
+        <property>InventoryCondition|49|1|0</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|Phase4Planning_mg_18.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|48|1|0</property>
+        <property>InventoryCondition|49|-1|1</property>
+        <property>InventoryCondition|47|1|0</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|Control Room 4_Donation_mg_19.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|51|1|0</property>
+        <property>InventoryCondition|52|1|0</property>
+        <property>InventoryCondition|49|-1|1</property>
+        <property>InventoryCondition|53|1|0</property>
+        <property>InventoryCondition|54|1|0</property>
+        <property>InventoryCondition|55|1|0</property>
+      </condition>
+      <action>
+        <property>AddInventoryItemAction|49|1</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

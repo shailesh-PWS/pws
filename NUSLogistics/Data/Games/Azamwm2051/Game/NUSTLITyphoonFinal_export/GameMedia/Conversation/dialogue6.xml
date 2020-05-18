@@ -1,0 +1,14 @@
+<xml>
+  <dialog myid="3002019161441720878" id="1" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="Nisa" portrait="image" imagepath="female06_talk.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="target" cameraPosition="front" cameraRange="mid" cameraPanState="interpolate" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="1" bgImage="IMG124.png" scale="fit" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="true">
+    <text><![CDATA[]]></text>
+    <dialog myid="30052019215659229453" id="2" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="Nisa" portrait="image" imagepath="female06_expressionless.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Sal, we may need to relocate our stockpile for a faster reponse.]]></text>
+      <dialog myid="30052019215737795763" id="3" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="Nisa" portrait="image" imagepath="female06_talk.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[You need to identify the safest yet fastest lead to store the LSK.]]></text>
+        <dialog myid="13272019173942675762" id="4" multiplayerreward="" persistentreward="" reward="1" who="2" link="" nick="Nisa" portrait="image" imagepath="female06_talk.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+          <text><![CDATA[We'll need our vehicles to start transporting the LSK.]]></text>
+        </dialog>
+      </dialog>
+    </dialog>
+  </dialog>
+</xml>

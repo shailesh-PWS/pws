@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Comic Strip</title>
+	<style>
+    	#slideShowDivWrapper{
+    		position:absolute;
+    		width:100%;
+    		height:100%;
+            left:0px;
+            top:0px;
+            margin: 0px;
+            padding: 0px;
+            font-family: arial;
+            font-size: 12px;
+    	}
+        #slideShowContainerID{
+            position: absolute;
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        }
+        #slideContentid,#slideContentReservedid{
+            position: absolute;
+            width:100%;
+            height:100%;
+            background-color: white;
+            overflow:hidden;
+        }
+        #slideContentReservedid{
+            left:100%;
+        }
+        .slideInnerContentClass{
+            position: absolute;
+            width:640px;
+            height:480px; 
+            overflow:hidden;
+        }
+        .navClass{
+            position: absolute;
+            height:100%;
+            width:15%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            -webkit-opacity: 0.5;
+            -moz-opacity: 0.5;
+            opacity: 0.5;
+            
+        }
+
+        #sliderightNavID{
+            right:0px;
+            background-image: url(images/minigames/slideshow_arrow_right.png);
+        }
+        #slideleftNavID{
+            left:0px;
+            background-image: url(images/minigames/slideshow_arrow_left.png);
+        }
+        #navigateSlideWrapperID{
+            position: absolute;
+            width:100%;
+            height:40px;
+            background-color: rgba(39, 56, 72,1);
+            bottom: 0px;
+            text-align: center;
+            color: white;
+        }
+        
+        .msgTextClass{
+            position: relative;
+            top:50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        .dotsClass{
+            position: relative;
+            width:5px;
+            height:5px;
+            margin: 2px;
+            display: inline-block;
+            margin-top:15px;
+            background-color: white;
+            -moz-border-radius: 2.5px;
+            border-radius: 2.5px;
+            border:1px solid white;
+        }
+        #closeNavBtnID,#startNavBtnID{
+            position:absolute;
+            line-height: 30px;
+            padding:5px;
+            color: white;
+            cursor: pointer;
+            font-size: 1.5em;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #closeNavBtnID:hover,#startNavBtnID:hover{
+            background-color: white;
+            color: #004040;
+        }
+        #closeNavBtnID{
+            left:0px;
+        }
+        #startNavBtnID{
+            right:0px;
+        }
+    </style>
+    
+    <script type="text/javascript">
+        var correctAnswers;
+        var currentAnswers;
+        var currentXMLList;
+        var soundDelay;
+        
+        var slideCount=0;
+        var currentSlideContainer;
+        var nextSlideContainer;
+        var currentItem=0;
+        var currentDuration=1000;
+        var currentDelay=1000;
+        var autoSliding;
+        var animationType=1;
+        var animationIndices=[];
+        var scale1=1;
+        var transparentBG=false;
+        function resize(){
+            monitorResize();
+        }
+        $(document).ready(function(){
+                        
+            monitorResize();
+            
+            
+            $("#slideleftNavID").hide();
+            $("#navigateSlideWrapperID").hide();
+            autoSliding = ($(currentXMLList).find("AutoSliding").text()=="true")?true:false;
+            transparentBG = ($(currentXMLList).find("transparent").text()=="true")?true:false;
+            animationType = $(currentXMLList).find("animationType").text();
+            slideCount = $(currentXMLList).find("Items").length;
+
+            currentSlideContainer = document.getElementById("slideContentid");
+                        
+            if(slideCount>1)nextSlideContainer = document.getElementById("slideContentReservedid");
+                                 
+            assignValuestoSlide(currentSlideContainer);
+            
+            playCurrentSound();
+            
+            if(!autoSliding){
+                $("#navigateSlideWrapperID").css({
+                    backgroundColor:"rgba(0, 0, 0,.6)"
+                });
+
+                if(animationType==3){
+                    $("#slideleftNavID").on("mousedown",function(){
+                        gotoPrevSlide();
+                    });
+                    $("#sliderightNavID").on("mousedown",function(){
+                        gotoNextSlide();
+                       
+                    });
+
+                   
+                    $("#slideShowContainerID").swipe({
+                        swipe:function(event, direction, distance, duration, fingerCount) {
+                            if(direction=="left"){
+                                    gotoNextSlide();
+                            }
+                            else{
+                                    gotoPrevSlide();
+                            }
+                        },
+                        threshold:20
+                    });
+                }
+                else{
+                    $(".navClass").hide();
+                    if(!transparentBG)$("#navigateSlideWrapperID").show();
+                    $("#navigateSlideWrapperID").html("<div class='msgTextClass'>Tap to continue</div>");
+                    $("#navigateSlideWrapperID").delay(3000).fadeOut();
+                    $("#slideShowContainerID").on("mousedown",function(){
+                        gotoNextSlide();
+                    });
+                }
+            }
+            else{
+                $("#navigateSlideWrapperID").css({
+                    backgroundColor:"rgba(39, 56, 72,1)"
+                });
+                $("#slideleftNavID").css({
+                    pointerEvents:"none",
+                    display:"none"
+                });
+                $("#sliderightNavID").css({
+                    pointerEvents:"none",
+                    display:"none"
+                });
+                $("#navigateSlideWrapperID").fadeIn();
+                
+                $("#navigateSlideWrapperID").html("<div id='closeNavBtnID'>Close</div><div id='startNavBtnID'>Start</div>");
+                $("#closeNavBtnID").on("mousedown",function(){
+                    $("#closeNavBtnID").off("mousedown");
+                    stopSlideShowAndGotoNextGame();
+                });
+                $("#startNavBtnID").on("mousedown",function(){
+                    startNav();
+                });
+            }
+        });
+        
+        function playCurrentSound(){
+            soundFile = ($($(currentXMLList).find("Items")[currentItem]).find("audiofile").text() != "") ? $($(currentXMLList).find("Items")[currentItem]).find("audiofile").text() : "";
+            soundDelay = ($($(currentXMLList).find("Items")[currentItem]).find("audiodelay").text() != "") ? $($(currentXMLList).find("Items")[currentItem]).find("audiodelay").text() : 0;
+
+            if(soundFile=="") stopSoundMedia();
+            else playSoundMedia(soundFile,soundDelay);
+        }
+        function startNav(){
+            $("#navigateSlideWrapperID").empty();
+            $("#navigateSlideWrapperID").css({
+                backgroundColor:"rgba(39, 56, 72,.5)"
+            });
+            for(var i=0;i<slideCount;i++){
+                $("#navigateSlideWrapperID").append("<div class='dotsClass'></div>");
+            }
+            highlightDot(currentItem);
+            startSlideShow();
+        }
+        function startSlideShow(){
+            $("#startNavBtnID").off("mousedown");
+            setTimeout(gotoNextSlide,1000);
+        }
+
+        var ssto;
+        function gotoNextSlide(){
+            if(!autoSliding){
+                $("#sliderightNavID").off("mousedown");
+                clearTimeout(ssto);
+                if(!transparentBG){
+                    $("#navigateSlideWrapperID").fadeIn();
+                    ssto = window.setTimeout(function(){
+                        $("#navigateSlideWrapperID").fadeOut();
+                    },3000);
+                }
+            }
+            
+            if(animationIndices.length>0){
+                for(var i=0;i<animationIndices[0].length;i++){
+                    $(animationIndices[0][i]).show();
+                }
+                animationIndices.shift();
+                if(!autoSliding){
+                    window.setTimeout(function(){
+                            $("#sliderightNavID").on("mousedown tap",function(){
+                                gotoNextSlide();
+                            });
+                    },250);
+                }
+                else{
+                    startSlideShow();
+                }
+                return;
+            }
+            if(autoSliding){
+                if(currentItem==slideCount-1){
+                    currentItem=-1;
+                    
+                    $("#startNavBtnID").text("Replay");
+                    $("#navigateSlideWrapperID").empty();
+                    
+                    $("#navigateSlideWrapperID").html("<div id='closeNavBtnID'>Close</div><div id='startNavBtnID'>Start</div>");
+                    $("#startNavBtnID").on("mousedown",function(){
+                        $(".slideInnerContentClass").empty();
+                        startNav();
+                    });
+                    $("#closeNavBtnID").on("mousedown",function(){
+                        $("#closeNavBtnID").off("mousedown");
+                        
+                        stopSlideShowAndGotoNextGame();
+                    });
+                    $("#navigateSlideWrapperID").css({
+                        backgroundColor:"rgba(39, 56, 72,1)"
+                    });
+                    return;
+                }
+            }
+       
+            currentItem++;
+            if(currentItem>=slideCount){
+                currentItem = slideCount-1;
+                stopSlideShowAndGotoNextGame();
+                return;
+            }
+            currentDuration=$($(currentXMLList).find("Items")[currentItem]).find("duration").text();
+            assignValuestoSlide(nextSlideContainer);
+            animateSlides("left");
+            
+            if(!autoSliding){
+                window.setTimeout(function(){
+                    $("#sliderightNavID").on("mousedown tap",function(){
+                            gotoNextSlide();
+                    });
+                },250);
+            }
+        }
+        
+        function stopSlideShowAndGotoNextGame(){
+            stopSoundMedia();
+            
+            $("#slideShowContainerID").empty();
+            ctr++;
+            minigameManager.startGame(ctr);
+        }
+        
+        function gotoPrevSlide(){
+            //parent.strFuncs.log("Prev");
+            
+            $("#leftNavid").off("mousedown");
+            window.setTimeout(function(){
+                    $("#leftNavid").on("mousedown tap",function(){
+                            gotoPrevSlide();
+                    });
+            },250);
+            
+            if(!transparentBG){
+                $("#navigateSlideWrapperID").fadeIn();
+                ssto = window.setTimeout(function(){
+                    $("#navigateSlideWrapperID").fadeOut();
+                },2000);
+            }
+            currentItem--;
+            if(currentItem<0){
+                currentItem=0;
+                return
+            }
+
+            currentDuration=$($(currentXMLList).find("Items")[currentItem]).find("duration").text();
+            assignValuestoSlide(nextSlideContainer,true);
+            animateSlides("right");
+        }
+        
+        
+        function assignValuestoSlide(currentTartget,prev){
+            animationIndices=[];
+            $(currentTartget).find(".slideInnerContentClass").empty();
+            if(currentItem<=0){
+               $("#slideleftNavID").hide();
+            }
+            else{
+                if(animationType==3 && !autoSliding)$("#slideleftNavID").show();
+            }
+            var animIndex=0;
+            $(currentTartget).css("background-image","none");
+            for(var i=0;i<$($(currentXMLList).find("Items")[currentItem]).find("image").length;i++){
+                    animIndex = $($($(currentXMLList).find("Items")[currentItem]).find("image")[i]).find("animationIndex").text();
+                    if(animIndex.length==0)animIndex=0;
+                    animIndex = parseInt(animIndex);
+
+                    var bg = true;
+                    var divElem;
+					var imagepath = $($($(currentXMLList).find("Items")[currentItem]).find("image")[i]).text();
+               
+                    if(bg){
+                        
+                        $(currentTartget).css({
+                            backgroundSize:"auto 100%",
+                            backgroundPosition:"center",
+                            backgroundImage:"url("+imagepath+")",
+                            backgroundRepeat:"no-repeat"
+
+                        });
+                    }
+                    else{
+                        divElem = document.createElement("img");
+                        $(divElem).attr("src",imagepath);
+                        //parent.strFuncs.setImg(divElem,imagepath);
+                        $(divElem).css({
+                                position:"absolute",
+                                left:($($($(currentXMLList).find("Items")[currentItem]).find("image")[i]).find("xPos").text())+"px",
+                                top:($($($(currentXMLList).find("Items")[currentItem]).find("image")[i]).find("yPos").text())+"px",
+                                width:$($($(currentXMLList).find("Items")[currentItem]).find("image")[i]).find("width").text()+"px",
+                                height:$($($(currentXMLList).find("Items")[currentItem]).find("image")[i]).find("height").text()+"px"
+
+                        });
+                        if(!prev){
+                                if(animIndex>0){
+                                        $(divElem).hide();
+                                        if(animationIndices[animIndex]==undefined)animationIndices[animIndex] = [];
+                                        animationIndices[animIndex].push(divElem);
+                                }
+                        }
+                        $(currentTartget).find(".slideInnerContentClass").append(divElem);
+                    }
+            }
+            $(currentTartget).css("background-color",$($(currentXMLList).find("Items")[currentItem]).find("backColor").text());
+            for(var i=0;i<$($(currentXMLList).find("Items")[currentItem]).find("textbox").length;i++){
+                animIndex = $($($(currentXMLList).find("Items")[currentItem]).find("textbox")[i]).find("animationIndex").text();
+                if(animIndex.length==0)animIndex=0;
+                animIndex = parseInt(animIndex);
+
+                var divElem = document.createElement("div");
+
+                $(divElem).html($($($(currentXMLList).find("Items")[currentItem]).find("textbox")[i]).find("text").text());
+                $(divElem).css({
+                        position:"absolute",
+                        left:($($($(currentXMLList).find("Items")[currentItem]).find("textbox")[i]).find("xPos").text())+"px",
+                        top:($($($(currentXMLList).find("Items")[currentItem]).find("textbox")[i]).find("yPos").text())+"px"
+                });
+               $(currentTartget).find(".slideInnerContentClass").append(divElem);
+
+                if(!prev){
+                    if(animIndex>0){
+                        $(divElem).hide();
+                        if(animationIndices[animIndex]==undefined)animationIndices[animIndex] = [];
+                        animationIndices[animIndex].push(divElem);
+                    }
+                }
+            }
+
+            var tempAnimAr = [];
+            for(var i=0;i<animationIndices.length;i++){
+                    if(animationIndices[i]!=undefined)tempAnimAr.push(animationIndices[i]);
+            }
+            animationIndices = tempAnimAr;
+        }
+        
+        function animateSlides(dir){
+            var cpos = "";
+            if(dir=="left"){
+                    cpos="-100%";
+            }
+            else {
+                    cpos = "100%";
+                    $(nextSlideContainer).css("left","-100%");
+            }
+
+            if(!true){
+                    $(currentSlideContainer).css("left",cpos);
+                    $(nextSlideContainer).css("left","0px");
+                    enableNavEvent();
+            }
+            else{
+                if(dir=="left"){
+                        $(nextSlideContainer).css("left","100%");
+                }
+                else{
+                        $(nextSlideContainer).css("left","-100%");
+                }
+                if(parseInt(animationType)==1){
+                        $(currentSlideContainer).css({
+                                left:cpos
+                        });
+                        $(nextSlideContainer).css({
+                                left:"0px"
+                        });
+                         if(autoSliding)startSlideShow();
+                }
+                else if(parseInt(animationType)==2){
+                        $(currentSlideContainer).css({
+                                left:"0px"
+                        });
+                        $(nextSlideContainer).css({
+                                left:"0px"
+                        });
+
+                        $(currentSlideContainer).fadeOut();
+                        $(nextSlideContainer).hide();
+                        $(nextSlideContainer).fadeIn();
+                         if(autoSliding)startSlideShow();
+                }
+                else{
+
+                        TweenMax.to(currentSlideContainer, currentDuration,{css:{left:cpos},ease:Linear.easeNone});
+                        if(dir=="left")TweenMax.fromTo(nextSlideContainer, currentDuration,{css:{left:"100%"}},{css:{left:"0px"},ease:Linear.easeNone,onComplete:startNextSlide});
+                        else TweenMax.fromTo(nextSlideContainer, currentDuration,{css:{left:"-100%"}},{css:{left:"0px"},ease:Linear.easeNone});
+                }
+                setTimeout(playCurrentSound,1000);
+            }
+
+            var tempSlide = currentSlideContainer;
+            currentSlideContainer = nextSlideContainer;
+            nextSlideContainer = tempSlide;
+            highlightDot(currentItem);
+        }
+        
+        function startNextSlide(){
+            if(autoSliding)startSlideShow();
+        }
+        function highlightDot(idx){
+            $("#navigateSlideWrapperID").empty();
+            if(autoSliding){
+                for(var i=0;i<slideCount;i++){
+                    if(i==idx)$("#navigateSlideWrapperID").append("<div class='dotsClass' style='background-color:#004040'></div>");
+                    else $("#navigateSlideWrapperID").append("<div class='dotsClass' style='background-color:#cccccc'></div>");
+                }
+            }
+        }
+        
+        function monitorResize(){
+            var sw = $(".slideInnerContentClass").width();
+            var sh = $(".slideInnerContentClass").height();
+            var ew = $("#slideShowContainerID").width();
+            var eh = $("#slideShowContainerID").height();
+            var mltpr = strFuncs.multiplier(sw,ew);
+            var mltpr1 = strFuncs.multiplier(sh,eh);
+            var scale = Math.min(mltpr,mltpr1);
+            
+            $(".slideInnerContentClass").css({
+                "transform":"scale("+scale+")",
+                "-webkit-transform": "scale("+scale+")",
+                "-ms-transform": "scale("+scale+")",
+                "-moz-transform": "scale("+scale+")",
+                "-o-transform": "scale("+scale+")",
+                "-ms-transform-origin":"0 0",
+                "moz-transform-origin":"0 0",
+                "o-transform-origin":"0 0",
+                "webkit-transform-origin":"0 0",
+                "transform-origin":"0 0",
+                top:(eh-sh*scale)/2,
+                left:(ew-sw*scale)/2
+            });
+        }
+    </script>
+</head>
+<body>
+	<div id='slideShowDivWrapper'>
+  <div id="slideShowContainerID">
+        <div id='slideContentid'>
+            <div class="slideInnerContentClass"></div>
+        </div>
+        <div id='slideContentReservedid'>
+            <div class="slideInnerContentClass"></div>
+        </div>
+        
+        <div id="navigateSlideWrapperID"></div>
+    </div>
+    <div id="slideleftNavID" class="navClass"></div>
+    <div id="sliderightNavID" class="navClass"></div>
+    </div>
+</body>
+</html>

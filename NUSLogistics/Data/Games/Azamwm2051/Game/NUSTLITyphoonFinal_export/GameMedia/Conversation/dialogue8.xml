@@ -1,0 +1,5 @@
+<xml>
+  <dialog myid="3002019161233768921" id="1" multiplayerreward="" persistentreward="" reward="3" who="1" link="" nick="" portrait="image" imagepath="female06_expressionless.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="target" cameraPosition="front" cameraRange="close" cameraPanState="snap" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="1" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[We need to get prepared for such an eventuality. Here are you assignments.]]></text>
+  </dialog>
+</xml>
