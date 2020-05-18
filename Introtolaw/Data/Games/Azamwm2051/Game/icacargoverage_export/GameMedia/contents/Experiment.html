@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Experiment</title>
+     <style>
+        #ExperimentHolder{
+            position: relative;
+            left:0px;
+            top:0px;
+            width:100%; 
+            height:100%;
+            text-align: center;
+            font-family: arial;
+            font-size: 18px;
+            
+        }
+        #ExpQuestionHldrID{
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            width:75%;
+            height:90%;
+            top:5%;
+            left:0;
+            padding:0px;
+            margin: 2px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+            
+            float:centre;
+        }
+         
+         #ExpAnsHolderId{
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            width:25%;
+            height:90%;
+            top:5%;
+            left:75%;
+            padding:0px;
+            margin: 2px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow-y: auto;
+
+         }
+         
+         .matchItemClass{
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            position: relative;
+            
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            border: 2px solid white;  
+            float:centre;
+            margin-bottom: 10px;
+             
+            overflow-x: auto;
+
+            text-align: left;
+            
+        }
+        .matchItemClass span{
+            color: white;
+            text-align: left;
+         }
+        
+        .mouseOverBoxEffect{
+            background-color: #80CBC4 ; 
+            transform: rotateY(180deg);
+        }
+        
+            
+        .matchItemClass .mouseOverBoxEffect{
+          backface-visibility: hidden;
+          height: 100%;
+          width: 100%;
+        }
+        
+        .matchItemClass span{
+           float: left;
+            padding: 5px;
+        }
+        .matchItemClass img{
+            width:15%;
+            float: left;
+        }
+        
+ 
+         .divImage{
+            display: block;
+            margin: auto;
+            position: relative;
+        }
+         
+        .groupBoxClass{
+            border: 5px solid rgba(0,0,0,.6);
+            display: inline-block;
+            background-color: rgba(0,0,0,.6) ;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 18px;
+            position: absolute;
+            width:90%;
+            height: 90%;
+            top:5%;
+            left:5%;     
+        }
+        
+        .mouseOverBoxEffect{
+            background-color: rgba(102,204,255,.6) ; 
+        }
+        
+        .groupBoxClass span{
+            position: absolute;
+            top: 0px;
+            left:0px;
+            width:100%;
+            background-color: black;
+            font-size: 18px;
+            color:white;
+            overflow: hidden;
+            min-height: 10%;
+            padding: 2px;
+        }
+         
+       .listBoxWrapper{
+            position: absolute;
+            width:100%;
+            bottom: 0px;
+            left:0px;
+            overflow-y: auto;
+            border: 1px solid rgba(255,255,255,0);
+            box-sizing: border-box;
+        }
+         .listItemClass,.listItemCount{
+            
+            
+            box-sizing: border-box;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            font-size: 18px;
+            border-collapse: collapse;
+            margin-top: 1px;
+            min-height: 20%;
+            text-align: left;
+            color:white;
+        }
+         
+        .listItemClass{
+            width:100%;
+            position: relative;
+            padding-left:20%;
+            padding-right: 10%;
+        }
+        .listItemCount{
+            position: absolute;
+            width: auto;
+            right:15%;
+            top:0px;
+        }
+        ._deleteBtnClass{
+            width:10%;
+            height:100%;
+            position: absolute;
+            right:0px;  
+            top:0px;
+            box-sizing: border-box;
+            background-image: url("images/minigames/delete.png");
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: center;
+        }
+        
+        ._imgBtnClass{
+            width:20%;
+            height:100%;
+            position: absolute;
+            left:0px;  
+            top:0px;
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        
+        
+    </style>
+    <script type="text/javascript">
+        var correctAnswers=[];
+        var currentAnswers=[];
+        var imgScal=0;
+        var myscore=0;
+        $(document).ready(function(){
+            question = $(currentXMLList).find("Question").text();
+            minigameControl.showInstruction(question);
+            
+            
+            title =  $(currentXMLList).find("Title").text();
+            if(title == null || title == "") {title = question;}
+            
+            div =  $("#ExpQuestionHldrID") ;
+            imgPath = $(currentXMLList).find("Path").text();
+            
+            var imgDiv = $("<img/>");
+            $(imgDiv).attr("src",imgPath);
+            $(imgDiv).addClass("divImage");
+            div.append(imgDiv);
+          
+            scalex= div.width();
+            scaley =div.height();
+            
+            var groupName=title;
+            var divOverlay = $("<div class='groupBoxClass'><span style='border-top: 2px solid #68B8F9'>"+groupName+"</span><div class='listBoxWrapper'></div></div>");
+            divOverlay.data("color","#68B8F9");
+            div.append(divOverlay);
+            
+            ht= $(".groupBoxClass").height()-$(".groupBoxClass span").height();
+             $(".listBoxWrapper").css("height",ht);
+            
+            
+            scale = scalex < scaley ? scalex : scaley;
+            
+            items=$(currentXMLList).find("itemArray");
+            
+            for(i=0; i<items.length;i++)
+            {
+                name ="item"+i;
+                text = $(items[i]).find("text").text();
+                imgPath = $(items[i]).find("path").text();
+                count = $(items[i]).find("total").text();
+                imgDiv.width(scale);
+                imgDiv.height(scale);
+                itemDiv = CreateDiv(name,text,imgPath);
+                itemDiv.data("count",count);
+                itemDiv.data("index",i);
+                correctAnswers[i]=parseInt(count);
+                currentAnswers[i]=0;
+                
+                $("#ExpAnsHolderId").append(itemDiv);
+            }
+            
+            
+            var clicked = false, clickY;
+            $("#ExpAnsHolderId").on({
+                'mousemove': function(e){
+                    clicked && updateScrollPos(e);
+                },
+                'mousedown': function(e){
+                    clicked = true;
+                    clickY = e.pageY;
+                },
+                'mouseup mouseout': function(){
+                    clicked = false;
+                }
+            });
+
+            var updateScrollPos = function (e) {
+                $("#ExpAnsHolderId").scrollTop($("#ExpAnsHolderId").scrollTop() + (clickY - e.pageY));
+            };
+            
+            Resize();
+            FontUtils.resize(".matchItemClass");
+        });
+        
+        function bindInfoButton(){
+            
+            if($($(this).parent()).css("background-image")!="none"){
+                $($(this).parent()).css({
+                    backgroundImage:"none"
+                });
+                $($(this).parent()).append("<span class='spnText'>"+$($(this).parent()).data("text")+"</span>");
+            }
+            else{
+                $($(this).parent()).find(".spnText").remove();
+                $($(this).parent()).css({
+                    backgroundImage:"url("+encodeURI($($(this).parent()).data("imgPath"))+")"
+                });
+            }
+        }
+        
+        function CreateDiv(name,text,imgPath){
+            var td = $("<div class='matchItemClass'></div>");
+             td.attr("id",name);
+             td.data("imgPath",imgPath);
+             td.data("text",text);
+            
+            if(imgPath!="NA" && imgPath!=""){
+                    td.css({
+                        backgroundImage:"url("+encodeURI(imgPath)+")"
+                    });
+                    if(text!=""){
+                        var div1 = $("<img src='images/minigames/info.png' style='float: right;'/>");
+                        
+                        td.append(div1);
+                        
+                       div1.on("click",bindInfoButton);
+
+                    }
+                }else{
+                   
+                    td.css({
+                        textAlign:"center"
+                    });
+                    td.html("<span class='spnText'>"+text+"</span>");
+                }
+           
+            
+            return td;
+        }
+        
+        function Resize(){
+            size = $("#ExpAnsHolderId").width() * .7 ;
+            $(".matchItemClass").width(size);
+            $(".matchItemClass").height(size);
+        }
+
+
+        var currentDragMC;
+		var currentClone;
+		var returned=false;
+		var newClone;        
+        $(".matchItemClass").each(function(){}).draggable({
+			start:function(){
+				currentDragMC = this;
+				returned = false;
+			},
+			zIndex:999,
+			helper:function(event){
+				currentClone = $(this).clone(true,true);
+				return currentClone;
+			},
+            appendTo:'#ExpQuestionHldrID',
+            containment:$("#ExperimentHolder"),
+		});
+        
+		$("#ExpAnsHolderId").droppable({
+			drop:function(){
+
+				returned=true;
+				if($(currentDragMC).data("newclone")){
+                    currentAnswers[$(currentDragMC).data("index")]--;
+					$(currentDragMC).remove();
+				}
+			}
+		});
+        
+        $(".groupBoxClass").droppable({
+                drop:function(e,ui){
+                    
+                    ind = $(ui.draggable).data("index");
+                    if( currentAnswers[ind] > 0){
+                        
+                        var liDiv = $('.listItemClass').filter( 
+                            function() { 
+                                return $(this).data("index") == ind;
+                            });
+                         currentAnswers[ind]++;
+                        $(liDiv).children(".listItemCount").html(currentAnswers[ind]);
+                        return;
+                    }
+                    
+                    
+                    var div = $("<div></div>");
+                    div.addClass("listItemClass");
+                    div.html($(ui.draggable).data("text"));
+                    div.data("text",$(ui.draggable).data("text"));
+                    div.data("imgPath",$(ui.draggable).data("imgPath"));
+                    div.data("object",$(ui.draggable));
+                    div.data("index",$(ui.draggable).data("index"));
+                    div.css({
+                       backgroundColor: "#68B8F9"
+                    });
+                    $(this).find("[class='listBoxWrapper']").append(div);
+                    
+                    $scrl = $(".listBoxWrapper");
+                    $scrl[0].scrollTop= $scrl[0].scrollHeight;
+                    
+                    var countdiv=$("<div class='listItemCount'></div>");
+                    countdiv.html("1");
+                    div.append(countdiv);
+                    
+                    FontUtils.resize(div);
+                    
+                    
+                    var div1=$("<div class='_deleteBtnClass'></div>");
+                    
+                    div1.click(function(){
+                       $(this).parent().data("object").show();
+                       ind = $($(this).parent().data("object")).data("index");
+                       currentAnswers[ind]--;
+                       if(currentAnswers[ind]>0)
+                       {
+                            $(this).siblings(".listItemCount").html(currentAnswers[ind]);
+                       }else{
+                            $(this).parent().remove();
+                       }
+                    });
+                    div.append(div1);
+                    
+                    if($(ui.draggable).data("imgPath")&&$(ui.draggable).data("imgPath")!="NA"){
+                        var div2=$("<div class='_imgBtnClass'></div>");
+                        div2.css({
+                            backgroundImage:"url("+encodeURI($(ui.draggable).data("imgPath"))+")"
+                        });
+                        div.append(div2);
+                        
+                        div2.css({
+                            width:$(div2).height()
+                        });
+                        
+                        div.css({
+                            paddingLeft:$(div2).height()+2
+                        });
+                    }
+                    else{
+                        div.css({
+                            paddingLeft:"2%"
+                        });
+                    }
+                    ind = $(ui.draggable).data("index");
+                    currentAnswers[ind]++;
+                    
+                    var min = Math.min(correctAnswers.length,currentAnswers.length);
+                    myscore=0;
+                    for(var i=0;i<min;i++){
+                        if(correctAnswers[i]==currentAnswers[i])myscore++;
+                    }
+                }
+            });
+
+ 
+var xPos=Math.random() * size;
+var yPos=Math.random() * size;       
+                
+function showCorrectAnswer(){    
+    $(".listBoxWrapper").empty();
+
+    $("#ExpAnsHolderId .matchItemClass").each(function(){
+          if(correctAnswers[$(this).data("index")] > 0){
+            var div = $("<div></div>");
+            div.css({
+                backgroundColor:$($(".groupBoxClass")).data("color")
+            });
+            div.addClass("listItemClass");
+            div.text($(this).data("text"));
+            $($(".groupBoxClass")).find("[class='listBoxWrapper']").append(div);
+
+            if($(this).data("imgPath")&&$(this).data("imgPath")!="NA"){
+                var div2=$("<div class='_imgBtnClass'></div>");
+                div2.css({
+                    backgroundImage:"url("+encodeURI($(this).data("imgPath"))+")"
+                });
+                div.append(div2);
+
+                div2.css({
+                    width:$(div2).height()
+                });
+
+                div.css({
+                    paddingLeft:$(div2).height()+2
+                });
+                
+            }else{
+                div.css({
+                    paddingLeft:"2%"
+                });
+            }
+            var countdiv=$("<div class='listItemCount'></div>");
+            countdiv.html(correctAnswers[$(this).data("index")]);
+            div.append(countdiv); 
+        }
+    });
+    
+    $(".matchItemClass").draggable( 'disable' );
+    FontUtils.resize(".listItemClass");
+    
+}
+        
+function getScore(){
+    return myscore;
+}
+        
+function getTotal(){
+    return correctAnswers.length;
+}
+        
+function getCorrectAnswer(){
+    return correctAnswers;
+}
+
+function getAnswer(){
+    return currentAnswers;
+}
+        
+</script>
+</head>
+<body>
+    <div id="ExperimentHolder">
+        <div id="ExpQuestionHldrID" >
+        </div>
+        <div id="ExpAnsHolderId">
+        </div>
+    </div>
+</body>
+</html>

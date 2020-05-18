@@ -1,0 +1,129 @@
+<xml>
+  <class>minigame</class>
+  <name>quiz0400</name>
+  <description/>
+  <MGame>
+    <Type>STICKERS</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Question><![CDATA[Match the following to the correct category.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[870]]></width>
+    <height><![CDATA[446]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG79.png]]></Path>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <snap><![CDATA[true]]></snap>
+    <Answer><![CDATA[[175.40166666666667,281.46288067627614,120.83333333333334,125.67465048228026,Minigames/images/IMG80.png,true,120.83333333333334,125.67465048228026],[29.096666666666664,287.40825837216863,120.83333333333334,125.67465048228026,Minigames/images/IMG81.png,true,120.83333333333334,125.67465048228026],[707.165,279.3360788988837,120.83333333333334,125.67465048228026,Minigames/images/IMG82.png,true,120.83333333333334,125.67465048228026],[574.6833333333334,286.24818467540916,120.83333333333334,125.67465048228026,Minigames/images/IMG83.png,true,120.83333333333334,125.67465048228026],[438.67333333333335,285.2814565947762,120.83333333333334,125.67465048228026,Minigames/images/IMG84.png,true,120.83333333333334,125.67465048228026],[303.77500000000003,278.2726780101875,120.83333333333334,125.67465048228026,Minigames/images/IMG85.png,true,120.83333333333334,125.67465048228026]]]></Answer>
+    <CorrectFeedback><![CDATA[Good job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>MCQ</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Path>NA</Path>
+    <Question><![CDATA[LCL container is a container with goods for ___ consignee or with goods from ___ consignor.]]></Question>
+    <Answer><![CDATA[more than one ; more than one]]></Answer>
+    <Answer><![CDATA[more than one ; one<br/>]]></Answer>
+    <Answer><![CDATA[one ; more than one<br/>]]></Answer>
+    <Answer><![CDATA[one ; one<br/>]]></Answer>
+    <Correct>1</Correct>
+    <Path0>NA</Path0>
+    <Path1>NA</Path1>
+    <Path2>NA</Path2>
+    <Path3>NA</Path3>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>MCQ</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Path>NA</Path>
+    <Question><![CDATA[Anyone who intends to import, transport or store petroleum or flammable materials beyond the stipulated exemption quantities is required to obtain a licence from ___.]]></Question>
+    <Answer><![CDATA[SCDF]]></Answer>
+    <Answer><![CDATA[NEA]]></Answer>
+    <Answer><![CDATA[HSA]]></Answer>
+    <Answer><![CDATA[SPF]]></Answer>
+    <Correct>1</Correct>
+    <Path0>NA</Path0>
+    <Path1>NA</Path1>
+    <Path2>NA</Path2>
+    <Path3>NA</Path3>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>MCQ</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Path>NA</Path>
+    <Question><![CDATA[Transhipment containers are sealed with ___ colour seal.]]></Question>
+    <Answer><![CDATA[red]]></Answer>
+    <Answer><![CDATA[green]]></Answer>
+    <Answer><![CDATA[white]]></Answer>
+    <Answer><![CDATA[black]]></Answer>
+    <Correct>1</Correct>
+    <Path0>NA</Path0>
+    <Path1>NA</Path1>
+    <Path2>NA</Path2>
+    <Path3>NA</Path3>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>MCQ</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Path>NA</Path>
+    <Question><![CDATA[ICA uses the ___ for tracking and monitoring the movement of cargoes into and out of Singapore.]]></Question>
+    <Answer><![CDATA[Cargo Screening System]]></Answer>
+    <Answer><![CDATA[VETS]]></Answer>
+    <Answer><![CDATA[i-Borders]]></Answer>
+    <Answer><![CDATA[CIRIS]]></Answer>
+    <Correct>1</Correct>
+    <Path0>NA</Path0>
+    <Path1>NA</Path1>
+    <Path2>NA</Path2>
+    <Path3>NA</Path3>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>STICKERS</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Question><![CDATA[Arrange the following in sequence for the Cargo Clearance at Tuas Command.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[870]]></width>
+    <height><![CDATA[446]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG86.png]]></Path>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <snap><![CDATA[true]]></snap>
+    <Answer><![CDATA[[151.76666666666668,200.69274953939524,122.76666666666667,36.73566706405115,Minigames/images/IMG87.jpg,true,122.76666666666667,36.73566706405115],[403.245,174.05939091795815,122.76666666666667,36.73566706405115,Minigames/images/IMG88.jpg,true,122.76666666666667,36.73566706405115],[682.95,200.6444131353636,122.76666666666667,36.73566706405115,Minigames/images/IMG89.jpg,true,122.76666666666667,36.73566706405115],[500.92666666666673,234.9149235938008,122.76666666666667,36.73566706405115,Minigames/images/IMG90.jpg,true,122.76666666666667,36.73566706405115],[711.9983333333333,360.78291969220766,122.76666666666667,36.73566706405115,Minigames/images/IMG91.jpg,true,122.76666666666667,36.73566706405115]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>true</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater>10</greater>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <background><![CDATA[Minigames/images/IMG92.jpg]]></background>
+  <bgColor><![CDATA[rgba(0,0,0,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>
