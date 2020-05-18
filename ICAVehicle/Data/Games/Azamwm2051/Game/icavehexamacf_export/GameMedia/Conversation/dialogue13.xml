@@ -1,5 +1,0 @@
-<xml>
-  <dialog myid="942020222408232" id="1" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="SGT Carl Ong" portrait="image" imagepath="pic-avatar-carlong3.png" audiofile="" audiotime="" gesture="11" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
-    <text><![CDATA[You've inspected Vehicle 1. Select another vehicle to inspect.]]></text>
-  </dialog>
-</xml>

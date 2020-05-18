@@ -1,9 +1,0 @@
-<trigger>
-  <event type="0">
-    <logic>
-      <action>
-        <property>ShowMediaAction|minigame|menu0200tti_mg_114.xml</property>
-      </action>
-    </logic>
-  </event>
-</trigger>

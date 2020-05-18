@@ -1,9 +1,0 @@
-<trigger>
-  <event type="0">
-    <logic>
-      <action>
-        <property>ShowMediaAction|minigame|menu0100carparts_mg_112.xml</property>
-      </action>
-    </logic>
-  </event>
-</trigger>
