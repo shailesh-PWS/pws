@@ -1,0 +1,71 @@
+<NpcInfo>
+  <npc id="0" name="John_Bystander" prefab="Playware_Pack/Characters/R2_NNI_CRO">
+    <trigger>media|npctrigger0</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="1" name="Invisible_OpeningComicTrigger" prefab="APS_Pack/Characters/R_noncustom_malechild03B">
+    <trigger>media|npctrigger1</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="2" name="Amos_Casualty" prefab="Playware_Pack/Characters/R2_BCLS_oldman01">
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="3" name="Crowd_NPC_1" prefab="Playware_Pack/Characters/R2_NNI_patient02_casual">
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="4" name="Crowd_NPC_2" prefab="Playware_Pack/Characters/R2_NNI_doctor">
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="8" name="Amos_Casualty" prefab="Playware_Pack/Characters/R2_BCLS_oldman01">
+    <trigger>media|npctrigger8</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+</NpcInfo>

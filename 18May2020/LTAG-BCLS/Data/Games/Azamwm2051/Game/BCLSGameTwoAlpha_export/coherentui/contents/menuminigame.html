@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<title>MenuMiniGame</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .mySlides {display:none;}
+    p.solid {border-style: solid;}
+    #TextInput {
+    position: absolute;;
+    z-index: 0;
+    align-self: center;
+    left:80px;
+        top:10px;
+    }
+
+    #deviceContainer {
+        position: absolute;
+    }
+
+    #currentScore {
+        position:absolute;
+        z-index: 1;
+        align-self: center;
+        left:160px;
+        top:50px;
+    }
+
+    #sliderightNavID{
+        background-image: url('images/minigames/slideshow_arrow_right.png');
+        background-repeat:no-repeat;
+        height:100px;width:100px;
+        position: absolute;
+        left:350px;
+        top:50px;
+    }
+   
+    #slideleftNavID{
+        background-image: url('images/minigames/slideshow_arrow_left.png');
+        background-repeat:no-repeat;
+        height:100px;width:100px;
+        position: absolute;
+        left:250px;
+        top:50px;
+    }
+
+    #slideupNavID{
+        background-image: url('images/minigames/slideshow_arrow_up.png');
+        background-repeat:no-repeat;
+        height:100px;width:100px;
+        position: absolute;
+        left:300px;
+        top:10px;
+    }
+
+    #slidedownNavID{
+        background-image: url('images/minigames/slideshow_arrow_down.png');
+        background-repeat:no-repeat;
+        height:100px;width:100px;
+        position: absolute;
+        left:300px;
+        top:110px;
+    }
+
+    #okButtonNavID{
+        background-image: url('images/minigames/slideshow_arrow_down.png');
+        background-repeat:no-repeat;
+        height:100px;width:100px;
+        position: absolute;
+        left:300px;
+        top:110px;
+    }
+
+    #slidedownNavID{
+        background-image: url('images/minigames/slideshow_arrow_down.png');
+        background-repeat:no-repeat;
+        height:100px;width:100px;
+        position: absolute;
+        left:300px;
+        top:110px;
+    }
+</style>
+
+<script>
+    var currentColumnIndex;
+    var currentRowIndex;
+    var totalColumns;
+    var totalRows;
+    var hasCyclicUpdate = false;
+    var menuEntries = [["USE_DRUG_LIBRARY", "USE_DRUG_LIBRARY", "USE_DRUG_LIBRARY"],
+        ["ALL_DRUGS", "ANALGESYIC", "ANTIMICROBIALS"],
+        ["ICU", "GW", "RARE"],
+        ["FENTANYL", "FENTANYL_GW", "FENTANYL_RARE"],
+        ["MORPHINE", "MORPHINE_GW", "MORPHINE_RARE"],
+        ["DEPAMINE", "DEPAMINE_GW", "DEPAMINE_RARE"],
+        ["TPN", "TPN_GW", "TPN_RARE"],
+        ["FUROSMIDE", "FUROSMIDE_GW", "FUROSMIDE_RARE"],
+        ["GW", "GW_GW", "GW_RARE_RARE"],
+    ];
+    var pointsAr;
+    var myIndex = 0;
+    SelectedMenuEntry();
+
+    // $(document).ready(function(){
+
+    //     // TODO this is just for testing and will be removed as soon as the testing is done
+    //     //minigameXMLManager.testingXML(initializeMinigame);
+
+       
+    // });
+
+    function initializeMinigame(currentXMLList){
+        console.log(current)
+
+        correctAnswers=["FENTANYL"];
+        currentAnswer = menuEntries[currentColumnIndex][currentRowIndex];
+
+        var options = $(currentXMLList).find("Options");
+        path = $(currentXMLList).find("Path").text();
+        GivenImgHt = $(currentXMLList).find("height").text();
+        GivenImgWdth = $(currentXMLList).find("width").text();
+        resizeOption = $(currentXMLList).find("resize").text();
+        question = $(currentXMLList).find("Question").text();
+
+        var pointsStr = "["+$(currentXMLList).find("Points").text()+"]";
+        pointsStr = pointsStr.replace("[[","");
+        pointsStr = pointsStr.replace("]]","");
+        pointsAr = pointsStr.split("],[");
+    }
+    
+    function SelectedMenuEntry() {
+            var totalMenuEntries = menuEntries.length * menuEntries[0].length;
+            var middleColumn = 0;
+            var middleRow = 0;
+            currentColumnIndex = middleColumn;
+            currentRowIndex = middleRow;
+            var currentScoreElement = document.getElementById("currentScore");
+            currentScoreElement.innerHTML = menuEntries[currentRowIndex][currentColumnIndex];
+    
+            totalColumns = menuEntries[0].length;
+            totalRows = menuEntries.length;
+        }
+    
+        function MoveHorizontal(direction){
+
+            var currentScoreElement = document.getElementById("currentScore");
+            if(direction === 'left'){
+                if(hasCyclicUpdate){
+                    currentColumnIndex = ((currentColumnIndex - 1) < 0)? (totalColumns - 1):(currentColumnIndex - 1);
+                } else {
+                    currentColumnIndex = Math.max(0,currentColumnIndex - 1);
+                }
+                
+                currentScoreElement.innerHTML = menuEntries[currentRowIndex][currentColumnIndex];
+            } else if(direction === 'right'){
+                if(hasCyclicUpdate){
+                    currentColumnIndex = ((currentColumnIndex + 1)%totalColumns);
+                } else {
+                    currentColumnIndex = Math.min((currentColumnIndex + 1),(totalColumns - 1));
+                }
+                
+                currentScoreElement.innerHTML = menuEntries[currentRowIndex][currentColumnIndex];
+            }
+    
+            console.log(currentRowIndex +"::" + currentColumnIndex);
+            return menuEntries[currentRowIndex][currentColumnIndex];
+        }
+    
+        function MoveVertical(direction){
+
+            var currentScoreElement = document.getElementById("currentScore");
+
+            if(direction === 'up'){
+                if(hasCyclicUpdate){
+                    currentRowIndex = ((currentRowIndex - 1) < 0)? (totalRows - 1):(currentRowIndex - 1);
+                } else {
+                    currentRowIndex = Math.max(0,currentRowIndex - 1);
+                }
+    
+                currentScoreElement.innerHTML = menuEntries[currentRowIndex][currentColumnIndex];
+            } else if(direction === 'down'){
+                if(hasCyclicUpdate){
+                    currentRowIndex = ((currentRowIndex + 1)%totalRows);
+                } else {
+                    currentRowIndex = Math.min((cure=currentRowIndex + 1),(totalRows - 1));
+                }
+    
+                console.log(currentRowIndex +"::" + currentColumnIndex);
+                currentScoreElement.innerHTML = menuEntries[currentRowIndex][currentColumnIndex];
+            }
+    
+            return menuEntries[currentRowIndex][currentColumnIndex];
+        }
+
+        $("#slideleftNavID").on("mousedown",function(){
+            MoveHorizontal('left');
+        });
+
+        $("#sliderightNavID").on("mousedown",function(){
+            MoveHorizontal('right');
+        });
+
+        $("#slideupNavID").on("mousedown",function(){
+            MoveVertical('up');
+        });
+
+        $("#slidedownNavID").on("mousedown",function(){
+            MoveVertical('down');
+        });
+    </script>
+</head>
+<body>
+<span>
+    <img id="TextInput" src="images/minigames/Input.png">
+    <div id="currentScore" style="width:100%">456</div>
+    <div id="slideleftNavID"></div>
+    <div id="sliderightNavID"></div>
+    <div id="slideupNavID"></div>
+    <div id="slidedownNavID"></div>
+</span>
+</body>
+</html>
