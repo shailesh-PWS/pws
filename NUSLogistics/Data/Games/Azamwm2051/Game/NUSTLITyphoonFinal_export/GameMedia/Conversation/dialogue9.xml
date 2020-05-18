@@ -1,8 +1,0 @@
-<xml>
-  <dialog myid="3002019161528902271" id="1" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="" portrait="image" imagepath="female06_talk.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="target" cameraPosition="front" cameraRange="mid" cameraPanState="snap" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="1" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
-    <text><![CDATA[I should get updates from everyone. ]]></text>
-    <dialog myid="116201953029153786" id="2" multiplayerreward="" persistentreward="" reward="6" who="1" link="" nick="" portrait="image" imagepath="female06_expressionless.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
-      <text><![CDATA[Once that's done, I'll update upstairs.]]></text>
-    </dialog>
-  </dialog>
-</xml>

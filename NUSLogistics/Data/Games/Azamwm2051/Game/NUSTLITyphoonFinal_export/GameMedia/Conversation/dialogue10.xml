@@ -1,8 +1,0 @@
-<xml>
-  <dialog myid="11201953419901785" id="1" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Thoughts" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="target" cameraPosition="front" cameraRange="mid" cameraPanState="snap" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="1" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
-    <text><![CDATA[I've gotten the info I need.]]></text>
-    <dialog myid="9182019161639648510" id="2" multiplayerreward="" persistentreward="" reward="12" who="1" link="" nick="" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
-      <text><![CDATA[Time to update upstairs.]]></text>
-    </dialog>
-  </dialog>
-</xml>
