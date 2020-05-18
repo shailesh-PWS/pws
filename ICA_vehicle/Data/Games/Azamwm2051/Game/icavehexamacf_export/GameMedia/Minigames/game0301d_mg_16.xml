@@ -1,0 +1,158 @@
+<xml>
+  <class>minigame</class>
+  <name>game0301d</name>
+  <description/>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Question><![CDATA[Find the tell-tale indicator(s)]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1280]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[false]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG39.jpg]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[199.90039131981501,437.501976284585,873.2171232064508,200.42371541501979,Label,true],[520.317799122495,640.6577075098814,226.91806000237165,85.8308300395257,Label,false],[244.44918771492948,236.69881422924902,121.42772441598484,121.42292490118578,Label,false],[930.8193999762836,230.6276679841897,121.42772441598484,121.42292490118578,Label,false]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[Please try again.]]></WrongFeedback>
+    <correctReward>25</correctReward>
+  </MGame>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Question><![CDATA[Find the tell-tale indicator(s)]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1280]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[false]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG40.gif]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[215.3065338550931,416.1770750988142,206.80659314597418,121.42292490118578,Label,true],[425.1488201114669,477.6474308300395,422.1890193288272,121.42292490118578,Label,false],[221.3020277481324,600.7399209486166,181.91390964069726,121.42292490118578,Label,false],[937.7256018024427,246.10909090909092,121.42772441598484,121.42292490118578,Label,false]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[Please try again.]]></WrongFeedback>
+    <correctReward>27</correctReward>
+  </MGame>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Question><![CDATA[Find the tell-tale indicator(s)]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1280]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[false]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG41.jpg]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[202.93608443021463,470.1343873517786,873.2930155342109,268.7241106719368,Label,true],[246.34649590892923,236.0916996047431,121.42772441598484,121.42292490118578,Label,false],[932.2613542037236,230.93122529644268,121.42772441598484,121.42292490118578,Label,false],[403.2159373888296,321.84664031620554,504.380410292897,121.42292490118578,Label,false]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[Please try again.]]></WrongFeedback>
+    <correctReward>28</correctReward>
+  </MGame>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Question><![CDATA[Find the tell-tale indicator(s)]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1280]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[false]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG42.jpg]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[519.558875844895,651.5857707509881,270.7838254476462,73.3090909090909,Label,true],[521.6079686944148,536.1581027667985,266.7615320763666,102.60237154150195,Label,false],[315.71208348156057,455.2600790513834,151.48108620894106,121.42292490118578,Label,false],[847.5655164235741,466.1881422924901,151.55697853670105,121.42292490118578,Label,false]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[Please try again.]]></WrongFeedback>
+    <correctReward>29</correctReward>
+  </MGame>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Question><![CDATA[Find the tell-tale indicator(s)]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1280]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[false]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG43.jpg]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[516.9785367010555,650.295652173913,274.7302264911657,82.7193675889328,Label,true],[322.2388236689198,596.2624505928854,121.50361674374481,121.42292490118578,Label,false],[323.2254239297996,468.8442687747035,125.75358709830428,81.35335968379448,Label,false],[888.2438041029291,594.2134387351779,121.50361674374481,121.42292490118578,Label,false]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[Please try again.]]></WrongFeedback>
+    <correctReward>30</correctReward>
+  </MGame>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Question><![CDATA[Find the tell-tale indicator(s)]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1280]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[false]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG44.jpg]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[210.75299418949368,419.4403162055336,121.42772441598484,121.42292490118578,Label,true],[440.706747302265,490.700395256917,400.40792126171,135.38656126482215,Label,false],[522.7463536108146,636.2561264822134,225.32432111941182,67.16205533596838,Label,false],[917.0828886517255,589.5083003952569,121.42772441598484,121.42292490118578,Label,false]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[Please try again.]]></WrongFeedback>
+    <correctReward>31</correctReward>
+  </MGame>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Question><![CDATA[Find the tell-tale indicator(s)]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1280]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[false]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG45.jpg]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[521.0008300723349,653.7106719367589,273.5918415747658,77.78656126482214,Label,true],[322.92185461875965,599.2221343873518,113.83849163998578,121.42292490118578,Label,false],[329.9798411004388,357.36284584980234,634.4598600735208,121.42292490118578,Label,false],[862.8198743033323,612.9581027667984,113.83849163998578,121.42292490118578,Label,false]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+    <correctReward>32</correctReward>
+  </MGame>
+  <randomise>true</randomise>
+  <noQuest>1</noQuest>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>true</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater>24</greater>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(0,0,0,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

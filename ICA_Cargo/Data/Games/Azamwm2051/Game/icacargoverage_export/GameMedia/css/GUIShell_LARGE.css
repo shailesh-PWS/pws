@@ -1,0 +1,1558 @@
+body
+{
+    position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: sans-serif;
+	background-size: 100% 100%;
+}
+.contentWrapperClass
+{
+    background-color: transparent;
+}
+.exit_window
+{
+    background-color: red;
+}
+/*
+::-webkit-scrollbar {
+    width: 3px;
+    width: 3px;
+}
+ 
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
+    border-radius: 1px;
+    background-color: #304457;
+    width: 3px;
+}
+ 
+::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    background-color: #627587;
+    width: 3px;
+}*/
+.ui-page 
+{ 
+	background:transparent;
+}
+/*********************
+LOADING SCREEN
+**********************/
+#LoadingScreen
+{
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background-color: #22313F;
+}
+.loadingScreenImage
+{
+	  position: fixed;
+	  width: 50px;
+	  height: 50px;
+	  top: 50%;
+	  left: 50%;
+	  margin-top: -50px;
+	  margin-left: -50px;
+}
+.loadingScreenImage img
+{
+	width: 100%;
+	height: 100%;
+}
+
+/*********************
+VIRTUAL KEYBOARD PANELS
+**********************/
+#VirtualKeyboardInputPanel
+{
+	position: fixed;
+	width: 100%;
+	height: 20%;
+	background-color: green;
+}
+
+/*********************
+MOVEMENT PANELS
+**********************/
+#ControlsMaster
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+#ControlComponentLeft
+{
+	position: fixed;
+	display: table-cell;
+	left: 0px;
+	width: 50%;
+	height: 100%;
+	color: #eeeeee;
+	z-index: 999;
+	background-color: rgba(20,20,20,.5);
+}
+#ControlComponentRight
+{
+	position: fixed;
+	display: table-cell;
+	right:0px;
+	width: 50%;
+	height: 100%;
+	height: 100%;
+	color: #eeeeee;
+	z-index: 999;
+	background-color: rgba(200,200,200,.5);
+}
+.virtualButtonsClass div{
+	position: absolute;
+	width:40px;
+	height:40px;
+	border:1px solid gray;
+}
+#dID{
+	bottom:0px;
+	left:40px;
+}
+#lID{
+	bottom:40px;
+	left:0px;
+}
+#rID{
+	bottom:40px;
+	left:80px;
+}
+#tID{
+	bottom:80px;
+	left:40px;
+}
+/*********************
+COMMON ELEMENTS
+**********************/
+.compLabel
+{
+	position: relative;
+	width: 100%;
+	font-size: 12px;
+	font-weight: 200;
+	color: #eeeeee;
+	height: 15px;
+}
+.compInput
+{
+	float:left;
+	width: 70%;
+	height: 35px;
+	font-size: 18px;
+	background-color: #eeeeee;
+}
+.compButton
+{
+
+}
+.contentwrapper
+{
+	width: 100%;
+	height: 100%;
+}
+.horizontalTabPanelPanel
+{
+	float: left;
+	width: 50px;
+	height: 100%;
+	background-color: #eeeeee;
+}
+.horizontalTabPanelPanelRight
+{
+	float: right;
+	width: 50px;
+	height: 100%;
+	background-color: #eeeeee;
+}
+.horizontalTabSelected
+{
+	position: relative;
+	display: inline-block;
+	color: #EEEEEE;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	background-color: #22313F;
+}
+.horizontalTabSelected img
+{
+	width: 100%;
+	height: 100%;
+}
+.horizontalTabNormal
+{
+	position: relative;
+	display: inline-block;
+	color: #333333;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	background-color: #eeeeee;
+}
+.horizontalTabNormal img
+{
+	width: 100%;
+	height: 100%;
+}
+.horizontalTabPersistant
+{
+	position: relative;
+	display: inline-block;
+	color: #333333;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	background-color: #eeeeee;
+}
+.horizontalTabPersistant img
+{
+	width: 100%;
+	height: 100%;
+}
+.horizontalTabPanel span
+{
+	font-size: 14px;
+	font-weight: 200;
+	vertical-align: middle;
+}
+.tabPanel
+{
+	width: 100%;
+	height: 45px;
+}
+.tabSelected
+{
+	position: relative;
+	display: inline-block;
+	padding-right: 8px;
+	background-color: #22313F;
+	color: #eeeeee;
+	min-width: 45px;
+	min-height: 45px;
+	border-radius: 10px 10px 0px 0px;
+	text-align: center;
+}
+.tabNormal
+{
+	position: relative;
+	display: inline-block;
+	padding-right: 8px;
+	background-color: #EFF1FE;
+	color: #333333;
+	min-width: 45px;
+	min-height: 45px;
+	border-radius: 10px 10px 0px 0px;
+	text-align: center;
+}
+.tabPanel span
+{
+	font-size: 14px;
+	font-weight: 200;
+	margin-left: 3px;
+	vertical-align: middle;
+}
+/*********************
+ACCESS PANEL
+**********************/
+#mainAccessPanel
+{
+	position: absolute;
+	width: 250px;
+	min-height: 50px;
+	background-color: red;
+	right: 0px;
+}
+#accessPanelDraw
+{
+	position: relative;
+	display: inline;
+	height: 100%;
+	min-width: 50px;
+	background-color: green;
+}
+#accessPanelContent
+{
+	position: relative;
+	display: inline;
+	height: 100%;
+	width: 200px;
+	background-color: purple;
+}
+
+/*********************
+STATUS PANEL
+**********************/
+#mainStatusPanel
+{
+	position: fixed;
+	bottom:0px;
+	left: 0px;
+	min-width: 400px;
+	width: 50%;
+	
+}
+#mainStatusBackgroundContainer
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #22313F;
+}
+#mainStatusPanelHeader
+{
+	position: relative;
+	width: 100%;
+}
+#mainStatusPanelStatusBars
+{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 2px;
+}
+#mainStatusPanelHeader h1
+{
+	width: 100%;
+	text-align: center;
+	color: #eeeeee;
+	margin: 0px;
+	padding: 0px;
+	font-size: 15px;
+}
+#mainStatusPanelLeft
+{
+	position: relative;
+	display: inline-block;
+	width: 50%;
+}
+.statusBarContainer
+{
+	position: relative;
+	display: inline-block;
+	width: 32%;
+	background-color: #eae181;
+}
+.statusBarLabel
+{
+	position: relative;
+	display: inline-block;
+	width: 80%;
+	font-size: 14px;
+	color: #333333;
+	text-align: left;
+}
+.statusBarValue
+{
+	position: relative;
+	display: inline-block;
+	width: 20%;
+	font-size: 14px;
+	color: #333333;
+	text-align: left;
+}
+.statusBar
+{
+	position: relative;
+	width: 100%;
+	height: 10px;
+}
+.statusBarGuide
+{
+	position: absolute;
+	background-color: #333333;
+	width: 100%;
+	height: 100%;
+}
+.statusBarBar
+{
+	position: absolute;
+	background-color: #bbbbbb;
+	width: 10%;
+	height: 100%;
+}
+#mainStatusPanelInfo
+{
+	position: relative;
+	width: 100%;
+	text-align: left;
+	padding-bottom: 4px;
+}
+.mainStatusInfoContainer
+{
+	position: relative;
+	display: inline;
+	width: 100%;
+}
+.mainStatusInfoIcon
+{
+	float: left;
+	width: 25px;
+	height: 25px;
+}
+.mainStatusInfoIcon img
+{
+	width: 25px;
+	height: 25px;
+}
+.mainStatusInfoLabel
+{
+	float: left;
+	color: #eeeeee;
+	font-size: 15px;
+	margin-top: 3px;
+}
+
+/*********************
+DEV PANEL
+**********************/
+#mainDevPanel
+{
+	position: absolute;
+	background-color: #333333;
+	width: 125px;
+	right:0px;
+	top:0px;
+	opacity: 0.1;
+	
+}
+.toggleSwitchOFF
+{
+	position: relative;
+	width: 100%;
+	height:25px;
+	background-color:#666666;
+	font-size: 11px;
+	text-align: center;
+	color: #eeeeee;
+	border-top: 2px solid #4858ed;
+}
+.toggleSwitchON
+{
+	position: relative;
+	width: 100%;
+	height: 25px;
+	background-color:#4858ed;
+	font-size: 11px;
+	text-align: center;
+	color: #eeeeee;
+	border-top: 2px solid #4858ed;
+}
+/*********************
+INVENTORY PANEL - OBJECTIVE BLOCK
+**********************/
+#objectiveWrapper
+{
+	position: relative;
+	width: 100%;
+	height: 250px;
+	overflow: auto;
+
+}
+.grid2
+{
+	float: left;
+	width: 20%;
+	top: 0px;
+	min-height: 50px;
+	height: 100%;
+}
+.grid10
+{
+	float: left;
+	top: 0px;
+	width: 80%;
+	min-height: 50px;
+	height: 100%;
+}
+.objectiveBlock
+{
+	position: relative;
+	display: inline-block;
+	width: 96%;
+	left: 2%;
+	background-color: #eeeeee;
+}
+.objectiveIconComplete
+{
+	background: url("../images/icons/checkbox-marked-circle.png") no-repeat left center;
+
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.objectiveIcon
+{
+	background: url("../images/icons/checkbox-blank-circle.png") no-repeat left center;
+
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.qty_val
+{
+	font-size: 0.8em;
+	text-align: center;
+	background-color: #DDDDDD;
+}
+/*********************
+INVENTORY PANEL
+**********************/
+.inventoryPanelHeader
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	color: #eeeeee;
+	font-size: 26px;
+	font-weight: 200;
+	text-align: center;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+#inventoryWrapper
+{
+	position: relative;
+	width: 100%;
+	height: 250px;
+	overflow: auto;
+
+}
+#mainInventoryPanel
+{
+	position: absolute;
+	background-color: #22313F;
+	width: 400px;
+	height: 100%;
+	left:0%;
+	top:0%; 
+	display: none;
+	overflow: hidden;
+}
+#inventoryItemsList
+{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+#inventoryInformationPanel
+{
+	float: right;
+	width: 50%;
+	height: 100%;
+}
+#mainInventoryContentPanel
+{
+	float: left;
+	height: 100%;
+}
+.inventoryPanelHeader
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	color: #eeeeee;
+	font-size: 26px;
+	font-weight: 200;
+	text-align: center;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+/*********************
+INVENTORY PANEL - MAIN
+**********************/
+
+.invBlock
+{
+	position: relative;
+	display: inline-block;
+	width: 96%;
+	left: 2%;
+	min-height: 60px;
+	background-color: #eeeeee;
+	margin-bottom: 3px;
+}
+.invBlockActive
+{
+	background-color: #eae181;
+}
+.invBlockThumbnail
+{
+	float: left;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+}
+.invBlockThumbnail img
+{
+	width: 100%;
+	height: 100%;
+}
+.invBlockTextContent
+{
+	float: left;
+	left: 50px;
+	top: 0px;
+	width: 100%;
+	overflow: auto;
+}
+.invBlockTextName
+{
+	font-size: 14px;
+	font-weight: bold;
+}
+.invBlockTextDesc
+{
+	font-size: 12px;
+	font-weight: 200;
+}
+.invBlockQuickLabelContent
+{
+	float: right;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+}
+.invBlockQuickLabelQTY
+{
+	font-weight: 200;
+	font-size: 36px;
+	color: #bbbbbb;
+	text-align: center;
+}
+.invBlockOptions
+{
+	float: left;
+	width: 100%;
+}
+.invBlockFirstOptionsMenu
+{
+	float: left;
+	width: 100%;
+	height: 50px;
+}
+.invBlockTabTabNormal
+{
+	position: relative;
+	display: inline;
+	color: #333333;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+.invBlockTabTabNormal img
+{
+	width: 50px;
+	height: 50px;
+}
+.invBlockCompTabNormal
+{
+	float:right;
+	color: #333333;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	margin-left: 8px;
+	margin-right: 2px;
+}
+.invBlockCompTabNormal img
+{
+	width: 35px;
+	height: 35px;
+}
+#invBlockSecondaryOptionsWrapper
+{
+	position: relative;
+	display: inline-block;
+	margin-bottom: 8px;
+	border-radius: 5px;
+	width: 96%;
+	left: 2%;
+	background-color: #22313f;
+}
+.invBlockSecondaryOptions
+{
+	position: relative;
+	display: inline-block;
+	width: 99%;
+	min-height: 50px;
+	padding: 1%
+}
+
+
+/*********************
+MAP PANEL
+**********************/
+#mainMapPanel
+{
+	position: absolute;
+	background-color: #333333;
+	width: 150px;
+	height: 150px;
+	right:0%;
+	bottom:0%; 
+	display: none;
+	overflow: hidden;
+}
+.mapBackgroundImage
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0px;
+	overflow: hidden;
+}
+.mapFunctionPanel
+{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	min-height: 45px;
+}
+.mapFunctionIcon
+{
+	position: relative;
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+}
+.mapFunctionIcon img
+{
+	position: absolute;
+	width: 70%;
+	height: 70%;
+	left: 15%;
+	top: 15%;
+}
+/*********************
+LEARNING PANEL
+**********************/
+#mainLearningPanel
+{
+	position: absolute;
+	background-color: #22313F;
+	width: 400px;
+	height: 100%;
+	left:0%;
+	top:0%; 
+	overflow: hidden;
+	display: none;
+}
+#mainLearningContentPanel
+{
+	float: left;
+	height: 100%;
+}
+.learningPanelHeader
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	color: #eeeeee;
+	font-size: 26px;
+	font-weight: 200;
+	text-align: center;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+/*********************
+LEARNING PANEL - CHAT
+**********************/
+#chatHistory
+{
+	position: relative;
+	left: 5%;
+	width: 90%;
+	height: 250px;
+	border: solid 1px #3c4d5c;
+	overflow: auto;
+}
+#chatHistoryWrapper
+{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+}
+#chatInput
+{
+	position: relative;
+	display: inline-block;
+	width: 90%;
+	left: 5%;
+	height: 80px;
+	top:20px;
+	background-color: #eeeeee;
+	border: solid 1px #3c4d5c;
+}
+#chatInput TextArea
+{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	resize: none;
+	/*font-size: 14px;*/
+	font-size:13px;
+	color: #333333;
+	overflow: auto;
+	background: none;
+	border: none;
+}
+.chatTextArea
+{
+	position: absolute;
+	left: 0px;
+	height: 80px;
+}
+.chatButtons
+{
+	position: absolute;
+	width: 40px;
+	height: 80px;
+	right: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+.chatButton
+{
+	position: relative;
+	display: inline;
+	width: 40px;
+	height: 40px;
+}
+.chatButton img
+{
+	width: 40px;
+	height: 40px;
+}
+.chatline
+{
+	position: relative;
+	display: inline-block;
+	bottom: 0px;
+	width: 100%;
+	/*font-size: 14px;*/
+	font-size: 16px;
+	color: #eeeeee;
+}
+.you
+{
+	float: right;
+	width: 95%;
+	color: #7bb2fe;
+	font-weight: 200;
+	background-color: #293b4c;
+	border-radius: 3px;
+	margin-bottom:3px;
+}
+.instructor
+{
+	color: #333333;
+	background-color: #F2F5A9;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom:3px;
+}
+.other
+{
+	float: left;
+	width: 95%;
+	color: #61e564;
+	font-weight: 200;
+	background-color: #293b4c;
+	border-radius: 3px;
+	margin-bottom:3px;
+}
+.team
+{
+	float: left;
+	width: 95%;
+	color: #e561ac;
+	font-weight: 200;
+	background-color: #293b4c;
+	border-radius: 3px;
+	margin-bottom:3px;
+}
+/*********************
+LEARNING PANEL - NOTES
+**********************/
+#notesWrapper
+{
+	position: relative;
+	width: 96%;
+	left: 2%;
+    top: 5px;
+    height: calc(100% - 137px);
+	overflow: auto;
+    box-sizing: content-box;
+}
+.singlenote
+{
+	position: relative;
+	min-height: 125px;
+	height: 125px;
+	width: 96%;
+	left: 2%;
+	background-color: #F2F5A9;
+	margin-bottom: 3px;
+	-webkit-user-select: all;
+}
+.singlenote textarea
+{
+	width: 100%;
+	height: 100%;
+	resize: none;
+	background-color: transparent;
+	color: #333333;
+	border: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+}
+#addnote
+{
+	position: relative;
+	height: 50px;
+	width: 96%;
+	left: 2%;
+	background-color: #F2F5A9;
+	color: #333333;
+	margin-bottom: 3px;
+	text-align: center;
+}
+#addnote img
+{
+	height: 100%;
+}
+/*********************
+One Drive and One Note Specifics
+*********************/
+#one-note-input-container
+{
+    position: relative;
+	width: 96%;
+	left: 2%;
+    background-color: #eeeeee;
+}
+.on-text-input
+{
+    position: relative;
+    width: 100%p;  
+    height: 55px;
+}
+.on-text-input textarea
+{
+    width: 95%;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    box-sizing: padding-box;
+    resize: none;
+    font-size: 1.3em;
+    font-family:sans-serif;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
+}
+.button-group
+{
+    position: relative;
+    text-align: right;
+    height: 32px;
+}
+.button-group button
+{
+    display: inline-block;
+    height: 100%;
+    color: #1744ad;
+    border: none;
+}
+.button-disabled
+{
+    color: #CCCCCC !important;
+    pointer-events: none !important;
+}
+.single-note-container
+{
+    position: relative;
+    width: 100%;
+    background-color:#eeeeee;
+    min-height: 80px;
+    margin-bottom: 3px;
+}
+.single-note-container span
+{
+    width: 100%;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+
+/*********************
+DIALOG PANEL
+**********************/
+.dialogbranch
+{
+    position: relative;
+    height: 50px;
+}
+.dialogbranchtext
+{
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    top: 3px;
+    left: 3px;
+    position: absolute;
+    background-color: rgba(255,255,255,0.15);
+    overflow: auto;
+    border-radius: 6px
+}
+.dialogbranchselected
+{
+    background-color:#567656;
+    color: #FFFFFF;
+}
+#mainDialogPanel
+{
+	position: fixed;
+	width: 100%;
+	height: 25%;
+	bottom:0%;
+	display: none;
+}
+#dialogViewPort
+{
+    position: absolute;
+    left:0px;
+    bottom: 0px;
+    width:20%;
+    height: 230%;
+    background-repeat: no-repeat;
+    background-position:  2% bottom;
+    background-size: contain;
+    display: none;
+}
+
+#objectViewPort{
+    position: absolute;
+    left:0px;
+    bottom: 0px;
+    width:20%;
+    height: 230%;
+    background-repeat: no-repeat;
+    background-position: 2% bottom;
+    background-size: contain;
+    display: none;
+}
+
+#dialogContentPanel
+{
+    color: white;
+	position: absolute;
+    width:100%;
+    height: 100%;
+    left: 0px;
+    top:0px;
+    overflow: hidden;
+}
+#dialogHistoryPanel
+{
+	position: absolute;
+	width: 100%;
+    top: 0%;
+	height: 15%;
+}
+#dialogActivePanel
+{
+	position: absolute;
+	width: 100%;
+    top:15%;
+    height: 85%;
+	box-sizing: border-box;
+    border-top:10px solid rgba(0,0,0,0);
+    border-bottom:5px solid rgba(0,0,0,0);
+    border-left: 30px solid rgba(0,0,0,0);
+    border-right: 30px solid rgba(0,0,0,0);
+}
+#dialogContent
+{
+	position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 15px;
+	font-size: 16px;
+	color: rgba(255,255,255,1);
+	font-weight:500;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.tapStatusMessage
+{
+    text-align: center;
+    color: rgba(255,255,255,.5);
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    left: 0px;
+    bottom: 0px;
+}
+#dialogExitButton
+{
+	position: absolute;
+	right: -30px;
+	bottom: -5px;
+	height: 40px;
+    width: 40px;
+    display: none;
+}
+#dialogHistoryFocusButton
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 40px;
+    width: 40px;
+}
+
+#dialogHistoryFocusButton img
+{
+    position: absolute;
+	width: auto;
+	height: 100%;
+    top: 0px;
+    right:0px;
+}
+#dialogExitButton img
+{
+    position: absolute;
+	width: auto;
+	height: 100%;
+    bottom: 0px;
+    right:0px;
+}
+
+#dialogHistoryAll
+{
+	position:absolute;
+    bottom:0px;
+    left:0px;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x:hidden;
+	display: none;
+    background-color: white;
+}
+#dialogHistoryAll h3
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	color: #555555;
+	font-size: 15px;
+	font-weight: 0;
+	margin: 0px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+#dialogHistoryActive
+{
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	height: 100%;;
+	width: 100%;
+    left:0px;
+    right:0px;
+	color: rgba(255,255,255,.5);
+    border-left: 30px solid rgba(0,0,0,0);
+    border-right: 30px solid rgba(0,0,0,0);
+	font-size: 14px;
+}
+
+#dialog-bg-wrapper{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    background-image: none;
+}
+
+#fading-effect-wrapper{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    display: none;
+}
+
+
+#hintImg{
+    position: absolute;
+    top:1.1%;
+    left:1.1%;
+    width:2%;
+    height: auto;
+}
+
+.paragraphPaddingClass
+{
+	margin-top:0;
+	margin-bottom: 0;
+	margin-left: 5px;
+	margin-right: 5px; 
+}
+.interactionBlock
+{
+	position: relative;
+	display: inline-block;
+	left: 1%;
+	width: 91%;
+	margin-bottom: 10px;
+	background-color: #DEDEDE;
+	border-radius: 10px;
+}
+.interactionBlock h2
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin: 0px;
+	font-size: 12px;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #888888;
+}
+.interactionBlockLine
+{
+	position: relative;
+	display: inline-block;
+	width: 95%;
+	height: 1px;
+	margin-bottom: 2px;
+	background-color: #E4E4E4;
+}
+.blob
+{
+	position: relative;
+	display: inline-block;
+	width: 98%;
+	min-height: 40px;
+	margin-top: 3px;
+	margin-bottom:3px;
+}
+.blob p
+{
+	width: 100%;
+	margin: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	font-size: 16px;
+	color: #555555;
+}
+.blob h4
+{
+	width: 100%;
+	margin: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-size: 12px;
+	color: #333333;
+}
+.dialogBlobPlayer
+{
+	float: left;
+
+}
+.dialogBlobOther
+{
+	float: left;
+	text-align: left;
+}
+.dialogBlobCustom
+{
+	width: 90%;
+	left: 5%;
+	float: left;
+	border-radius: 0px;
+	text-align: left;
+	
+}
+.dialogBlobReward
+{
+	width: 98%;
+	left: 1%;
+	float: left;
+	background-color: #eee958;
+	border-radius: 10px;
+	text-align: center;
+	min-height: 22px;
+	padding-bottom:3px; 
+	
+}
+.dialogBlobReward
+{
+	width: 98%;
+	left: 1%;
+	float: left;
+	background-color: #eee958;
+	border-radius: 10px;
+	text-align: center;
+	min-height: 22px;
+	padding-bottom:3px; 
+	
+}
+.dialogBlobClosed
+{
+	width: 98%;
+	left: 1%;
+	float: left;
+	background-color: #dc7b6e;
+	border-radius: 10px;
+	text-align: center;
+	min-height: 22px;
+	padding-bottom:3px; 
+}
+.dialogBlobFinished
+{
+	width: 98%;
+	left: 1%;
+	float: left;
+	background-color: #8bdc6e;
+	border-radius: 10px;
+	text-align: center;
+	min-height: 22px;	
+}
+
+.dialogBlobChoice
+{
+	width: 100%;
+	float: left;
+	text-align: left;
+	
+}
+.dialogBlobChoiceBlock
+{
+	float: left;
+	width: 100%;
+	border-bottom: solid #DDDDDD thin;
+}
+.dialogBlobChoiceBlockSelected
+{
+	float: left;
+	width: 100%;
+	background-color: #c6dec8;
+	border-bottom: solid #DDDDDD thin;
+}
+.dialogBlobChoice p
+{
+	margin-top: 3px;
+	text-align: left;
+}
+
+
+
+#multiSelectionPanel{
+    position: absolute;
+    width:100%;
+    height:30%;
+    bottom: 0px;
+}
+
+#multiDialogContent0{
+    left:1%;
+    top:0px;
+}
+
+#multiDialogContent1{
+    right:1%;
+    top:0px;
+}
+
+#multiDialogContent2{
+    left:1%;
+    bottom:0px;
+}
+
+#multiDialogContent3{
+    right:1%;
+    bottom:0px;
+}
+
+.hintClass{
+    top:1%;
+    left:1%;
+    height: 13.5% !important;
+}
+
+.multiDialogContentClass{
+    position:absolute;
+    width:45%;
+    height: 45%;
+    background-color: rgba(0,0,0,.75);
+    color: white;
+    overflow: hidden;
+}
+
+.multiDialogContentClass div{
+    position: relative;
+    width:96%;
+    left:2%;
+    text-align: center;
+    font-size: 16px;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#viewFinderMultiSelection{
+    position: absolute;
+    width: 20%;
+    height: 70%;
+    left:40%;
+    top:15%;
+    background-color: rgba(0,0,0,.75);
+    border-radius: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/icons/portrait.png);
+}
+/*********************
+ALL CONTENT WINDOW
+**********************/
+#mainContentWindow
+{
+	position: fixed !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+#chromeContentWindow
+{
+	position: absolute;
+	background-color: #000000;
+	overflow: hidden !important;
+}
+#chromelessContentWindow
+{
+	position: absolute;
+	overflow: hidden !important;
+}
+#contentCloseButton
+{
+	position: absolute;
+}
+#contentCloseButton img
+{
+    position: absolute;
+    right:-10px;
+    top:-10px;
+	width: 50px;
+	height: 50px;
+	height: 50px;
+}
+#contentTitleWindow
+{
+	position: absolute;
+	text-align: center;
+}
+#contentTitleWindow h1
+{
+	margin: 0px;
+	padding: 0px;
+	vertical-align: middle;
+	color: #eeeeee;
+	font-size: 16px;
+}
+
+/*********************
+	MENU MANAGER
+*********************/
+
+#menuWrapper{
+	position: fixed;
+	right:5px;
+	top:5px;
+	width:50px;
+	height:50%;
+	/*background-color: red;*/
+}
+
+#menuWrapper div{
+	width:50px;
+	height: 50px;
+	margin-bottom: 0px;
+	/*background-color: green;*/
+}
+
+#menuWrapper div img{
+	max-width: 100%;
+	max-height: 100%;
+	/*box-shadow: 3px 3px 3px #555555;*/
+}
+
+/*********************
+	FOCUS MODE
+*********************/
+
+#focusModePanel
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#focusCrossHair
+{
+	position: absolute;
+	left: 47%;
+	top: 47%;
+	width: 6%;
+	height: 6%;
+
+	background: url("../images/gui/crosshair.png") no-repeat center center;
+
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+
+	-webkit-animation: crosshairani 3s infinite;
+}
+
+@-webkit-keyframes crosshairani {
+  0%   { opacity:1;}
+  50%	{ opacity:0.5;}
+  100% { opacity:1;}
+}

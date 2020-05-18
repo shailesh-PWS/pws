@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>nameIT</title>
+    <style>
+        #stickersWrapperID{
+            width:100%;
+            height:100%;
+            position: relative;
+            overflow:hidden;
+            font-size: 18px;
+        }
+        #stickersContentWrapperID{
+            position: absolute;
+            left:0px;
+            top:0px;
+        }
+        #stickersID{
+            position: absolute;
+            top:0px;
+            background-color: rgba(0,0,0,.6);
+            overflow-y: auto;
+            overflow-x: hidden;
+            color:white;
+        }
+        #stickersImgID{
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .stickersClass{
+            margin-top: 2px;
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            background-color: black;
+            cursor:pointer;
+            padding:5px;
+            text-align: center;
+            color:white;
+            font-size: 13px;
+        }
+        
+        .addShadow{
+            -moz-box-shadow:0 0 3px 1px #ffffff;
+            -webkit-box-shadow:0 0 3px 1px #ffffff;
+            box-shadow:0 0 3px 1px #ffffff;
+        }
+        
+        .submit-trigger-class{
+            position: absolute;
+        }
+    </style>
+    <script type="text/javascript">
+        var question;
+        var path;
+        var pointsAr;
+        var currentDragMC;
+        var curX;
+        var curY;
+        var dropBoolCor;
+        var currentClone;
+        var piecesAr;
+        var multiplier;
+        var autoSubmit;
+        var givenImgHt;
+        var givenImgWdth;
+        var resizeOption;
+        var scaleValues;
+        var myscore=0;
+        $(document).ready(function(){
+            debugger;
+            correctAnswers=[];
+            currentAnswers=[];
+            piecesAr=[];
+            GivenImgHt = $(currentXMLList).find("height").text();
+            GivenImgWdth = $(currentXMLList).find("width").text();
+            resizeOption = $(currentXMLList).find("resize").text();
+            
+            path = $(currentXMLList).find("Path").text();
+            question = $(currentXMLList).find("Question").text();
+            autoSubmit = ($(currentXMLList).find("AutoSubmit").text()=="true")?true:false;
+            var pointsStr = "["+$(currentXMLList).find("Answer").text()+"]";
+            pointsStr = pointsStr.replace("[[","");
+            pointsStr = pointsStr.replace("]]","");
+            pointsAr = pointsStr.split("],[");
+            
+            minigameControl.showInstruction(question);
+            
+            rndNumbers=[];
+            for(var i=0;i<pointsAr.length;i++){
+                correctAnswers.push(true);
+                currentAnswers.push(false);
+                rndNumbers.push(i);
+            }
+            rndNumbers = strFuncs.arrayRandomize(rndNumbers);
+            
+            for(var i=0;i<pointsAr.length;i++){
+                $("#stickersID").append("<div id='id"+i+"' idx='"+i+"' class='stickersClass'>"+pointsAr[rndNumbers[i]].split(",")[4]+"</div>");
+            }
+            
+            for(var i=0;i<$(".stickersClass").length;i++){
+                piecesAr.push($(".stickersClass")[i]);
+                $($(".stickersClass")[i]).data("idx",rndNumbers[i]);
+                $($(".stickersClass")[i]).data("x",pointsAr[rndNumbers[i]].split(",")[0]);
+                $($(".stickersClass")[i]).data("y",pointsAr[rndNumbers[i]].split(",")[1]);
+                $($(".stickersClass")[i]).data("w",pointsAr[rndNumbers[i]].split(",")[2]);
+                $($(".stickersClass")[i]).data("h",pointsAr[rndNumbers[i]].split(",")[3]);
+            }
+            
+            if($(currentXMLList).find("triggers").text()!=""){
+                $("#submitBtnID").css("visibility","hidden");
+                for(var i=0;i<$(currentXMLList).find("triggers").length;i++){
+                    var div = $("<div class='submit-trigger-class'></div>");
+                    div.css({
+                        left:$($(currentXMLList).find("triggers")[i]).find("x").text(),
+                        top:$($(currentXMLList).find("triggers")[i]).find("y").text(),
+                        width:$($(currentXMLList).find("triggers")[i]).find("width").text(),
+                        height:$($(currentXMLList).find("triggers")[i]).find("height").text()
+                    });
+                    div.data("x",$($(currentXMLList).find("triggers")[i]).find("x").text());
+                    div.data("y",$($(currentXMLList).find("triggers")[i]).find("y").text());
+                    div.data("w",$($(currentXMLList).find("triggers")[i]).find("width").text());
+                    div.data("h",$($(currentXMLList).find("triggers")[i]).find("height").text());
+                    div.click(function(){
+                        $("#submitBtnID").mousedown();
+                        clearTimeout(HOto);
+                    });
+                    $("#stickersImgID").append(div);
+                }
+            }
+            
+            
+            $(".stickersClass").mousedown(function(){
+                console.log("$(this).parent:"+$(this).parent().attr("id"));
+                if($(this).parent().attr("id")=="stickersID"){ 
+                    $("#stickersID").find("div").css({
+                        backgroundColor:"black",
+                        color:"white"
+                    });
+                    $(this).css({
+                       backgroundColor:"white",
+                        color:"black"
+                    });
+                }
+            });
+            $(".stickersClass").draggable({
+                start:function(){
+                    currentDragMC=this;
+
+                    //$(this).addClass("addShadow");
+                    $(this).css({
+                        position:"initial",
+                        color:"white",
+                        backgroundColor:"black"
+                    });
+                    $(currentDragMC).hide();
+                    curX = $(this).position().left;
+                    curY = $(this).position().top;
+                    dropBoolCor=false;
+                },
+                zIndex:999,
+                appendTo:'#stickersImgID',
+                revert:true,
+                helper:function(){
+                    currentClone = $(this).clone();
+                    currentClone.css({
+                        color:"#66ccff",
+                        backgroundColor:"transparent"
+                    })
+                    return currentClone;
+                },
+                stop:function(){
+                    $(this).show();
+                }
+            });
+            
+            $("#stickersImgID").droppable({
+                drop:function(){
+                    $(currentDragMC).show();
+                    $(currentDragMC).css({
+                        position:"absolute",
+                        color:"#66ccff",
+                        backgroundColor:"transparent"
+                    });
+                    
+                    $(this).append(currentDragMC);
+                    $(currentDragMC).css("left",currentClone.position().left);
+                    $(currentDragMC).css("top",currentClone.position().top);
+                    
+                    currentClone.remove();
+                    
+                    
+                    
+                    stickerscheckAnswers();
+                }
+            });
+            
+            $("#stickersID").droppable({
+                drop:function(){
+                    currentClone.remove();
+                    $(currentDragMC).show();
+                    $(this).append(currentDragMC)
+                    $(currentDragMC).css({
+                        position:"initial",
+                        color:"white",
+                        backgroundColor:"black"
+                    });
+                    
+                    stickerscheckAnswers();
+                }
+            });
+            resize();
+
+            animateStickerContainer();
+            
+            soundFile = ($(currentXMLList).find("audiofile").text() != "") ? $(currentXMLList).find("audiofile").text() : "";
+            soundDelay = ($(currentXMLList).find("audiodelay").text() != "") ? $(currentXMLList).find("audiodelay").text() : 0;
+            playSoundMedia(soundFile,soundDelay);
+        });
+        
+        function animateStickerContainer(){
+            $("#stickersID").stop().animate({
+                left:$("#stickersWrapperID").width()-$("#stickersID").width()
+            },function(){
+                $(".stickersClass").css({
+                   display:"inline-block"
+                });   
+            });
+        }
+        
+        var answerPoint="";
+        function stickerscheckAnswers(){
+            answerPoint="";
+            $(".stickersClass").each(function(){
+                    var midPointX = parseInt($(this).position().left+$(this).width()/2);
+                    var midPointY = parseInt($(this).position().top+$(this).height()/2);
+                    
+                    var x1=parseFloat($(this).data("x"))*scaleValues.multiplier;
+                    var y1=parseFloat($(this).data("y"))*scaleValues.multiplier;
+                    var w1 = parseFloat($(this).data("w"))*scaleValues.multiplier;
+                    var h1 = parseFloat($(this).data("h"))*scaleValues.multiplier;
+                    if(midPointX>x1&&midPointX<x1+w1&&midPointY>y1&&midPointY<y1+h1 && $(this).css("position")=="absolute"){
+                        currentAnswers[$(this).data("idx")] = true;
+                    }
+                    else {
+                        
+                        currentAnswers[$(this).data("idx")] = false;
+                    }
+                    
+                    var _status = ($(this).css("position")=="absolute")?true:false;
+                    if(answerPoint=="")answerPoint+=x1+","+y1+","+_status;
+                    else answerPoint+="_"+x1+","+y1+","+_status;
+                
+                    myscore=0;
+                    for(var i=0;i<currentAnswers.length;i++){
+                        if(currentAnswers[i])myscore++;
+                    }
+            });
+
+            console.log("stickersClass Length:"+$("#stickersImgID div[class=stickersClass]").length);
+            if(autoSubmit){
+                $("#submitBtnID").mousedown();
+                clearTimeout(HOto);
+            }
+        }
+
+        function resize(){
+            var contentWidth = $("#stickersWrapperID").width();
+            var contentHeight = $("#stickersWrapperID").height();
+            var imgWidth;
+            var imgHeight;
+            
+            
+          /*  if(contentWidth/contentHeight >= 4/3){
+                $("#stickersContentWrapperID").css({
+                    width:contentHeight,
+                    height:contentHeight
+                });
+                $("#stickersID").css({
+                    width:contentWidth-contentHeight-2,
+                    height:contentHeight,
+                    left:contentWidth
+                });
+            }
+            else{*/
+                $("#stickersContentWrapperID").css({
+                    width:7*contentWidth/10,
+                    height:contentHeight
+                 });
+                 $("#stickersID").css({
+                    width:3*contentWidth/10,
+                    height:contentHeight,
+                    left:contentWidth
+                 });
+           // }
+            
+            $(".stickersClass").css({
+                width: $("#stickersID").width()
+            });
+                
+           imgWidth = $("#stickersContentWrapperID").width();
+            imgHeight = $("#stickersContentWrapperID").height();
+            scaleValues =  strFuncs.getImgScaleWidthHeight(GivenImgWdth,GivenImgHt,imgWidth,imgHeight,resizeOption);
+            
+          /*  if(imgWidth>imgHeight){
+                imgWidth = imgHeight;
+            }
+            else{
+                imgHeight = imgWidth;
+            }*/
+
+            $("#stickersImgID").css({
+                width:scaleValues.width,
+                height:scaleValues.height,
+                left:($("#stickersContentWrapperID").width()-scaleValues.width)/2,
+                top:($("#stickersContentWrapperID").height()-scaleValues.height)/2,
+                backgroundImage:"url("+encodeURI(path)+")"
+            });
+            
+           // multiplier = strFuncs.multiplier(400,imgWidth);
+            
+            $(".submit-trigger-class").each(function(){
+                $(this).css({
+                    width:parseFloat($(this).data("w"))*scaleValues.multiplier,
+                    height:parseFloat($(this).data("h"))*scaleValues.multiplier,
+                    left:parseFloat($(this).data("x"))*scaleValues.multiplier,
+                    top:parseFloat($(this).data("y"))*scaleValues.multiplier
+                });
+            });
+            
+            FontUtils.resize("#stickersWrapperID");
+            
+        }
+        
+        function getScore(){
+            return myscore;
+        }
+        
+        function getTotal(){
+            return correctAnswers.length;
+        }
+        
+        function showAnswer(ans){
+            ans = ans.toString();
+            if(ans=="")return;
+
+            ans = ans.split("_");
+            
+            $(".stickersClass").css({
+                position:"initial",
+                color:"red",
+                backgroundColor:"transparent"
+            });
+            
+            $("#stickersID").append($(".stickersClass"));
+            
+            for(var i=0;i<ans.length;i++){
+                if(ans[i].split(",")[2]=="true"){
+                    $("#stickersImgID").append($(".stickersClass")[i]);
+                    $($(".stickersClass")[i]).css({
+                        position:"absolute",
+                        left:ans[i].split(",")[0]+"px",
+                        top:ans[i].split(",")[1]+"px"
+                    });  
+                }
+            }
+            
+            $(".stickersClass").each(function(){}).draggable("disable");
+        }
+        
+        function showCorrectAnswer(){
+            answerPoint="";
+            $(".stickersClass").each(function(){
+                    var w2 = $(this).width();
+                    var h2 = $(this).height();
+                    var x1=parseFloat($(this).data("x"))*scaleValues.multiplier;
+                    var y1=parseFloat($(this).data("y"))*scaleValues.multiplier;
+                    var w1 = parseFloat($(this).data("w"))*scaleValues.multiplier;
+                    var h1 = parseFloat($(this).data("h"))*scaleValues.multiplier;
+                    var _status = true;
+                    if(answerPoint=="")answerPoint+=(-2.5+x1+(w1-w2)/2)+","+(-2.5+y1+(h1-h2)/2)+","+_status;
+                    else answerPoint+="_"+(-2.5+x1+(w1-w2)/2)+","+(-2.5+y1+(h1-h2)/2)+","+_status;
+            });
+            
+            showAnswer(answerPoint);
+        }
+        
+        function getCorrectAnswer(){
+            return correctAnswers;
+        }
+        
+        function getAnswer(){
+            return currentAnswers;
+        }
+    </script>
+</head>
+<body>
+    <div id="stickersWrapperID">
+        <div id="stickersContentWrapperID">
+            <div id="stickersImgID"></div>
+        </div>
+        <div id="stickersID"></div>
+    </div>
+</body>
+</html>

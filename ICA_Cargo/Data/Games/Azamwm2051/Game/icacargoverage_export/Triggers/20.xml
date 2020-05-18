@@ -1,0 +1,10 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition/>
+      <action>
+        <property>ShowMediaAction|minigame|menu0300A_mg_7.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

@@ -1,0 +1,139 @@
+<xml>
+  <class>minigame</class>
+  <name>game01</name>
+  <description/>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Question><![CDATA[Find the objects by click on it.]]></Question>
+    <showOnload><![CDATA[false]]></showOnload>
+    <width><![CDATA[1920]]></width>
+    <height><![CDATA[918]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[false]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG0.jpg]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[1353.9199999999998,495.37438996049264,496.85333333333335,122.2435510109226,Label,true],[855.4666666666666,494.62770160353233,473.7066666666667,132.2705089472461,Label,false],[842.0266666666666,648.125493841506,490.88,122.77689983732276,Label,false],[1363.9466666666667,646.3121078317453,481.3866666666667,130.35045317220545,Label,false]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>SLIDESHOW</Type>
+    <width><![CDATA[900]]></width>
+    <height><![CDATA[506]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <AutoSliding><![CDATA[false]]></AutoSliding>
+    <animationType><![CDATA[2]]></animationType>
+    <width><![CDATA[900]]></width>
+    <height><![CDATA[506]]></height>
+    <transparent><![CDATA[false]]></transparent>
+    <Items>
+      <duration>1</duration>
+      <delay>1</delay>
+      <backColor><![CDATA[rgba(0,0,0,1)]]></backColor>
+      <image>
+        <bg>true</bg>
+        <path><![CDATA[Minigames/images/IMG1.jpg]]></path>
+        <width>undefined</width>
+        <height>undefined</height>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </image>
+    </Items>
+    <Items>
+      <duration>1</duration>
+      <delay>1</delay>
+      <backColor><![CDATA[rgba(0,0,0,1)]]></backColor>
+      <image>
+        <bg>true</bg>
+        <path><![CDATA[Minigames/images/IMG2.jpg]]></path>
+        <width>undefined</width>
+        <height>undefined</height>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </image>
+    </Items>
+    <Items>
+      <duration>1</duration>
+      <delay>1</delay>
+      <backColor><![CDATA[rgba(0,0,0,1)]]></backColor>
+      <image>
+        <bg>true</bg>
+        <path><![CDATA[Minigames/images/IMG3.jpg]]></path>
+        <width>undefined</width>
+        <height>undefined</height>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </image>
+    </Items>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Question><![CDATA[Find the objects by click on it.]]></Question>
+    <showOnload><![CDATA[false]]></showOnload>
+    <width><![CDATA[1920]]></width>
+    <height><![CDATA[918]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[false]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG4.jpg]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[832.2133333333334,496.441087613293,504.5333333333333,123.95026725540322,Label,true],[1354.1333333333334,495.9077387868928,493.12000000000006,125.55031373460378,Label,true],[845.8666666666667,646.3121078317453,487.0400000000001,132.2705089472461,Label,false],[1362.3466666666668,644.3920520567046,483.2,134.19056472228678,Label,false]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>SLIDESHOW</Type>
+    <width><![CDATA[900]]></width>
+    <height><![CDATA[506]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <AutoSliding><![CDATA[false]]></AutoSliding>
+    <animationType><![CDATA[2]]></animationType>
+    <width><![CDATA[900]]></width>
+    <height><![CDATA[506]]></height>
+    <transparent><![CDATA[false]]></transparent>
+    <Items>
+      <duration>1</duration>
+      <delay>1</delay>
+      <backColor><![CDATA[rgba(0,0,0,1)]]></backColor>
+      <image>
+        <bg>true</bg>
+        <path><![CDATA[Minigames/images/IMG5.jpg]]></path>
+        <width>undefined</width>
+        <height>undefined</height>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </image>
+    </Items>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>true</Exit>
+  <score>1</score>
+  <Reward>
+    <greater>1</greater>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <background><![CDATA[Minigames/images/IMG6.jpg]]></background>
+  <bgColor><![CDATA[rgba(0,0,0,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

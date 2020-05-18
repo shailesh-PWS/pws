@@ -1,0 +1,1743 @@
+<xml>
+  <ObjectiveItem>
+    <item id="0">
+      <name>Welcome</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="1">
+      <name>trig_off</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="2">
+      <name>trig_on</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="3">
+      <name>Ans0301a0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="4">
+      <name>Ans0301a1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="5">
+      <name>Ans0301a1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="6">
+      <name>AnsVeh1a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="7">
+      <name>Ans0301a1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="8">
+      <name>Ans0301a1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="9">
+      <name>Ans0301a1_4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="10">
+      <name>Ans0301a1_5</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="11">
+      <name>Ans0301b0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="12">
+      <name>Ans0301b1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="13">
+      <name>Ans0301b1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="14">
+      <name>AnsVeh1b</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="15">
+      <name>Ans0301b1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="16">
+      <name>Ans0301c0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="17">
+      <name>Ans0301c1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="18">
+      <name>Ans0301c1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="19">
+      <name>AnsVeh1c</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="20">
+      <name>Ans0301c1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="21">
+      <name>Ans0301c1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="22">
+      <name>Ans0301c1_4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="23">
+      <name>Ans0301d0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="24">
+      <name>Ans0301d1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="25">
+      <name>Ans0301d1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="26">
+      <name>AnsVeh1d</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="27">
+      <name>Ans0301d1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="28">
+      <name>Ans0301d1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="29">
+      <name>Ans0301d1_4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="30">
+      <name>Ans0301d1_5</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="31">
+      <name>Ans0301d1_6</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="32">
+      <name>Ans0301d1_7</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="33">
+      <name>Ans0301e0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="34">
+      <name>Ans0301e1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="35">
+      <name>Ans0301e1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="36">
+      <name>AnsVeh1e</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="37">
+      <name>Ans0301e1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="38">
+      <name>Ans0301e1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="39">
+      <name>Ans0301f0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="40">
+      <name>Ans0301f1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="41">
+      <name>Ans0301f1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="42">
+      <name>AnsVeh1f</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="43">
+      <name>Ans0301f1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="44">
+      <name>Ans0301f1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="45">
+      <name>Ans0301f1_4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="46">
+      <name>Ans0301f1_5</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="47">
+      <name>Ans0301g0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="48">
+      <name>Ans0301g1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="49">
+      <name>Ans0301g1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="50">
+      <name>AnsVeh1g</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="51">
+      <name>Ans0301g1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="52">
+      <name>SumVeh1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="53">
+      <name>Ans0302a0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="54">
+      <name>Ans0302a1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="55">
+      <name>Ans0302a1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="56">
+      <name>AnsVeh2a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="57">
+      <name>Ans0302a1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="58">
+      <name>Ans0302a1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="59">
+      <name>Ans0302a1_4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="60">
+      <name>Ans0302a1_5</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="61">
+      <name>Ans0302b0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="62">
+      <name>Ans0302b1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="63">
+      <name>Ans0302b1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="64">
+      <name>AnsVeh2b</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="65">
+      <name>Ans0302b1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="66">
+      <name>Ans0302c0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="67">
+      <name>Ans0302c1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="68">
+      <name>Ans0302c1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="69">
+      <name>AnsVeh2c</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="70">
+      <name>Ans0302c1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="71">
+      <name>Ans0302c1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="72">
+      <name>Ans0302c1_4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="73">
+      <name>Ans0302d0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="74">
+      <name>Ans0302d1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="75">
+      <name>Ans0302d1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="76">
+      <name>AnsVeh2d</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="77">
+      <name>Ans0302d1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="78">
+      <name>Ans0302d1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="79">
+      <name>Ans0302d1_4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="80">
+      <name>Ans0302d1_5</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="81">
+      <name>Ans0302d1_6</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="82">
+      <name>Ans0302d1_7</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="83">
+      <name>Ans0302e0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="84">
+      <name>Ans0302e1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="85">
+      <name>Ans0302e1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="86">
+      <name>AnsVeh2e</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="87">
+      <name>Ans0302e1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="88">
+      <name>Ans0302e1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="89">
+      <name>Ans0302f0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="90">
+      <name>Ans0302f1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="91">
+      <name>Ans0302f1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="92">
+      <name>AnsVeh2f</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="93">
+      <name>Ans0302f1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="94">
+      <name>Ans0302f1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="95">
+      <name>Ans0302f1_4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="96">
+      <name>Ans0302f1_5</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="97">
+      <name>Ans0302g0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="98">
+      <name>Ans0302g1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="99">
+      <name>Ans0302g1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="100">
+      <name>AnsVeh2g</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="101">
+      <name>Ans0302g1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="102">
+      <name>SumVeh2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="103">
+      <name>Ans0303a0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="104">
+      <name>Ans0303a1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="105">
+      <name>Ans0303a1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="106">
+      <name>AnsVeh3a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="107">
+      <name>Ans0303a1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="108">
+      <name>Ans0303a1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="109">
+      <name>Ans0303a1_4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="110">
+      <name>Ans0303a1_5</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="111">
+      <name>Ans0303b0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="112">
+      <name>Ans0303b1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="113">
+      <name>Ans0303b1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="114">
+      <name>AnsVeh3b</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="115">
+      <name>Ans0303b1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="116">
+      <name>Ans0303c0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="117">
+      <name>Ans0303c1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="118">
+      <name>Ans0303c1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="119">
+      <name>AnsVeh3c</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="120">
+      <name>Ans0303c1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="121">
+      <name>Ans0303c1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="122">
+      <name>Ans0303c1_4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="123">
+      <name>Ans0303d0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="124">
+      <name>Ans0303d1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="125">
+      <name>Ans0303d1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="126">
+      <name>AnsVeh3d</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="127">
+      <name>Ans0303d1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="128">
+      <name>Ans0303d1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="129">
+      <name>Ans0303d1_4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="130">
+      <name>Ans0303d1_5</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="131">
+      <name>Ans0303d1_6</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="132">
+      <name>Ans0303d1_7</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="133">
+      <name>Ans0303e0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="134">
+      <name>Ans0303e1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="135">
+      <name>Ans0303e1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="136">
+      <name>AnsVeh3e</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="137">
+      <name>Ans0303e1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="138">
+      <name>Ans0303e1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="139">
+      <name>Ans0303f0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="140">
+      <name>Ans0303f1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="141">
+      <name>Ans0303f1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="142">
+      <name>AnsVeh3f</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="143">
+      <name>Ans0303f1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="144">
+      <name>Ans0303f1_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="145">
+      <name>Ans0303f1_4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="146">
+      <name>Ans0303f1_5</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="147">
+      <name>Ans0303g0</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="148">
+      <name>Ans0303g1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="149">
+      <name>Ans0303g1_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="150">
+      <name>AnsVeh3g</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="151">
+      <name>Ans0303g1_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="152">
+      <name>SumVeh3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="153">
+      <name>Module3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="154">
+      <name>Module1Intro</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="155">
+      <name>Module2Intro</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="156">
+      <name>Narrate01on</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="157">
+      <name>Module1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+  </ObjectiveItem>
+  <PropItem/>
+</xml>

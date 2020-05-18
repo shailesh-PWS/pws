@@ -1,0 +1,12 @@
+<trigger>
+  <event type="1">
+    <logic>
+      <condition>
+        <property>InventoryCondition|0|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|slide0000splash_mg_0.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

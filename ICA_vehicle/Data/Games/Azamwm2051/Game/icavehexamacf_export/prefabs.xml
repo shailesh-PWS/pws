@@ -1,0 +1,13 @@
+<xml>
+  <assets>
+    <asset>Playware_Pack/Environments/car_workshop</asset>
+    <asset>Playware_Pack/Environments/ICA_CargoClearance_Shorter</asset>
+    <asset>Playware_Pack/Characters/noncustom_female_ica2</asset>
+    <asset>AnimationController/R/R_FemaleAdult</asset>
+    <asset>Common/Misc/Icon</asset>
+    <asset>Common/Misc/DoorPortal</asset>
+    <asset>Playware_Pack/Characters/noncustom_male_ica</asset>
+    <asset>AnimationController/R/R_MaleAdult</asset>
+    <asset>Playware_Pack/Characters/blackfigure</asset>
+  </assets>
+</xml>
