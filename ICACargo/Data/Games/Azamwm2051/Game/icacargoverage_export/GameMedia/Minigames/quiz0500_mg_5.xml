@@ -1,0 +1,109 @@
+<xml>
+  <class>minigame</class>
+  <name>quiz0500</name>
+  <description/>
+  <MGame>
+    <Type>STICKERS</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Question><![CDATA[Drag the possible targeting decision(s) assigned to a cargo consignment into the box below.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[752]]></width>
+    <height><![CDATA[600]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG56.png]]></Path>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <snap><![CDATA[true]]></snap>
+    <Answer><![CDATA[[145.19457584358247,204.3675889328063,365.20971302428256,129.2490118577075,Minigames/images/IMG57.png,true,365.20971302428256,129.2490118577075],[166.8344370860927,279.60474308300394,365.20971302428256,129.2490118577075,Minigames/images/IMG58.png,true,365.20971302428256,129.2490118577075],[194.4623147272154,357.56916996047437,365.20971302428256,129.2490118577075,Minigames/images/IMG59.png,true,365.20971302428256,129.2490118577075],[210.05487228003784,428.65612648221344,365.20971302428256,129.2490118577075,Minigames/images/IMG60.png,true,365.20971302428256,129.2490118577075],[193.39514348785872,235.37549407114625,365.20971302428256,129.2490118577075,Minigames/images/IMG61.png,false,365.20971302428256,129.2490118577075],[193.39514348785872,235.37549407114625,365.20971302428256,129.2490118577075,Minigames/images/IMG62.png,false,365.20971302428256,129.2490118577075],[193.39514348785872,235.37549407114625,365.20971302428256,129.2490118577075,Minigames/images/IMG63.png,false,365.20971302428256,129.2490118577075],[193.39514348785872,235.37549407114625,365.20971302428256,129.2490118577075,Minigames/images/IMG64.png,false,365.20971302428256,129.2490118577075],[193.39514348785872,235.37549407114625,365.20971302428256,129.2490118577075,Minigames/images/IMG65.png,false,365.20971302428256,129.2490118577075]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Question><![CDATA[Spot the Tell-Tale Indicator (TTI) in the cargo clearance permit. (click on the image to identify the TTI)]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[799]]></width>
+    <height><![CDATA[896]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[false]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG66.png]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[357.0885416666667,411.43399209486165,416.5885416666667,51.26324110671936,Label,true]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>MCQ</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Path>NA</Path>
+    <Question><![CDATA[What are the possible TTIs for suspicious cargoes?<br/>I. Clock-ticking sound coming from the cargoes <br/>II. Unusual labels/markings on the cargoes<br/>III. Unusual odour emitting from the cargoes<br/>IV. Cargoes are not arranged neatly in the container<br/>]]></Question>
+    <Answer><![CDATA[I, II and III]]></Answer>
+    <Answer><![CDATA[I and II]]></Answer>
+    <Answer><![CDATA[II and III]]></Answer>
+    <Answer><![CDATA[I, III and IV]]></Answer>
+    <Correct>1</Correct>
+    <Path0>NA</Path0>
+    <Path1>NA</Path1>
+    <Path2>NA</Path2>
+    <Path3>NA</Path3>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>MCQ</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Path>NA</Path>
+    <Question><![CDATA[SGT John has removed all the cargoes from a 40-foot container as part of cargo examination. He used a distance finder to measure the interior length of the empty container and the length is found to be 33 feet. What action should he take?<br/>]]></Question>
+    <Answer><![CDATA[Refer the container for further checks as there might be false partition/compartment in the container<br/>]]></Answer>
+    <Answer><![CDATA[Release the container as nothing incriminating is found on the cargoes<br/>]]></Answer>
+    <Correct>1</Correct>
+    <Path0>NA</Path0>
+    <Path1>NA</Path1>
+    <Path2>NA</Path2>
+    <Path3>NA</Path3>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>STICKERS</Type>
+    <InstantRetry>true</InstantRetry>
+    <Tries>3</Tries>
+    <Question><![CDATA[Identify the concealment area shown in the images below. (Drag the boxes to the correct images)]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[906]]></width>
+    <height><![CDATA[900]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG67.png]]></Path>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <snap><![CDATA[true]]></snap>
+    <Answer><![CDATA[[101.12123294394816,414.8715415019763,359.4828703249239,72.12450592885375,Minigames/images/IMG68.png,true,359.4828703249239,72.12450592885375],[495.64523412192005,411.66996047430825,357.4373220771571,71.6798418972332,Minigames/images/IMG69.png,true,357.4373220771571,71.6798418972332],[100.76548542259742,772.1146245059289,362.5956611367429,72.74703557312252,Minigames/images/IMG70.png,true,362.5956611367429,72.74703557312252],[495.5562972415824,772.8260869565217,354.23559438500047,71.05731225296442,Minigames/images/IMG71.png,true,354.23559438500047,71.05731225296442]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>true</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater>9</greater>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <background><![CDATA[Minigames/images/IMG72.jpg]]></background>
+  <bgColor><![CDATA[rgba(0,0,0,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

@@ -1,0 +1,10 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition/>
+      <action>
+        <property>ShowMediaAction|minigame|quiz0100_mg_0.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>
