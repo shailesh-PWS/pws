@@ -1,0 +1,6 @@
+-target localplay
+-chaptername Azamwm2051
+-gamename icaintrotolawvaac_export
+-persistent Data
+-gamesPath Data\Games
+-assetsPath Data\Assets
