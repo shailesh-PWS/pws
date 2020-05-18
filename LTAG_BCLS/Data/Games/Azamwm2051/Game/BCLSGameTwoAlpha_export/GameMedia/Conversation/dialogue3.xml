@@ -1,0 +1,32 @@
+<xml>
+  <dialog myid="83202018397809616" id="1" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="AED" portrait="image" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[ANALYZING HEART RHYTHM. DO NOT TOUCH THE CASUALTY]]></text>
+    <dialog myid="833202018408825121" id="2" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Your Custom Name" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Stop chest compression and Spread your arms apart, say clearly “Stay Clear”]]></text>
+      <dialog myid="8332020185542434390" id="3" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Your Custom Name" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[(The AED charges for a few seconds. A warning tone is heard. Once the AED is fully charged, a voice prompt is heard)]]></text>
+        <dialog myid="833202018571856483" id="4" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="AED" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+          <text><![CDATA[PRESS THE SHOCK BUTTON NOW]]></text>
+          <dialog myid="833202018573271795" id="5" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Your Custom Name" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+            <text><![CDATA[Ensure no one touches the casualty, then press the shock button]]></text>
+            <dialog myid="83320201859419695" id="6" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Your Custom Name" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+              <text><![CDATA[(The player presses the button and the AED delivers a shock to the casualty)]]></text>
+              <dialog myid="8332020185919992601" id="7" multiplayerreward="" persistentreward="" reward="6" who="0" link="" nick="Your Custom Name" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false" minigame="ChestCompressionComic_mg_4.xml">
+                <text><![CDATA[Continue the chest compression until the AED repeats the voice prompt: “ANALYZING HEART RHYTHM. DO NOT TOUCH THE CASUALTY"]]></text>
+              </dialog>
+              <dialog myid="83320201903861740" id="8" multiplayerreward="" persistentreward="" reward="6" who="0" link="" nick="Your Custom Name" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false" minigame="ChestCompressionComic_mg_4.xml">
+                <text><![CDATA[2. Position the casualty for when help arrives]]></text>
+              </dialog>
+            </dialog>
+          </dialog>
+          <dialog myid="8332020185753587691" id="9" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Your Custom Name" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+            <text><![CDATA[Continue to administer CPR]]></text>
+          </dialog>
+        </dialog>
+      </dialog>
+    </dialog>
+    <dialog myid="833202018403024411" id="10" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Your Custom Name" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Continue chest compression and let others help too.]]></text>
+    </dialog>
+  </dialog>
+</xml>

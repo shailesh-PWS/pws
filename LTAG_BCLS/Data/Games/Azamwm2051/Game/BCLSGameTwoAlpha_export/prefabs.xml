@@ -1,0 +1,18 @@
+<xml>
+  <assets>
+    <asset>Starter_Pack/Environments/Mall</asset>
+    <asset>Playware_Pack/Characters/R2_BCLS_doctor</asset>
+    <asset>AnimationController/R2/R2_MaleAdult</asset>
+    <asset>Common/Misc/DoorPortal</asset>
+    <asset>Playware_Pack/Characters/R2_NNI_CRO</asset>
+    <asset>APS_Pack/Characters/R_noncustom_malechild03B</asset>
+    <asset>AnimationController/R/R_Child</asset>
+    <asset>Playware_Pack/Characters/R2_BCLS_oldman01</asset>
+    <asset>Playware_Pack/Characters/R2_NNI_patient02_casual</asset>
+    <asset>AnimationController/R2/R2_FemaleAdult</asset>
+    <asset>Playware_Pack/Characters/R2_NNI_doctor</asset>
+    <asset>Starter_Pack/Items/prop_AED</asset>
+    <asset>Starter_Pack/Items/prop_lyingshirtless</asset>
+    <asset>Starter_Pack/Items/prop_waterpuddle</asset>
+  </assets>
+</xml>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Spot the Difference</title>
+    <style>
+
+        #SpotDiffWrapperID{
+            position: absolute;
+            left:0px;
+            top:0px;
+            width:100%; 
+            height:100%;
+            text-align: center;
+            overflow: hidden;
+            font-family: arial;
+        }
+        .spotDiffImage{
+            width:48%;
+            height: 100%;
+            box-sizing: border-box;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+           
+            position: absolute;
+            overflow: hidden;
+
+        }
+        
+        #spotDiffImage1{
+            left:1%;
+        }
+         #spotDiffImage1 img{
+            border: 2px solid #33CCFF;  
+        }
+        
+        #spotDiffImage2{
+            left:51%;
+        }
+         #spotDiffImage2 img{
+            border: 2px solid #ff5b33;  
+        }
+        .divImage{
+            position:absolute;
+            vertical-align: middle;
+        }
+        
+        .spotsClass{
+            position: absolute;
+            width:40px;
+            height:35px;
+            background-image: url('images/minigames/highlight.png');
+            background-repeat: no-repeat;
+            -webkit-background-size:contain;
+            -moz-background-size:contain;
+            -o-background-size:contain;
+            background-size:contain;
+            background-position: center;
+            
+            -webkit-animation: backgroundScroll 10s linear infinite;
+            animation: backgroundScroll 10s linear infinite;
+        }
+        
+        @-webkit-keyframes backgroundScroll {
+            from { 
+                -webkit-transform: rotate(0deg); 
+            
+            }
+            to { 
+                -webkit-transform: rotate(360deg); 
+            }
+        }
+
+        @keyframes backgroundScroll {
+            from { 
+                transform: rotate(0deg); 
+            
+            }
+            to { 
+                transform: rotate(360deg); 
+            }
+        }
+        @-moz-keyframes backgroundScroll {
+            from { 
+                -moz-transform: rotate(0deg); 
+            
+            }
+            to { 
+                -moz-transform: rotate(360deg); 
+            }
+        }
+        
+        @-ms-keyframes backgroundScroll {
+            from { 
+                -ms-transform: rotate(0deg); 
+            
+            }
+            to { 
+                -ms-transform: rotate(360deg); 
+            }
+        }
+        
+        @-o-keyframes backgroundScroll {
+            from { 
+                -o-transform: rotate(360deg); 
+            
+            }
+            to { 
+                -o-transform: rotate(360deg); 
+            }
+        }
+        
+        
+       
+        
+    </style>
+    <script type="text/javascript">
+
+        var OptionsCount=0;
+        var spotSquareWidth = 0;
+        var correctSpots = new Array();
+        var curSpotCount =0   
+        var autoSubmit;
+        var givenImgHt;
+        var givenImgWdth;
+        var resizeOption;
+        var question;
+        var myscore=0;
+        $(document).ready(function(){
+           
+            question = $(currentXMLList).find("Question").text();
+            minigameControl.showInstruction(question);
+
+            imgPath1 = $(currentXMLList).find("Path").text();
+            imgPath2 = $(currentXMLList).find("Path1").text();
+
+            autoSubmit = ($(currentXMLList).find("AutoSubmit").text()=="true")?true:false;
+            correctAnswers =[];
+            currentAnswers = [];
+            
+            div =  $("#spotDiffImage1") ;
+            
+            GivenImgHt = $(currentXMLList).find("height").text();
+            GivenImgWdth = $(currentXMLList).find("width").text();
+            resizeOption = $(currentXMLList).find("resize").text();
+            var scaleValues =  strFuncs.getImgScaleWidthHeight(GivenImgWdth,GivenImgHt,div.width(),div.height(),resizeOption);
+            
+
+            function addImage(div,imgPath)
+            {
+                
+                var imgDiv = $("<img/>");
+                $(imgDiv).attr("src",imgPath);
+                $(imgDiv).addClass("divImage");
+                imgDiv.width(scaleValues.width);
+                imgDiv.height(scaleValues.height);
+                tpDiff =$(div).offset().top+(div.height() - (scaleValues.height))/2;
+                lftDiff =  $(div).offset().left+(div.width() - (scaleValues.width))/2;
+                div.append(imgDiv);
+                $(imgDiv).offset({top:tpDiff,left:lftDiff});
+            
+            }
+            addImage(div,imgPath1);
+            addImage($("#spotDiffImage2"),imgPath2);
+       
+            
+            var ansStr = "["+$(currentXMLList).find("Answer").text()+"]";
+            ansStr = ansStr.replace("[[","");
+            ansStr = ansStr.replace("]]","");
+            tmpAns = ansStr.split("],[");
+            
+            
+            spotSquareWidth = (tmpAns[0].split(',')[2]) * scaleValues.multiplier ;
+            curSpotCount =0;
+            
+            //computing below 2 since pos of the spots are wrt div and not img.
+            leftSpace= $("#spotDiffImage1 img").offset().left - $("#spotDiffImage1").offset().left;
+            topSpace = $("#spotDiffImage1 img").offset().top - $("#spotDiffImage1").offset().top;
+            for(var i=0 ; i< tmpAns.length;i++)
+            {
+                currentAnswers[i] = false;
+                correctAnswers[i] = true;
+                
+                correctSpots[i]=new Object();
+                correctSpots[i].left = leftSpace+ (tmpAns[i].split(',')[0])*scaleValues.multiplier;
+                correctSpots[i].top = topSpace + (tmpAns[i].split(',')[1])*scaleValues.multiplier;
+                
+            }
+        
+            
+        });
+        
+        
+        
+        
+        
+      $(".divImage").click(function(e){
+
+        if(curSpotCount >=correctSpots.length)return;
+          
+        var spotPos;
+
+        currentSpots =new Object();
+        currentSpots.left = e.clientX-$(this).parent().offset().left-(spotSquareWidth)/2;
+        currentSpots.top = e.clientY-$(this).parent().offset().top-(spotSquareWidth)/2;
+        addSpot(currentSpots,curSpotCount);
+
+
+        curSpotCount++;
+        spotDiffcheckAnswers();
+
+        $(".spotsClass").click(function spotHandle(){
+        clsList = $(this).attr("class").split(" ")
+        currentAnswers[clsList[1]] = false;
+        $("."+clsList[0]).filter("."+clsList[1]).remove();
+        curSpotCount--;  
+        event.stopImmediatePropagation();
+        });
+
+        if(curSpotCount ==correctSpots.length)
+        {
+            if(autoSubmit){
+                $("#submitBtnID").mousedown();
+            }    
+        }
+
+        });
+
+
+        function addSpot(spotPos, curSpotCount){
+            
+            spotsDiv = $("<div></div>");
+
+            spotsDiv.addClass("spotsClass");
+            spotsDiv.addClass(curSpotCount.toString());
+           
+            spotsDiv.css({
+                top:spotPos.top,
+                left: spotPos.left,
+                width:spotSquareWidth,
+                height:spotSquareWidth,
+            });
+            
+            $("#spotDiffImage1").append(spotsDiv);
+
+            secondSpot = spotsDiv.clone();
+            
+            $("#spotDiffImage2").append(secondSpot);
+
+        }
+        
+        function spotDiffcheckAnswers(){
+            
+            $("#spotDiffImage1").children(".spotsClass").each(function(){
+                var midPointX = parseInt($(this).position().left+$(this).width()/2);
+                var midPointY = parseInt($(this).position().top+$(this).height()/2);
+
+
+                for(var i=0; i<correctSpots.length ;i++)
+                {
+                    if(midPointX > correctSpots[i].left && midPointX < (correctSpots[i].left+spotSquareWidth))
+                    {
+                        if(midPointY > correctSpots[i].top && midPointY < (correctSpots[i].top+spotSquareWidth))
+                        {
+                            currentAnswers[i] = true;
+                            break ;
+                        }
+                    }
+                }
+                
+                myscore=0;
+                for(var i=0;i<currentAnswers.length;i++){
+                    if(currentAnswers[i])myscore++;
+                }
+
+            });
+
+       
+        }
+        
+        function getScore(){
+            return myscore;
+        }
+        
+        function getTotal(){
+            return correctAnswers.length;
+        }
+                
+        function showCorrectAnswer(){
+            $(".spotsClass").remove();
+            for(var i=0; i<correctSpots.length ;i++)
+                {
+                  currentSpots =new Object();
+                  currentSpots.left = correctSpots[i].left;
+                  currentSpots.top = correctSpots[i].top;
+                  addSpot(currentSpots,i);
+                  currentAnswers[i] = true;                     
+                }
+    
+        }
+        
+        function getCorrectAnswer(){
+            return correctAnswers;
+        }
+        
+        function getAnswer(){
+            return currentAnswers;
+        }
+        
+    </script>
+</head>
+<body>
+    <div id="SpotDiffWrapperID" >
+        <div id="spotDiffImage1" class="spotDiffImage">
+        </div>
+        <div id="spotDiffImage2" class="spotDiffImage">
+        </div>
+    </div>
+</body>
+</html>

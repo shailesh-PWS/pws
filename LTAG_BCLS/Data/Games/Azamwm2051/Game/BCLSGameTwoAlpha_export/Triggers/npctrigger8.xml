@@ -1,0 +1,39 @@
+<trigger>
+  <event type="1">
+    <logic>
+      <condition>
+        <property>InventoryCondition|2|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|dialog|dialogue1.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|3|1|0</property>
+        <property>InventoryCondition|4|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|dialog|dialogue2.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|5|1|0</property>
+        <property>InventoryCondition|6|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|dialog|dialogue3.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|7|1|0</property>
+        <property>InventoryCondition|8|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|dialog|dialogue4.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>
