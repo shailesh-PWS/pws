@@ -34,6 +34,26 @@ var TriggerManager = new function(){
             if(obj.ContinueMessageJson == "" || obj.ContinueMessageJson == "undefined")$("#closeBtnImg").mousedown();
 			ItemManager.populatePersistentInventory(obj);
     }
+    this.EndWriteLog=function(obj){
+
+    }
+    this.OnStopBGM=function(obj){
+        
+    }
+    this.OnStopDialog=function(obj){
+        
+    }
+    this.OnStopMinigameAudio=function(obj){
+        
+    }
+
+    this.OnStopInstantMusic=function(obj){
+        
+    }
+    this.OnStopSFX=function(obj){
+        
+    }
+    
     this.obj = null;
     this.isTrigger=false;
 	this.initTriggerType = function(obj)

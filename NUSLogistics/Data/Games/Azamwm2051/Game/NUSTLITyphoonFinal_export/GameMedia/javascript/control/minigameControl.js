@@ -396,12 +396,12 @@ function getCorrectReward(){
     var correctPersistentReward = minigameXMLManager.getCorrectPersistentReward();
     var correctMultiplayertReward = minigameXMLManager.getCorrectMultiplayerReward();
     if(correctReward!=""){
-        ItemManager.getReward(correctReward,1,"message"); 
+        ItemManager.AwardReward(correctReward,1,"message"); 
     }
     else if(correctPersistentReward!=""){
-        ItemManager.getPersistentReward(correctPersistentReward,1,"message"); 
+        ItemManager.AwardPersistentReward(correctPersistentReward,1,"message"); 
     }
     else if(correctMultiplayertReward!=""){
-        ItemManager.getMultiplayerReward(correctMultiplayertReward,1,"message"); 
+        ItemManager.AwardMultiplayerReward(correctMultiplayertReward,1,"message"); 
     }
 }

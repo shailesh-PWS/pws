@@ -281,6 +281,8 @@ var DialogRunner = new function()
         
         
     }
+
+    
     this.stopNPCAnimation=function(){
         if(stopGesture==true&&stopGesture!=""){
             if(DialogRunner.dialogobject.NpcInstanceID != null)VuplexManager.ResetGestureNEmotion(DialogRunner.dialogobject.NpcInstanceID,"DialogRunner.stopPlayerAnimation");
@@ -420,19 +422,19 @@ var DialogRunner = new function()
         {
             if(who == "1" || who=="2")
             {
-                $("#dialogViewPort").attr("src",encodeURI("Conversation/" + imagepath));
+                $("#dialogContent").hide();
                 $("#dialogViewPort").css({
+                    backgroundImage:"url(" + encodeURI("Conversation/" + imagepath) + ")",
                     width:$(document).innerHeight()*.25,
-                    height:"auto"
                 });
-                
-                $("#dialogContent").css({
-                    left:$("#dialogViewPort").width()
-                })
-                $("#dialogHistoryActive").css({
-                    left:$("#dialogViewPort").width()   
-                })
+
                 $("#dialogViewPort").show();
+                $("#dialogViewPort").data("img","Conversation/" + imagepath);
+                TweenMax.from($('#dialogViewPort'),.250,{left:"-100%",opacity:0, onComplete:this.setDialogContentPosition});
+                $("#dialogViewPort").off('click').on("click",function(){
+                    var img =$(this).data("img");
+                    DialogManager.previewImg(img);
+                });
             }
             else
             {
@@ -441,7 +443,7 @@ var DialogRunner = new function()
                 });
                 $("#objectViewPort").show();
                 $("#objectViewPort").data("img","Conversation/" + imagepath);
-                TweenMax.from($('#objectViewPort'),.250,{left:"-100%",opacity:0});
+                TweenMax.from($('#objectViewPort'),.250,{left:"-100%",opacity:0, onComplete:this.setObjectViewDialogContentPosition});
                 $("#objectViewPort").off('click').on("click",function(){
                     var img = $(this).data("img");
                     DialogManager.previewImg(img);
@@ -628,6 +630,30 @@ var DialogRunner = new function()
             DialogRunner.continueDialog();
         });
     }
+    this.setObjectViewDialogContentPosition = function(){
+        debugger;
+        $("#dialogContent").show();
+        $("#dialogContent").css({
+            left:$("#objectViewPort").width()
+        });
+        $("#dialogHistoryActive").css({
+            left:$("#objectViewPort").width()   
+        });
+    }
+
+    this.setDialogContentPosition = function(){
+
+        console.log("====>" + $("#dialogViewPort").width());
+        $("#dialogContent").show();
+        $("#dialogContent").css({
+            left:$("#dialogViewPort").width()
+        });
+        $("#dialogHistoryActive").css({
+            left:$("#dialogViewPort").width()   
+        });
+    }
+    
+ 
     this.continueDialog=function(){
         if(cameraEffect==1){
             $("#fading-effect-wrapper").css({
@@ -1069,7 +1095,7 @@ function buildInitialDialogSkeleton()
             str += "<div id='dialogHistoryFocusButton'><img src='images/menuicons/open_off.png'></div>"
         str += "</div>"
         str += "<div id='objectViewPort'></div>"
-        str += "<img id='dialogViewPort'></img>"
+        str += "<div id='dialogViewPort'></div>"
 	str += "</div>";
     str += "<div id='dialogHistoryAll'><h3>Dialogue History</h3></div>"
 
