@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>mcq</title>
+    <style>
+        #questionWrapperID{
+            position: relative;
+            width:100%;
+            height:40%;
+            overflow: hidden;
+            box-sizing:border-box;
+            border: 4px solid transparent;
+            border-bottom: 2px solid transparent;
+        }
+        #questID{
+            position:absolute;
+            width:100%;
+            height: 100%;
+            background-color:rgba(0,0,0,.6);
+            overflow:hidden;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .questMiddle{
+            left:50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+        
+        .questImgCover, .questTextCover{
+            position: relative;
+            display:block;
+            height: 100%;
+            float: left;
+            box-sizing: border-box;
+            border:4px solid transparent;
+        }
+        
+        /*.questImgClass{
+            position: relative;
+            top:50%;
+            width:100%;
+            height:100%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            box-sizing: border-box;
+            border: 2px solid white;
+        }*/
+        
+        .questTextClass{
+            position: absolute;
+            top:50%;
+            width:100%;
+            max-height:100%;
+            overflow-y: auto;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        
+        .questImgCover{
+            width: 20%;
+            background-repeat: no-repeat;
+            background-position: center; 
+            background-size: contain;
+        }
+        
+        .questTextCover{
+            width: 80%;
+        }
+        
+        .divTRClass{
+            position: relative;
+            text-align: center;
+            width:100%;
+            height: 60%;
+            box-sizing:border-box;
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+            font-size: 0px;
+            word-spacing: 0px;
+        }
+        .ansCoverClass{
+            position: relative;
+            display: none;
+            overflow: hidden;
+            text-align: left;
+            font-size: 16px;
+            color: white;
+            width: 50%;
+            height: 50%;
+            margin: 0px !important;
+            padding: 0px !important;
+            box-sizing: border-box;
+            border: 2px solid transparent;
+        }
+        
+        .ansContentDivClass{
+            position: relative;
+            background-color: rgba(0,0,0,.6);
+            width: 100%;
+            height: 100%;
+        }
+        
+        .ansImgCover, .ansTextCover{
+            position: relative;
+            display:block;
+            height: 100%;
+            float: left;
+        }
+        
+        .ansImgCover{
+            width:40%; 
+            background-repeat: no-repeat;
+            background-position: center; 
+            background-size: contain
+        }
+        
+        .ansTextCover{
+            width:60%;  
+            box-sizing: border-box;
+            border:4px solid transparent;
+        }
+        
+/*        .ansImgClass{
+            position: relative;
+            top:50%;
+            width:100%;
+            height:auto;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }*/
+        
+        .ansTextClass{
+            position: absolute;
+            top:50%;
+            width:100%;
+            max-height:100%;
+            overflow-y: auto;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        
+        .selectAnswerClass{
+            background-color: rgba(102,204,255,.6) !important;
+        }
+        
+        
+        
+    </style>
+    <script type="text/javascript">
+        //window.onresize=function(){
+            
+        //};
+        var autoSubmit;
+        var clickFromShowAnswer=false;
+        var myscore=0;
+        function resize(){   
+            /*This is for the question*/
+            var qHeight = $("#questID").height();
+            var qWidth = $("#questID").width();
+            var percent1 = qHeight/qWidth;
+            var percent2 = 1 - percent1;
+            
+            contentID = $("#questID").data("contentID");
+            $(".questImgCover").css({
+               width: qWidth * percent1
+            });
+            console.log("ContentID:"+contentID);
+            if(contentID==0)percent2=1;
+            else if(contentID==1){
+                $(".questImgCover").addClass("questMiddle");
+                $(".questImgCover").css({
+                     width: "100%"
+                });
+            }
+            $(".questTextCover").css({
+               width:  qWidth * percent2
+            });
+            
+            FontUtils.resize(".questTextClass");
+            FontUtils.resize(".ansTextClass");
+            //----------------
+            
+            
+            
+            for(var i=0;i<mcqAnswers.length;i++){
+                contentID = $($(".ansCoverClass")[i]).data("contentID");
+                //This is for the answer
+                var aHeight = $($(".ansContentDivClass")[i]).height();
+                var aWidth = $($(".ansContentDivClass")[i]).width();
+                var percent3 = aHeight/aWidth;
+                var percent4 = 1-percent3;
+                
+                console.log("answer contentID:"+contentID+" percent3:"+percent3+" percent4:"+percent4+" aWidth:"+aWidth+" aHeight:"+aHeight);
+                $($(".ansImgCover")[i]).css({
+                   width: aWidth * percent3
+                });
+                if(contentID==0)percent4=.8;
+                else if(contentID==1){
+                    $($(".ansImgCover")[i]).addClass("questMiddle");
+                    $($(".ansImgCover")[i]).css({
+                         width: "100%"
+                     });
+                }
+                console.log("percent4:"+percent4)
+                $($(".ansTextCover")[i]).css({
+                   width:aWidth*percent4
+                   
+                });
+                
+                if(contentID==0){
+                    $($(".ansTextCover")[i]).css({
+                        left:($($(".ansCoverClass")[i]).width()-aWidth*percent4)/2,
+                        textAlign:"center"
+                    });
+                }
+            }
+            //=====
+        }
+        var mcqQuestion;
+        var mcqAnswers;
+        var contentID=0;//0 for text only, 1 for image only, 2 for image and text;
+        $(document).ready(function(){
+            question = $(currentXMLList).find("Question").text();
+            autoSubmit = ($(currentXMLList).find("AutoSubmit").text()=="true")?true:false;
+            mcqAnswers = [];
+            rndNum=[];
+            currentAnswers = [];
+            minigameReward=[];
+            for(var i=0;i<$(currentXMLList).find("Answer").length;i++){
+                rndNum.push(i);
+                mcqAnswers.push($($(currentXMLList).find("Answer")[i]).text());
+            }
+            rndNum = strFuncs.arrayRandomize(rndNum);
+            
+            correctAnswers = $(currentXMLList).find("Correct").text().split(",");
+            correctAnswers.sort(Array.numeric);
+            if(question!=""){
+                contentID=0;
+                $(".questTextClass").html(question);
+            }
+            else{
+                contentID=1;
+                $(".questTextCover").hide();
+            }
+            if($(currentXMLList).find("Path").text()!="NA"&&$(currentXMLList).find("Path").text()!=""){
+                $(".questImgCover").attr("src",encodeURI($(currentXMLList).find("Path").text()));
+                $($(".questImgCover")).css({
+                    backgroundImage:"url("+encodeURI($(currentXMLList).find("Path").text())+")"
+                });
+                if(contentID==0)contentID=2;
+                else contentID=1;
+            }
+            else{
+                contentID=0;
+                $(".questImgCover").hide();
+            }
+            $("#questID").data("contentID",contentID);
+            for(var i=0;i<mcqAnswers.length;i++){
+                var display="";
+                $($(".ansCoverClass")[i]).data("ans",rndNum[i]+1);
+                
+                $($(".ansImgCover")[i]).data("parent","ans"+i+"ID");
+                
+                if(mcqAnswers[rndNum[i]]=="" || mcqAnswers[rndNum[i]]==" "){
+                    contentID=1;
+                    $($(".ansTextCover")[i]).hide();
+                }
+                else{
+                    contentID=0;   
+                }
+                
+                if($(currentXMLList).find("Path"+rndNum[i]).text()!="NA"&&$(currentXMLList).find("Path"+rndNum[i]).text()!=""){
+                    $($(".ansImgCover")[i]).attr("src",encodeURI($(currentXMLList).find("Path"+rndNum[i]).text()));
+                     $($(".ansImgCover")[i]).css({
+                        backgroundImage:"url("+encodeURI($(currentXMLList).find("Path"+rndNum[i]).text())+")",
+                     });
+                    if(contentID==0)contentID=2;
+                    else contentID=1;
+                }
+                else{
+                    contentID=0;
+                    display="none";
+                    $($(".ansImgCover")[i]).hide();
+                }
+                $($(".ansTextClass")[i]).html(mcqAnswers[rndNum[i]]);
+                
+                
+                
+                $($(".ansCoverClass")[i]).data("contentID",contentID);
+                if((mcqAnswers[rndNum[i]]=="" || mcqAnswers[rndNum[i]]==" ") && display=="none"){
+                    $($(".ansCoverClass")[i]).css({
+                        display:"none"   
+                    });
+                }
+                else {
+                    $($(".ansCoverClass")[i]).css({
+                        display:"inline-block"   
+                    });
+                }
+            }
+            
+            $(".questImgCover").on("click",function(){
+                var img =$(this).attr("src");
+                ui.previewImg(img);
+            });
+            
+            $(".ansImgCover").on("click",function(){
+                if($("#"+$(this).data("parent")).hasClass("selectAnswerClass")){
+                    var img =$(this).attr("src");
+                    ui.previewImg(img);
+                }
+            });
+            
+            resize();
+            
+            soundFile = ($(currentXMLList).find("audiofile").text() != "") ? $(currentXMLList).find("audiofile").text() : "";
+            soundDelay = ($(currentXMLList).find("audiodelay").text() != "") ? $(currentXMLList).find("audiodelay").text() : 0;
+            playSoundMedia(soundFile,soundDelay);
+        });
+        function selectAnswerCLICK(div){
+            if(correctAnswers.length>1){
+                if($(div).hasClass("selectAnswerClass")){
+                    $(div).removeClass("selectAnswerClass");
+                }
+                else{
+                    $(div).addClass("selectAnswerClass");
+                }
+            }
+            else{
+                $(".divTRClass div").removeClass("selectAnswerClass");
+                $(div).addClass("selectAnswerClass");
+            }
+            currentAnswers=[];
+            for(var i=0;i<$(".ansCoverClass").length;i++){
+                if($($(".ansCoverClass")[i]).hasClass("selectAnswerClass"))currentAnswers.push($($(".ansCoverClass")[i]).data("ans"));
+            }
+            currentAnswers.sort(Array.numeric);
+            minigameReward=[];
+            for(var i=0;i<currentAnswers.length;i++){
+                var obj={};
+                if($(currentXMLList).find("reward"+(currentAnswers[i]-1)).text()!=""){
+                    obj.type="reward";
+                    obj.id = $(currentXMLList).find("reward"+(currentAnswers[i]-1)).text()
+                }
+                else if($(currentXMLList).find("persistentreward"+(currentAnswers[i]-1)).text()!=""){
+                    obj.type="persistentreward";
+                    obj.id = $(currentXMLList).find("persistentreward"+(currentAnswers[i]-1)).text()
+                }
+                else if($(currentXMLList).find("multiplayerreward"+(currentAnswers[i]-1)).text()!=""){
+                    obj.type="multiplayerreward";
+                    obj.id = $(currentXMLList).find("multiplayerreward"+(currentAnswers[i]-1)).text()
+                }
+                if(obj.type!=undefined)minigameReward.push(obj);
+            }
+            
+             myscore=0;
+            if(parent.currentAnswers.length>parent.correctAnswers.length){
+                myscore=0;
+            }else{
+                for(var i=0;i<parent.currentAnswers.length;i++){
+                    if(parent.correctAnswers.indexOf(parent.currentAnswers[i].toString())>=0)myscore++;
+                }
+                
+            }
+            
+            if(autoSubmit & !clickFromShowAnswer){
+                if(correctAnswers.length==currentAnswers.length){
+                    $("#submitBtnID").mousedown();
+                    clearTimeout(HOto);
+                }
+            }
+        }
+        
+        function getScore(){
+            return myscore;
+        }
+        
+        function getTotal(){
+            return correctAnswers.length;
+        }
+        
+        function showAnswer(ans){
+            ans = ans.toString();
+            if(ans=="")return;
+            var _ansMade = ans.split(",");
+            $(".divTRClass div").removeClass("selectAnswerClass");
+            clickFromShowAnswer=true;
+            for(var a=0;a<$(".ansCoverClass").length;a++){
+                var ans = $($(".ansCoverClass")[a]).data("ans");
+                if(_ansMade.indexOf(ans.toString())>=0)$($(".ansCoverClass")[a]).click();
+                $($(".ansCoverClass")[a]).removeAttr("onclick");
+                $($(".ansCoverClass")[a]).css({
+                    pointerEvents:"none"
+                });
+            }
+        }
+        
+        function showCorrectAnswer(){
+            showAnswer(correctAnswers);
+            
+        }
+        
+        function getCorrectAnswer(){
+            return correctAnswers;
+        }
+        
+        function getAnswer(){
+            return currentAnswers;
+        }
+    </script>
+</head>
+<body>
+    <div id="questionWrapperID">
+        <div id='questID'>
+            <div class="questImgCover"></div><div class="questTextCover"><div class="questTextClass"></div></div>
+        </div>
+    </div>
+    <div class="divTRClass">
+        <div id="ans0ID" class="ansCoverClass" onclick="selectAnswerCLICK(this)">
+            <div class="ansContentDivClass">
+                <div class="ansImgCover"></div><div class="ansTextCover"><div class="ansTextClass"></div></div>
+            </div>
+        </div>
+        <div id="ans1ID" class="ansCoverClass" onclick="selectAnswerCLICK(this)">
+            <div class="ansContentDivClass">
+                <div class="ansImgCover"></div><div class="ansTextCover"><div class="ansTextClass"></div></div>
+            </div>
+        </div>
+        <div id="ans2ID" class="ansCoverClass" onclick="selectAnswerCLICK(this)">
+            <div class="ansContentDivClass">
+                <div class="ansImgCover"></div><div class="ansTextCover"><div class="ansTextClass"></div></div>
+            </div>
+        </div>
+        <div id="ans3ID" class="ansCoverClass" onclick="selectAnswerCLICK(this)">
+            <div class="ansContentDivClass">
+                <div class="ansImgCover"></div><div class="ansTextCover"><div class="ansTextClass"></div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

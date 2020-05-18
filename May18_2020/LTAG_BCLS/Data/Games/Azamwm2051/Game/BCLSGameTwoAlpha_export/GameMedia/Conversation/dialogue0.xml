@@ -1,0 +1,11 @@
+<xml>
+  <dialog myid="832020115127284337" id="1" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="John" portrait="image" imagepath="R2_NNI_CRO.png" audiofile="" audiotime="" gesture="19" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[AED is here! Continue CPR!]]></text>
+    <dialog myid="8332020115334471109" id="2" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="Kendall" portrait="image" imagepath="R2_BCLS_kendall.png" audiofile="" audiotime="" gesture="6" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[(Nods head)]]></text>
+      <dialog myid="833202012027959124" id="3" multiplayerreward="" persistentreward="" reward="0" who="1" link="" nick="Kendall" portrait="image" imagepath="R2_BCLS_kendall.png" audiofile="" audiotime="" gesture="8" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false" minigame="CasualtyMovementComic_mg_1.xml">
+        <text><![CDATA[I must move the casualty to a safe location.]]></text>
+      </dialog>
+    </dialog>
+  </dialog>
+</xml>
