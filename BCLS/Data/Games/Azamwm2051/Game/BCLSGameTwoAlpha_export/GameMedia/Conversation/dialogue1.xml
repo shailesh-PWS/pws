@@ -1,0 +1,5 @@
+<xml>
+  <dialog myid="832020162645701462" id="1" multiplayerreward="" persistentreward="" reward="2" who="1" link="" nick="Kendall" portrait="image" imagepath="R2_BCLS_kendall.png" audiofile="" audiotime="" gesture="8" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false" minigame="MG_1_ChestPrep_mg_2.xml">
+    <text><![CDATA[I must prepare the casualty's chest for the AED pads.]]></text>
+  </dialog>
+</xml>

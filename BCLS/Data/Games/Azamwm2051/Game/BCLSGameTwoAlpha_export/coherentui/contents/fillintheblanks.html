@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>fill in the blanks</title>
+    <style>
+        #fitbWrapperID{
+            width:100%;
+            height:100%;
+            position: relative;
+            overflow-y:auto;
+            font-size: 18px;
+            color:white;
+            font-size: 0px;
+        }
+        
+        .fitb-container-class{
+            height: 100%;
+            position: relative;
+            display: inline-block;
+            border: 5px solid transparent;
+            box-sizing: border-box;
+        }
+        
+        .fitb-content-class{
+            position: absolute;
+            top:0px;
+            width:100%;
+            height:100%;
+            background-color:rgba(0,0,0,.6);
+        }
+        
+        
+        #imgContainer{
+            width:50%;
+            border-right: 2.5px solid transparent;
+            
+        }
+        
+        #textContainer{
+            width:50%;
+            border-left: 2.5px solid transparent;
+        }
+        
+        #img-content{
+            left:0px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        #text-content{
+            right:0px; 
+            padding: 10px;
+            font-size: 18px;
+        }
+        
+        .blankFillTextclass{
+            display: inline-block;
+            border: 1px solid white;
+            min-width: 50px;
+            text-align: left;
+            color:white;
+            font-weight: bold;
+            padding:2px;
+            background-color: black;
+        }
+    </style>
+    <script type="text/javascript">
+        var caseSensitive;
+        var path;
+        var blankFiller;
+        var tempCorrect;
+        var tempCurrent;
+        var myscore=0;
+        function resize(){
+            
+        }
+        
+        $(document).ready(function(){
+            tempCorrect=[];
+            tempCurrent=[];
+			showAnsValues=[];
+            
+            correctAnswers=[true];
+            currentAnswers=[false];
+            
+            question = $(currentXMLList).find("Question").text();
+
+            caseSensitive = ($(currentXMLList).find("CaseSensitive").text()=="true")?true:false;
+            path = $(currentXMLList).find("Path").text()
+            
+            tempCorrect = $(currentXMLList).find("Correct").text().split(",");
+			showAnsValues= $(currentXMLList).find("Correct").text().split(",");
+            
+            for(var i=0;i<tempCorrect.length;i++){
+                blankFiller = "<input type='text' class='blankFillTextclass' id='blankFillTextid"+i+"'></input>";
+
+                var caseString = tempCorrect[i];
+                if(!caseSensitive)caseString = strFuncs.lowerCase(caseString);
+
+                tempCorrect[i] = strFuncs.trimDown(caseString);
+               
+                question = question.replace("[blank]",blankFiller);
+            }
+            
+            if(path!="NA"){
+                $("#img-content").css({
+                   backgroundImage:'url('+path+')'
+                });
+            }else{
+                $("#imgContainer").remove();
+                $("#textContainer").css({
+                    left:"25%"
+                });
+                
+            }
+            $("#text-content").append(question);
+            
+            for(var i=0;i<tempCorrect.length;i++){
+                $($(".blankFillTextclass")[i]).data("idx",i);
+                $(".blankFillTextclass")[i].addEventListener("input",function(){
+                    var caseString=$(this).val();
+                    if(!caseSensitive)caseString=strFuncs.lowerCase(caseString);
+                    tempCurrent[parseInt($(this).data("idx"))] = strFuncs.trimDown(caseString);
+                    blankFillKeyPress(this);
+                    
+                    currentAnswers=[true];
+                    myscore=0;
+                    for(var i=0;i<tempCorrect.length;i++){
+                        //for(var j=0;j<tempCorrect[i].split(";").length;i++){
+                            if(tempCorrect[i].split(";").indexOf(tempCurrent[i])<0){
+                                if(currentAnswers[0])currentAnswers=[false];
+                            }
+                            else{
+                                myscore++;
+                            }
+                        //}
+                    }
+                });
+            }
+            
+             $(".blankFillTextclass").keypress(function(e){
+                if(e.keyCode==13){
+                    $("#submitBtnID").mousedown();
+                }
+             });
+            
+            soundFile = ($(currentXMLList).find("audiofile").text() != "") ? $(currentXMLList).find("audiofile").text() : "";
+            soundDelay = ($(currentXMLList).find("audiodelay").text() != "") ? $(currentXMLList).find("audiodelay").text() : 0;
+            playSoundMedia(soundFile,soundDelay);
+            
+            FontUtils.resize("#text-content");
+        });
+        
+        function blankFillKeyPress(textField){
+            if(textField.value.length > textField.size - 3)textField.size+=1;
+            else{
+                if(parseInt(textField.name) < textField.value.length)textField.size-=1;
+            }
+        }
+        
+        function getScore(){
+            return myscore;
+        }
+        
+        function getTotal(){
+            return tempCorrect.length;;
+        }
+        
+        function showAnswer(ans){
+            ans = ans.toString();
+            if(ans=="")return;
+            ans = ans.split(",");
+            for(var i=0;i<ans.length;i++){
+                 $("#blankFillTextid"+i).val(ans[i].split(';')[0]);
+            }
+            //$(".blankFillTextclass").attr("contenteditable",false);
+            $(".blankFillTextclass").prop("readonly",true)
+        }
+        
+        function showCorrectAnswer(){
+            showAnswer(showAnsValues);
+        }
+        
+        function getCorrectAnswer(){
+            return correctAnswers;
+        }
+        
+        function getAnswer(){
+            return currentAnswers;
+        }
+    </script>
+</head>
+<body>
+    <div id="fitbWrapperID">
+        <!--<div id="fitbContentID"></div>-->
+        <div class='fitb-container-class' id="imgContainer"><div class='fitb-content-class' id='img-content'></div></div>
+        <div class='fitb-container-class' id="textContainer"><div class='fitb-content-class' id='text-content'></div></div>
+    </div>
+</body>
+</html>

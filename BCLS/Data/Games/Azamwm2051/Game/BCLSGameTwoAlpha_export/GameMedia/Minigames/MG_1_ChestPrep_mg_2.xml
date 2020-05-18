@@ -1,0 +1,38 @@
+<xml>
+  <class>minigame</class>
+  <name>MG_1_ChestPrep</name>
+  <description/>
+  <MGame>
+    <Type>STICKERS</Type>
+    <Question><![CDATA[Drag the images in the correct positions.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1024]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG2.jpg]]></Path>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <snap><![CDATA[true]]></snap>
+    <Answer><![CDATA[[571.2330838212407,237.68537549407114,284.81968428073816,201.03083003952568,Minigames/images/IMG3.png,true,284.81968428073816,201.03083003952568],[382.6434447491292,215.6774703557312,329.3678203512933,292.9328063241107,Minigames/images/IMG4.png,true,329.3678203512933,292.9328063241107],[70.8823834580894,87.80395256916997,215.53101608241312,212.49011857707512,Minigames/images/IMG5.png,true,215.53101608241312,212.49011857707512],[366.5545097457941,372.0094861660079,169.76862076632327,128.40474308300395,Minigames/images/IMG6.png,true,169.76862076632327,128.40474308300395]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[Oh no, that is incorrect. Please try again]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater>3</greater>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>
