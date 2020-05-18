@@ -1,0 +1,5 @@
+<xml>
+  <dialog myid="83202017352536704" id="1" multiplayerreward="" persistentreward="" reward="4" who="1" link="" nick="Kendall" portrait="image" imagepath="R2_BCLS_kendall.png" audiofile="" audiotime="" gesture="7" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false" minigame="MG_2_AEDPrep_mg_3.xml">
+    <text><![CDATA[I must prepare the AED for use!]]></text>
+  </dialog>
+</xml>
