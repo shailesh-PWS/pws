@@ -1,0 +1,30 @@
+<xml>
+  <class>minigame</class>
+  <name>FM3</name>
+  <description/>
+  <MGame>
+    <Type>HTML PAGE</Type>
+    <Question><![CDATA[]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <folderName><![CDATA[htmlPage320]]></folderName>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>false</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater>42</greater>
+    <greaterpersistent/>
+    <lesser>42</lesser>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

@@ -1,0 +1,16 @@
+<xml>
+  <assets>
+    <asset>Playware_Pack/Environments/officeSmallB</asset>
+    <asset>Playware_Pack/Environments/emergency_centre</asset>
+    <asset>Playware_Pack/Characters/R_noncustomfemale_06</asset>
+    <asset>AnimationController/R/R_FemaleAdult</asset>
+    <asset>Common/Misc/DoorPortal</asset>
+    <asset>Playware_Pack/Characters/R_noncustomfemale_05</asset>
+    <asset>Playware_Pack/Characters/R_noncustomfemale_13</asset>
+    <asset>Playware_Pack/Characters/R_noncustommale_15</asset>
+    <asset>AnimationController/R/R_MaleAdult</asset>
+    <asset>Playware_Pack/Characters/R_noncustommale_01</asset>
+    <asset>APS_Pack/Characters/R_noncustom_malechild03B</asset>
+    <asset>AnimationController/R/R_Child</asset>
+  </assets>
+</xml>

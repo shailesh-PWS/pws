@@ -1,0 +1,44 @@
+<trigger>
+  <event type="1">
+    <logic>
+      <condition>
+        <property>InventoryCondition|33|1|0</property>
+        <property>InventoryCondition|39|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|Situpdate3_mg_13.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|40|-1|1</property>
+        <property>InventoryCondition|39|1|0</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|Control Room 3_mg_14.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|41|-1|1</property>
+        <property>InventoryCondition|40|1|0</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|Phase3Planning_mg_15.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|42|1|0</property>
+        <property>InventoryCondition|43|1|0</property>
+        <property>InventoryCondition|40|-1|1</property>
+        <property>InventoryCondition|44|1|0</property>
+        <property>InventoryCondition|45|1|0</property>
+        <property>InventoryCondition|46|1|0</property>
+      </condition>
+      <action>
+        <property>AddInventoryItemAction|40|1</property>
+      </action>
+    </logic>
+  </event>
+</trigger>
