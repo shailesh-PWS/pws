@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>hidden objects</title>
+    <style>
+        #gameWrapperID{
+            color:white;
+            font-size: 18px;
+            position: relative;
+            padding: 0px;
+            margin: 0px;
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        }
+        #hiddenobjectImageID{
+            position: relative;
+            padding: 0px;
+            margin: 0px;
+            height:100%;
+            width:100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display:inline-block;
+        }
+        #hiddenobjectContentWrapperID{
+            position: absolute;
+            left: 0px;
+            top:0px;
+        }
+        .cententContent{
+            left:50% !important;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+        #hiddenObjectListWrapperID{
+            position: absolute;
+            right: 0px;
+            top:0px;
+            padding: 0px;
+            margin: 0px;
+            height:100%;
+            width:250px;
+            display:inline-block;
+            vertical-align: top;
+            background-color: rgba(0,0,0,.6);
+        }
+        #hiddenObjectTimeTextID{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #hiddenObjectListTableID{
+            position: relative;
+            top:0px;
+            left:0px;
+            width:100%;
+            height:75%;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        
+        #hiddenObjectListTableID ul{
+            list-style: none;
+            padding-left: 5px;
+            padding-top: 5px;
+        }
+        
+        #hiddenObjecTimerID{
+            color: white;
+            position: relative;
+            width:100%;
+        }
+        #hiddenObjectTimeRemainingID{
+            text-align: center;
+            padding: 5px;
+        }
+        
+        @-webkit-keyframes backgroundScroll {
+            from { 
+                -webkit-transform: rotate(0deg); 
+            
+            }
+            to { 
+                -webkit-transform: rotate(360deg); 
+            }
+        }
+
+        @keyframes backgroundScroll {
+            from { 
+                transform: rotate(0deg); 
+            
+            }
+            to { 
+                transform: rotate(360deg); 
+            }
+        }
+        @-moz-keyframes backgroundScroll {
+            from { 
+                -moz-transform: rotate(0deg); 
+            
+            }
+            to { 
+                -moz-transform: rotate(360deg); 
+            }
+        }
+        
+        @-ms-keyframes backgroundScroll {
+            from { 
+                -ms-transform: rotate(0deg); 
+            
+            }
+            to { 
+                -ms-transform: rotate(360deg); 
+            }
+        }
+        
+        @-o-keyframes backgroundScroll {
+            from { 
+                -o-transform: rotate(360deg); 
+            
+            }
+            to { 
+                -o-transform: rotate(360deg); 
+            }
+        }
+        
+        .spotClassShowAnswer{
+            position: absolute;
+            border:5px solid #DD0E37;
+            box-sizing: border-box;
+            -webkit-box-sizing:border-box;
+        }
+        
+        .submit-trigger-class{
+            position: absolute;
+        }
+        
+        .hotspot{
+            position: absolute;
+            border-radius: 10px;
+            background-color: rgba(255,255,255,0);
+            box-sizing: border-box;
+            -webkit-box-sizing:border-box;
+        }
+    </style>
+    <script type="text/javascript">
+        var question;
+        var path;
+        var showList;
+        var tmpAns;
+        var autoSubmit;
+        var showClicked;
+        var challengeType;
+        var challengeValue;
+        var deductValue;
+        var HOto;
+        var clickedBool;
+        var spotsDiv;
+        var multiplier=1;
+        var answershown=false;
+        var givenImgHt;
+        var givenImgWdth;
+        var resizeOption;
+        var myscore=0;
+        function resize(){
+            initHiddenObjects();
+        }
+        $(document).ready(function(){
+            
+            correctAnswers=[];
+            currentAnswers=[];
+            question = $(currentXMLList).find("Question").text();
+            
+            givenImgHt = $($(currentXMLList).find("height")[0]).text();
+            givenImgWdth = $($(currentXMLList).find("width")[0]).text();
+            resizeOption = $(currentXMLList).find("resize").text();
+            
+            path = $(currentXMLList).find("Path").text();
+            showList = ($(currentXMLList).find("ShowList").text()=="true")?true:false;
+            autoSubmit = ($(currentXMLList).find("AutoSubmit").text()=="true")?true:false;
+            showClicked = ($(currentXMLList).find("ShowClicked").text()=="true")?true:false;
+            challengeType = $(currentXMLList).find("ChallengeType").text();
+            challengeValue = $(currentXMLList).find("ChallengeValue").text();
+            deductValue = $(currentXMLList).find("DeductValue").text();
+            
+            minigameControl.showInstruction(question);
+            
+            $("#hiddenObjectTimeTextID").text(challengeValue);
+            
+            if(challengeType=="time"){
+                $("#hiddenObjectTimeRemainingID").text("Time Remaining (sec)");
+                HOto = setTimeout(starHOTimer,1000);
+            }
+            else if(challengeType=="attempt"){
+                $("#hiddenObjectTimeRemainingID").text("Attempt(s) Remaining");
+            }
+            else if(challengeType=="wrongattempt"){
+                $("#hiddenObjectTimeRemainingID").text("Wrong Attempt(s) Remaining)");
+            }
+            else{
+                $("#hiddenObjecTimerID").hide();
+                $("#hiddenObjectListTableID").css({
+                    height:"100%" 
+                });
+            }
+           
+            var ansStr = "["+$(currentXMLList).find("Answer").text()+"]";
+            ansStr = ansStr.replace("[[","");
+            ansStr = ansStr.replace("]]","");
+            tmpAns = ansStr.split("],[");
+            $("#hiddenObjectListTableID").append("<ul></ul>");
+            for(var i=0;i<tmpAns.length;i++){
+                var div=$("<li class='hiddenobjlistclass'>"+tmpAns[i].split(",")[4]+"</li>");
+                div.data("idx",i);
+                var correct = true;
+                if(tmpAns[i].split(",")[5]!=undefined)correct=(tmpAns[i].split(",")[5].toString()=="true")?true:false;
+                $("#hiddenObjectListTableID ul").append(div);
+                $(div).data("xPos",$(div).position().left);
+                $(div).data("yPos",$(div).position().top);
+                $(div).data("x",tmpAns[i].split(",")[0]);
+                $(div).data("y",tmpAns[i].split(",")[1]);
+                $(div).data("w",tmpAns[i].split(",")[2]);
+                $(div).data("h",tmpAns[i].split(",")[3]);
+                div.data("correct",correct);
+                if(!correct)div.hide();
+                if(correct){
+                    correctAnswers.push(true);
+                    
+                }
+                else{
+                    correctAnswers.push(false);
+                }
+                currentAnswers.push(false);
+            }
+            if(!showList){
+                $("#hiddenObjectListTableID").hide();
+                if(challengeType=="none"){
+                    $("#hiddenobjectContentWrapperID").addClass("cententContent");
+                }
+            }
+            
+            if(challengeType=="none"&&!showList){
+                $("#hiddenObjectListWrapperID").hide();
+            }
+            $("#hiddenobjectImageID").css({
+               backgroundImage:"url("+encodeURI(path)+")"
+            });
+            
+            initHiddenObjects();
+            
+            var spotClicked=false;
+            clickedBool=false;
+            
+            $("#hiddenobjectImageID").on("click",function(e){
+
+                console.log("====>mouseposition Left::" + (e.clientX-$(this).offset().left-(60*multiplier)/2));
+                console.log("====>mouseposition Top::" + (e.clientY-$(this).offset().top-(60*multiplier)/2));
+                var spot = $("<div class='hotspot items'></div>");
+                spot.css({
+                    position:"absolute",
+                    left:e.clientX -$(this).offset().left-(60*multiplier)/2,
+                    top:e.clientY -$(this).offset().top-(60*multiplier)/2,
+                    width:60*multiplier,
+                    height:60*multiplier
+                });
+                spot.css({
+                    backgroundColor:"rgba(255,0,0,0)",
+                    pointerEvents:"none"
+                });
+                $("#hiddenobjectImageID").append(spot);
+                debugger;
+                spot.data("selected",false);
+                spot.stop().animate({
+                    backgroundColor:"rgba(255,0,0,.5)"
+                },250,function(){
+                    spot.stop().animate({
+                        backgroundColor:"rgba(255,0,0,0)"
+                    },250)
+                })
+            });
+            
+            soundFile = ($(currentXMLList).find("audiofile").text() != "") ? $(currentXMLList).find("audiofile").text() : "";
+            soundDelay = ($(currentXMLList).find("audiodelay").text() != "") ? $(currentXMLList).find("audiodelay").text() : 0;
+            playSoundMedia(soundFile,soundDelay);
+        });
+        
+        function getNoOfClicks(){
+            return $(".hotspot").length;
+        }
+        function initHiddenObjects(){
+            var contentWidth = $("#gameWrapperID").width();
+            var contentHeight = $("#gameWrapperID").height();
+            var imgWidth;
+            var imgHeight;
+            
+            
+           
+            if(challengeType=="none"&& !showList){
+                $("#hiddenobjectContentWrapperID").css({
+                    width:contentWidth,
+                    height:contentHeight
+                 });
+            }else{
+                
+                $("#hiddenobjectContentWrapperID").css({
+                    width:7*contentWidth/10,
+                    height:contentHeight
+                 });
+                 $("#hiddenObjectListWrapperID").css({
+                    width:3*contentWidth/10,
+                    height:contentHeight,
+                    right:0
+                 });
+            }
+            
+            imgWidth = $("#hiddenobjectContentWrapperID").width();
+            imgHeight = $("#hiddenobjectContentWrapperID").height();
+            
+            
+            scaleValues =  strFuncs.getImgScaleWidthHeight(givenImgWdth,givenImgHt,imgWidth,imgHeight,resizeOption);
+            multiplier= scaleValues.multiplier;
+            
+            
+            $("#hiddenobjectImageID").css({
+                width:scaleValues.width,
+                height:scaleValues.height,
+                left:($("#hiddenobjectContentWrapperID").width()-scaleValues.width)/2,
+                top:($("#hiddenobjectContentWrapperID").height()-scaleValues.height)/2,
+            });
+            
+            for(var i=0;i<tmpAns.length;i++){
+                var spot = $("<div class='hotspot'></div>");
+                spot.css({
+                    position:"absolute",
+                    top:tmpAns[i].split(",")[1]*multiplier,
+                    left:tmpAns[i].split(",")[0]*multiplier,
+                    width:tmpAns[i].split(",")[2]*multiplier,
+                    height:tmpAns[i].split(",")[3]*multiplier
+                });
+                $("#hiddenobjectImageID").append(spot);
+                spot.data("selected",false);
+                spot.data("index",i);
+                var correct=true;
+                if(tmpAns[i].split(",")[5]!=undefined)correct = (tmpAns[i].split(",")[5].toString()=="true")?true:false;
+                spot.data("correct",correct);
+                spot.click(function(e){
+                    e.stopPropagation();
+                    if($(this).data("selected")==true){
+                        $(this).removeClass("items");
+                        $(this).data("selected",false);
+                        $(this).css("border","none");
+                        $(this).stop().animate({
+                            backgroundColor:"rgba(255,255,255,0)"
+                        });
+                    }
+                    else{
+                        $(this).addClass("items");
+                        $(this).data("selected",true);
+                        $(this).css("border","3px solid rgba(0,0,255,.5)");
+                        $(this).stop().animate({
+                            backgroundColor:"rgba(255,255,255,.5)"
+                        },250,function(){
+                            $(this).stop().animate({
+                                backgroundColor:"rgba(255,255,255,.25)"
+                            },250);
+                        });
+                    }
+                    hiddenObjcheckAnswers();
+                })
+            }
+            
+            if($(currentXMLList).find("triggers").text()!=""){
+                $("#submitBtnID").css("visibility","hidden");
+                for(var i=0;i<$(currentXMLList).find("triggers").length;i++){
+                    var div = $("<div class='submit-trigger-class'></div>");
+                    div.css({
+                        left:$($(currentXMLList).find("triggers")[i]).find("x").text(),
+                        top:$($(currentXMLList).find("triggers")[i]).find("y").text(),
+                        width:$($(currentXMLList).find("triggers")[i]).find("width").text(),
+                        height:$($(currentXMLList).find("triggers")[i]).find("height").text()
+                    });
+                    div.data("x",$($(currentXMLList).find("triggers")[i]).find("x").text());
+                    div.data("y",$($(currentXMLList).find("triggers")[i]).find("y").text());
+                    div.data("w",$($(currentXMLList).find("triggers")[i]).find("width").text());
+                    div.data("h",$($(currentXMLList).find("triggers")[i]).find("height").text());
+                    div.click(function(e){
+                        e.stopPropagation();
+                        $("#submitBtnID").mousedown();
+                        clearTimeout(HOto);
+                    });
+                    $("#hiddenobjectImageID").append(div);
+                }
+            }
+            $(".submit-trigger-class").each(function(){
+                $(this).css({
+                    width:parseFloat($(this).data("w"))*multiplier,
+                    height:parseFloat($(this).data("h"))*multiplier,
+                    left:parseFloat($(this).data("x"))*multiplier,
+                    top:parseFloat($(this).data("y"))*multiplier
+                });
+            });
+            
+            FontUtils.resize("#gameWrapperID");
+            FontUtils.resize("#hiddenObjectTimeTextID");
+        }
+        
+        function starHOTimer(){
+            if(challengeValue<=0){
+                challengeValue=0;
+                $("#hiddenobjectImageID").off("click");
+            }
+            else challengeValue--;
+            $("#hiddenObjectTimeTextID").text(challengeValue);
+            HOto = setTimeout(starHOTimer,1000);
+        }
+        
+        var answerPoint="";
+        var attemptCorrect;
+        function hiddenObjcheckAnswers(){
+            answerPoint="";
+            
+            myscore=0;
+            attemptCorrect=false;
+            
+            if(challengeValue<=0){
+                challengeValue=0;
+            }
+            else {
+                if(challengeType=="time"&&!attemptCorrect)challengeValue-=deductValue;
+                else if(challengeType=="wrongattempt"&&!attemptCorrect){
+                    challengeValue--;
+                }
+                else if(challengeType=="attempt") challengeValue--;
+            }
+            $("#timerWrapperID div").text(challengeValue);
+
+            for(var i=0;i<currentAnswers.length;i++){
+                currentAnswers[i]=false;
+            }
+            var answered=0;
+            for(var i=0;i<$(".hotspot").length;i++){
+                if($($(".hotspot")[i]).data("selected")==true){
+                    if($($(".hotspot")[i]).data("correct")==true)answered++;
+                    currentAnswers[$($(".hotspot")[i]).data("index")]=true;
+                }
+                else if($($(".hotspot")[i]).data("selected")==false){
+                    if($($(".hotspot")[i]).data("correct")==false)answered++;
+                    currentAnswers[$($(".hotspot")[i]).data("index")]=false;
+                }
+                if($($(".hotspot")[i]).data("selected")==true){
+                    if(answerPoint=="")answerPoint+=$($(".hotspot")[i]).position().left+","+$($(".hotspot")[i]).position().top;
+                    else answerPoint+="_"+$($(".hotspot")[i]).position().left+","+$($(".hotspot")[i]).position().top;
+                }
+            }
+            myscore = answered;
+
+            for(var i=0;i<$(".hiddenobjlistclass").length;i++){
+                if(currentAnswers[i])$($(".hiddenobjlistclass")[i]).css("text-decoration","line-through");
+                else $($(".hiddenobjlistclass")[i]).css("text-decoration","none");
+            }
+
+            if(autoSubmit){
+                if($(".items").length>=0 && tmpAns.length>=0){
+                    $("#submitBtnID").mousedown();
+                    clearTimeout(HOto);
+                }
+            }
+        }
+        
+        function getScore(){
+            return myscore;
+        }
+        
+        function getTotal(){
+            return correctAnswers.length;
+        }
+        
+        function showAnswer(ans){
+            if(answershown)return;
+            answershown=true;
+            ans = ans.toString();
+            if(ans=="")return;
+            $("#hiddenobjectImageID").off("click");
+            $(".hotspot").remove();
+            var _ans = ans.split("_");
+            for(var i=0;i<_ans.length;i++){
+                    spotsDiv = $("<div></div>");
+                    spotsDiv.addClass("spotClassShowAnswer");
+                    spotsDiv.css({
+                        left:Number(_ans[i].split(",")[0])*multiplier,
+                        top:Number(_ans[i].split(",")[1])*multiplier,
+                        width:Number(_ans[i].split(",")[2])*multiplier,
+                        height:Number(_ans[i].split(",")[3])*multiplier
+                    });
+                    
+                    $("#hiddenobjectImageID").append(spotsDiv);
+                    spotsDiv.data("x",spotsDiv.position().left);
+                    spotsDiv.data("y",spotsDiv.position().top);
+                    spotsDiv.data("w",spotsDiv.width());
+                    spotsDiv.data("h",spotsDiv.height());
+                    spotsDiv.data("pw",$("#hiddenobjectImageID").width());
+            }	
+            evaluateHddenObjectAns();
+        }
+        
+        function showCorrectAnswer(){
+            answerPoint="";
+            for(var i=0;i<$(".hiddenobjlistclass").length;i++){
+                    var x2= parseFloat($($(".hiddenobjlistclass")[i]).data("x"));
+                    var y2= parseFloat($($(".hiddenobjlistclass")[i]).data("y"));
+                    var w2 = parseFloat($($(".hiddenobjlistclass")[i]).data("w"));
+                    var h2 = parseFloat($($(".hiddenobjlistclass")[i]).data("h"));
+
+                    var correct=true;
+                    if($($(".hiddenobjlistclass")[i]).data("correct")){
+                        if(answerPoint=="")answerPoint+=x2+","+y2+","+w2+","+h2;
+                        else answerPoint+="_"+x2+","+y2+","+w2+","+h2;
+                    }
+            }
+            showAnswer(answerPoint);
+        }
+        
+        function getCorrectAnswer(){
+            return correctAnswers;
+        }
+        
+        function getAnswer(){
+            return answerPoint;
+        }
+    </script>
+</head>
+<body>
+    <div id="gameWrapperID">
+        <div id="hiddenobjectContentWrapperID">
+            <div id="hiddenobjectImageID"></div>
+        </div>
+        <div id="hiddenObjectListWrapperID">
+            <div id="hiddenObjectListTableID">
+            </div>
+            <div id="hiddenObjecTimerID">
+                <div id="hiddenObjectTimeRemainingID">Time Remaining (sec)</div>
+                <div id="hiddenObjectTimeTextID">100</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

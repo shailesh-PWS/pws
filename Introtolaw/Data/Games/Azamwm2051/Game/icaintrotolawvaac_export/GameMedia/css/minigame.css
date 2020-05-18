@@ -1,0 +1,395 @@
+/*==================Header============================*/
+#headerBarID{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 5%;
+    background-color:rgb(0,0,0);
+    color:white;
+    font-size: 16px;
+}
+#headerTimerIconID{
+    position: absolute;
+    width:38px;
+    height:38px;
+    color:black;
+    left:50%;
+    margin-left: -19px;
+    top:0px;
+    border-radius: 19px;
+    background-image: url(../images/minigames/info.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#headerScoreID,#headerTotalID{
+    position: absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#instructionIcon{
+    display: none;
+    width:auto;
+    height:80%;
+    position: absolute;
+    top:10%;
+    left:2px;
+}
+
+#headerScoreID{
+    text-align: left;
+    display: none;
+}
+
+#headerTotalID{
+    width:auto;
+}
+/*============Main=============*/
+body{
+    overflow: hidden;
+}
+body,html,#minigameWrapper,#mainWrapperTable,#slideShowWrapper{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+    height:100%;
+    font-family: arial;
+    font-size: 12px;
+    border-collapse: collapse;
+    
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+
+    /* No support for these yet, use at own risk */
+    -o-user-select: none;
+    user-select: none;          
+}
+#slideShowWrapper{
+    top:0px;
+    left:0px;
+}
+#minigameWrapper{
+    display:none;
+    background-color: transparent;
+}
+
+#contentWrapper{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#introMainWrapper{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+.mainWrapperTDClass{
+    position: relative;
+}
+
+#feedbackParentID,#contentWrapper{
+    position: absolute;
+    top:5%;
+    width:100%;
+    overflow: hidden;
+    height: 85%;
+}
+#introIframe{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    padding: 0px;
+    margin: 0px;
+}
+#feedbackParentID{
+    position: absolute;
+    top:5%;
+    left:0px;
+    background-color: rgba(0,0,0,.6);
+    background-image: url(../images/minigames/mgs_correct.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+
+#feedbackTextID{
+    width:100%;
+    height:auto;
+    overflow-y:auto;
+    background-color: white;
+    color:white;
+    min-height: 50px;
+}
+#feedbackTextID img{
+    max-width: 100px;
+    max-height: 100px;
+    height:100%;
+    width:100%;
+    padding: 10px;
+    padding-top: 0px;
+}
+#feedbackTextID h2:first-child{
+    width:100%;
+    background-color: darkslategrey;
+    margin-top: 0px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    text-indent: 5px;
+}
+#feedbackTextID p{
+    color: #333333;
+    padding:5px;
+}
+#footerWrapper{
+    position:absolute;
+    bottom: 0px;
+    width:100%;
+    height:10%;
+    background-color: rgb(0,0,0);
+    overflow: hidden;
+}
+
+#submitBtnID,#showAnswerBtnID,#retryBtnID{
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+    min-width:100px;
+    cursor:pointer;
+    color:white;
+    background-color: transparent;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+#submitBtnID{
+    position: absolute;
+    right:0px;
+}
+#showAnswerBtnID{
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+#retryBtnID{
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#instructionWrapper{
+    position: absolute;
+    top:5%;
+    left:0px;
+    background-color: rgba(0,0,0,.6);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 10;
+}
+
+#instructionText,#feedbackText,#feedbackPercent{
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+}
+
+#feedbackPercent{
+    position: absolute;
+    bottom: 52%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    color:black;
+    width:100%;
+    vertical-align: bottom;
+    padding:5px;
+    padding-left: 5%;
+    box-sizing: padding-box;
+    overflow: auto;
+}
+#instructionTextWithImg{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    background-color: rgba(0,0,0,.6);
+    font-size: 16px;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    padding-top:5px;
+    padding-bottom: 5px;
+    max-height: 25%;
+    overflow: auto;
+    
+}
+
+#instructionText,#feedbackText{
+    position: relative;
+    top: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    color:white;
+    width:90%;
+    height:18%;
+    padding:5px;
+    box-sizing: padding-box;
+    overflow: auto;
+}
+#instructionTap,#feedbackTapMsg{
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    margin:auto;
+    bottom:1%;
+    background-color: rgba(0,0,0,0.6);
+    padding-bottom: 5%;
+    width: 100%;
+}
+/*==========End of Main==========*/
+
+/*========Pop-up Message=========*/
+#popupMessageFormID{
+    position: absolute;
+    left:50%;
+    margin-left:-45%;
+    top:5%;
+    width:90%;
+    height:90%;
+    background-color: #ffffcc;
+    color:#003333;
+    box-shadow: 3px 3px 3px #555555;
+}
+#pmf1{
+    width:100%;
+    height:85%;
+    overflow: auto;
+}
+#pmf2{
+    position: relative;
+    width:100%;
+    height:15%;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #009999;
+}
+#pmf21{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+/*======End Of Pop-up Message====*/
+
+
+@media only screen
+and (max-device-width:480px){
+    #submitBtnID,#showAnswerBtnID,#retryBtnID{
+        font-size:1em;
+    }
+}
+
+@media only screen
+and (max-device-width:640px){
+    
+}
+
+@media only screen
+and (max-device-width:800px){
+    
+}
+@media only screen
+and (max-device-width:1024px){
+    
+}
+
+@media only screen
+and (max-device-width:1366px){
+    
+}
+
+@media only screen
+and (max-device-width:1366px){
+    
+}
+
+/*====Image Preview======*/
+#imgPreviewID{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0,0,0,.6);
+}
+
+#imgPreviewID img{
+    position: absolute;
+    width:100%;
+    height:auto;
+}
+
+#imgPreviewID div{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    font-size: 14px;
+    padding: 10px;
+    background-color: rgba(255,255,255,.6);
+    text-align: center;
+}
+
+/*==============Minigame Menu========================*/
+#minigameMenuWrapper{
+    position: absolute;
+    width:640px;
+    height:480px;
+    background-color: white;
+    display:none;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#closeMenuBtnImg,#closeBtnImg{
+    width:21px;
+    height:21px;
+    position: absolute;
+    top:2px;
+    right:2px;
+}
+.markClass{
+    position: absolute;
+    pointer-events: none;
+}
+#closeFrame{
+    position: absolute;
+    height: 7%;
+    width: auto;
+    top: 2px;
+    right:2px;
+    padding: 0px;
+    margin: 0px;
+}
