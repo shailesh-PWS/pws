@@ -1,0 +1,17 @@
+<xml>
+  <dialog myid="832017135053287366" id="1" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick=" " portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="shoulder" cameraPosition="left" cameraRange="mid" cameraPanState="snap" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="3" usePreviousBG="false" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[What should you do next?]]></text>
+    <dialog myid="8312017135143591642" id="2" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="" portrait="image" imagepath="femaleboot_expressionless.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="true" bgTransparent="true" panelColor="rgba(102,51,153,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Hand customer the product]]></text>
+      <dialog myid="8312017135232569225" id="3" multiplayerreward="" persistentreward="" reward="29" who="0" link="" nick="" portrait="image" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[You hand the product to customer.]]></text>
+      </dialog>
+    </dialog>
+    <dialog myid="831201713514434660" id="4" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Your Custom Name" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="true" bgTransparent="true" panelColor="rgba(102,51,153,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Direct customer to seat]]></text>
+      <dialog myid="8312017135233647150" id="5" multiplayerreward="" persistentreward="" reward="30" who="0" link="" nick="" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[You direct the customer to a seat.]]></text>
+      </dialog>
+    </dialog>
+  </dialog>
+</xml>

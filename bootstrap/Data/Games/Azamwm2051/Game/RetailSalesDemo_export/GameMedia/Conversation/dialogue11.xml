@@ -1,0 +1,5 @@
+<xml>
+  <dialog myid="832017142132979810" id="1" multiplayerreward="" persistentreward="" reward="42" who="2" link="" nick="" portrait="image" imagepath="female24_happy.png" audiofile="sound2632017153349409687.ogg" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="3" cameraFadeDuration="2" cameraFadeColor="0,0,0,1" shotType="shoulder" cameraPosition="right" cameraRange="default" cameraPanState="snap" cameraHeight="birdeye" cameraOffsetX="0.5" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="0.5" usePreviousBG="false" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[Thanks so much! I will take the envelope clutch.]]></text>
+  </dialog>
+</xml>

@@ -1,0 +1,5 @@
+<xml>
+  <dialog myid="3120171291575524" id="1" multiplayerreward="" persistentreward="" reward="106" who="1" link="" nick=" " portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="twoshot" cameraPosition="right" cameraRange="default" cameraPanState="snap" cameraHeight="birdeye" cameraOffsetX="0" cameraOffsetY="-0.2" cameraOffsetZ="0" cameraDuration="1" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[Go to the storeroom.]]></text>
+  </dialog>
+</xml>

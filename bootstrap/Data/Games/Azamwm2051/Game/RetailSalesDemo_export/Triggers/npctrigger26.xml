@@ -1,0 +1,57 @@
+<trigger>
+  <event type="1">
+    <logic>
+      <condition>
+        <property>InventoryCondition|4|1|0</property>
+      </condition>
+      <action>
+        <property>RemoveInventoryItemAction|4|1</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|95|-1|1</property>
+        <property>InventoryCondition|96|-1|1</property>
+        <property>InventoryCondition|97|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|dialog|dialogue20.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|98|-1|1</property>
+        <property>InventoryCondition|95|1|0</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|c3g12_mg_19.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|98|-1|1</property>
+        <property>InventoryCondition|96|1|0</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|c3g12_mg_19.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|98|-1|1</property>
+        <property>InventoryCondition|97|1|0</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|c3g12_mg_19.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|57|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|c3g13 comic_mg_20.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

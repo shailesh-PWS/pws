@@ -1,0 +1,10 @@
+<trigger>
+  <event type="1">
+    <logic>
+      <condition/>
+      <action>
+        <property>TeleportAction|p80</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

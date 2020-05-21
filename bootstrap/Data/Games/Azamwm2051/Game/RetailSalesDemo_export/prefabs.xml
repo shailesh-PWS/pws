@@ -1,0 +1,17 @@
+<xml>
+  <assets>
+    <asset>Bootstrap_Pack/Environments/bootstrap_Mall</asset>
+    <asset>Playware_Pack/Characters/R_noncustom_bootstrapF</asset>
+    <asset>AnimationController/R/R_FemaleAdult</asset>
+    <asset>Common/Misc/DoorPortal</asset>
+    <asset>Common/Misc/Icon</asset>
+    <asset>Playware_Pack/Characters/R_noncustomfemale_12</asset>
+    <asset>Playware_Pack/Characters/R_noncustomfemale_01</asset>
+    <asset>Playware_Pack/Characters/R_noncustomfemale_24</asset>
+    <asset>Playware_Pack/Characters/R_noncustomfemale_03</asset>
+    <asset>Playware_Pack/Characters/R_noncustomfemale_05</asset>
+    <asset>Playware_Pack/Characters/R_noncustom_bootstrapM</asset>
+    <asset>AnimationController/R/R_MaleAdult</asset>
+    <asset>Bootstrap_Pack/Items/baby_pram</asset>
+  </assets>
+</xml>

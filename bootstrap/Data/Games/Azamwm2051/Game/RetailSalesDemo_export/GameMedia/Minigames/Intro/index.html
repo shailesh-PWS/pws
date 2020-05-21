@@ -1,0 +1,289 @@
+<html>
+<head>
+    <style>
+        body,#thisIntroContainer{
+            position: relative;
+            width:100%;
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        
+        #thisIntroContainer{
+            background-color: black;   
+        }
+        #introWrapper{
+            position: absolute;
+            width:100%;
+            height: 100%;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        #closeIntoBtn{
+            position: absolute;
+            height: 50px !important;
+            width: 200px !important;
+            top: 45%;
+            right: 50%;
+            transform: translateX(50%);
+            -webkit-transform: translateX(50%);
+            padding: 0px;
+            margin: 0px;
+            background-image: url(assets/plain_button01.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display: none;
+        }
+
+        #closeIntoBtn span{
+            position: absolute;
+            font-size: 20px;
+            font-family:sans-serif;
+            left: 50%;
+            line-height: 50px;
+            transform: translateX(50%);
+            -webkit-transform: translateX(-50%);   
+        }
+		
+		#ShowMessage{
+            bottom:0;
+            height:40px;
+            width:100%;         
+            position:absolute;
+            background-color: rgba(0,0,0,.6);
+            color:white;
+            text-align:center;
+        }
+        
+        .msgTextClass {
+            position: relative;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+		
+        #warning-page{
+            position: absolute;
+            left:0px;
+            top:0px;
+            width:100%;
+            height: 100%;
+            background-color: rgba(255,255,255,.6);
+            display: none;
+        }
+        
+        #warning-panel{
+            position: absolute;
+            left:50%;
+            margin-left: -150px;
+            top:50%;
+            margin-top: -125px;
+            width:300px;
+            height: 250px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+        }
+        #warning-panel p{
+            margin: 20px;  
+            text-align: center;
+        }
+        
+        #warning-panel button{
+            width:100px;
+            height: 40px;
+            position: absolute;
+            bottom: 20px;
+        }
+        
+        #yes-btn{
+            left:20px;   
+        }
+        
+        #no-btn{
+            right:20px;   
+        }
+    </style>
+    <script type="text/javascript" src="assets/jquery-min.js"></script>
+    <script type="text/javascript">
+        jQuery.noConflict();
+        var introImages=["howtoplay1.jpg","howtoplay2.jpg","howtoplay3.jpg"];
+        var introSounds=["","",""];
+        var speedIntro=250;//in milliseconds
+        var IsMobile;
+        var gameId=1;
+        jQuery(document).ready(function(){
+            IsMobile=false;
+            if(window.self !== window.top){IsMobile=true;}
+			 function showMessage(){
+					jQuery("#ShowMessage").show();
+					jQuery("#ShowMessage").html("<div class='msgTextClass'>Tap to continue</div>");
+					jQuery("#ShowMessage").delay(3000).fadeOut();
+			}
+            showMessage();
+             jQuery("#introWrapper").css({
+                backgroundImage:"url(assets/"+introImages[0]+")"
+             });
+             jQuery("#introWrapper").click(function(){
+                 if(!IsMobile){
+                    SoundPlayer.stopDialogAudio();
+                    playNext(); 
+                 }
+                 else{
+                      if(!doneplaying)return;
+                     parent.DialogManager.StopDialog(playNext);
+                 }
+             });
+            jQuery("#closeIntoBtn").click(function(){
+                jQuery("#thisIntroContainer").fadeOut(speedIntro,function(){ 
+                    if(!IsMobile)closeIntro();
+                    else parent.closeIntro();
+                });
+            });
+            
+            jQuery("#no-btn").click(function(){
+                if(!IsMobile){
+                    exit = true;
+                    ContentEvents.CloseWindow();
+                }
+                else{
+                    parent.exit = true;
+                    parent.ContentEvents.CloseWindow();
+                }
+            });
+            
+            jQuery("#yes-btn").click(function(){
+                resetItems();
+            });
+            
+            if(!IsMobile){
+                ItemManager.getPersistentItems(getItems);
+            }
+            else{
+                parent.ItemManager.getPersistentItems(getItems);
+            }
+        });
+        
+        function resetItems(){
+            if(itemToResetArray.length>0){
+                if(!IsMobile){
+                    ItemManager.resetPersistentReward(itemToResetArray[0].ItemId);
+                    itemToResetArray.shift();
+                    resetItems();
+                }
+                else{
+                    parent.ItemManager.resetPersistentReward(itemToResetArray[0].ItemId,gotoNextItem);  
+                }
+            }
+            else{
+                
+                if(!IsMobile){
+                    ItemManager.SaveUserData();
+                    jQuery("#warning-page").hide();
+                    jQuery("#closeFrame").show();
+                    if(introSounds.length>0)playSound(introSounds[0]);
+                }
+                else {
+                    parent.ItemManager.SaveUserData(proceedToGame);
+                }
+            }
+        }
+        
+        function proceedToGame(){
+            jQuery("#warning-page").hide();
+            parent.$("#closeFrame").show();
+            if(introSounds.length>0)playSound(introSounds[0]);
+        }
+        
+        function gotoNextItem(){
+            itemToResetArray.shift();
+            resetItems();
+        }
+        
+        function getGameId(value)
+        {
+            var index = parseInt(value);
+            if(!index)index = 1;
+            return index;
+        }
+        
+        var itemToResetArray;
+        var resetAvailable;
+        function getItems(itemObj){
+            resetAvailable=false;
+            itemToResetArray=[];
+            for(var i=0;i<itemObj.length;i++){
+                if(parseInt(itemObj[i].Qty)>0){
+                    if(getGameId(itemObj[i].ItemId)>=gameId)itemToResetArray.push(itemObj[i]);
+                }
+            }
+            if(itemToResetArray.length>0)resetAvailable=true;
+            
+            if(resetAvailable){
+                if(!IsMobile)jQuery("#closeFrame").hide();
+                else parent.$("#closeFrame").hide();
+                jQuery("#warning-page").show();
+            }
+            else{
+                if(introSounds.length>0)playSound(introSounds[0]);   
+            }
+        }
+        //Window.parent==null is for CoherentUI, window.parent!=null is for uniwebview
+        function playNext(){
+            if(introImages.length>=2){
+                 introImages.shift();
+                 introSounds.shift();
+                 jQuery("#introWrapper").fadeOut(speedIntro,function(){
+                     jQuery("#introWrapper").css({
+                        backgroundImage:"url(assets/"+introImages[0]+")"
+                     });
+                     jQuery("#introWrapper").fadeIn(speedIntro);   
+                     if(introSounds.length>0)playSound(introSounds[0]);
+                 });  
+             }
+             else {
+                 jQuery("#introWrapper").fadeOut(speedIntro);
+                 jQuery("#closeIntoBtn").fadeIn(speedIntro);
+             }   
+        }
+        var doneplaying=false;
+        function playSound(audio){
+            if(!IsMobile){
+                
+                SoundPlayer.PlaySoundFile("dialog",audio);
+            }
+            else {
+                doneplaying=false;
+                if(audio!="" && audio!=null)parent.DialogManager.PlayDialog(audio,DonePlayingAudio);
+                else DonePlayingAudio();
+            }
+        }
+
+        function DonePlayingAudio(){
+            doneplaying=true;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="thisIntroContainer">
+        <div id="introWrapper"></div>
+        <div id="closeIntoBtn"><span>Play Game</span></div>
+		<div id="ShowMessage"></div>
+    </div>
+    <div id="warning-page">
+        <div id="warning-panel">
+            <p>You are replaying this game. This will reset your scores in the current and the following games. <br/><br/>Do you want to continue?</p>
+            <button id="yes-btn">Yes</button>
+            <button id="no-btn">No</button>
+        </div>
+    </div>
+</body>
+    
+</html>

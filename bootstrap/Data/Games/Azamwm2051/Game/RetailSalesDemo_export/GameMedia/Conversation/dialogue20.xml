@@ -1,0 +1,23 @@
+<xml>
+  <dialog myid="832017193023395601" id="1" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick=" " portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="shoulder" cameraPosition="left" cameraRange="default" cameraPanState="snap" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="1" usePreviousBG="false" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[What should you do?]]></text>
+    <dialog myid="8312017193112389540" id="2" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="" portrait="image" imagepath="femaleboot_expressionless.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="shoulder" cameraPosition="left" cameraRange="default" cameraPanState="snap" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="1" usePreviousBG="true" bgTransparent="true" panelColor="rgba(102,51,153,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Let customer check product]]></text>
+      <dialog myid="831201719322507683" id="3" multiplayerreward="" persistentreward="" reward="95" who="0" link="" nick="" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[You let customer check the product.]]></text>
+      </dialog>
+    </dialog>
+    <dialog myid="8312017193112804485" id="4" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Your Custom Name" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="true" bgTransparent="true" panelColor="rgba(102,51,153,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Check product with customer]]></text>
+      <dialog myid="831201719323761401" id="5" multiplayerreward="" persistentreward="" reward="96" who="0" link="" nick="" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[You offer to check the product with customer.]]></text>
+      </dialog>
+    </dialog>
+    <dialog myid="8312017193113173781" id="6" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Your Custom Name" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="true" bgTransparent="true" panelColor="rgba(102,51,153,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Pack product in paper bag and hand it to the customer]]></text>
+      <dialog myid="831201719325198821" id="7" multiplayerreward="" persistentreward="" reward="97" who="0" link="" nick="" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[You pack the product in paper bag and hand it to the customer.]]></text>
+      </dialog>
+    </dialog>
+  </dialog>
+</xml>

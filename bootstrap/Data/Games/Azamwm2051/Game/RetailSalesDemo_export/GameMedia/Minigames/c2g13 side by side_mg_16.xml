@@ -1,0 +1,50 @@
+<xml>
+  <class>minigame</class>
+  <name>c2g13 side by side</name>
+  <description/>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <AutoSubmit>true</AutoSubmit>
+    <Question><![CDATA[ ]]></Question>
+    <showOnload><![CDATA[false]]></showOnload>
+    <width><![CDATA[1280]]></width>
+    <height><![CDATA[720]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[false]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG31.jpg]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[641.3873603468402,100.24505928853755,641.1027736090268,622.5296442687747,Label]]]></Answer>
+    <triggers>
+      <x>1268.9011172252794</x>
+      <y>-1.3517786561264822</y>
+      <width>12.806403201600798</width>
+      <height>12.806324110671937</height>
+    </triggers>
+    <CorrectFeedback><![CDATA[You are right!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[The answer is incorrect.]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>true</ShowAnswer>
+  <ShowRetry>false</ShowRetry>
+  <score>1</score>
+  <Reward>
+    <greater>94</greater>
+    <greaterpersistent/>
+    <lesser>93</lesser>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>1</windowSize>
+  <windowPercentWSize>90</windowPercentWSize>
+  <windowPercentHSize>90</windowPercentHSize>
+  <windowPosition>0</windowPosition>
+  <transition>3</transition>
+  <transDuration>0.25</transDuration>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

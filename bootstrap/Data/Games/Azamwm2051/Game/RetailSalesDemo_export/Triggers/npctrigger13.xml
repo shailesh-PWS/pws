@@ -1,0 +1,12 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition>
+        <property>InventoryCondition|19|-1|1</property>
+      </condition>
+      <action>
+        <property>AddInventoryItemAction|19|1</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

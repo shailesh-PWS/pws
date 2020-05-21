@@ -1,0 +1,1230 @@
+<xml>
+  <ObjectiveItem>
+    <item id="0">
+      <name>vMary</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="1">
+      <name>vMaryCashier</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="2">
+      <name>vMotherIntro</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="3">
+      <name>ticTang2Seat</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="4">
+      <name>ticSeat2Cashier</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="5">
+      <name>vIconTang</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="6">
+      <name>vIconTangTalk</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="7">
+      <name>vIconTangStoreroom</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="8">
+      <name>ticBackToStore</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="9">
+      <name>ticStorermToMary</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="10">
+      <name>vTang</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="11">
+      <name>vTangCashier</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="12">
+      <name>vTangSeat</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="13">
+      <name>vOlivia</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="14">
+      <name>vOliviaCashier</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="15">
+      <name>vTouristIntro</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="16">
+      <name>vOfficeLadyIntro</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="17">
+      <name>isBackNPC1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="18">
+      <name>isNPC1scaredBefore</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="19">
+      <name>isBackNPC2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="20">
+      <name>isNPC2scaredBefore</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="21">
+      <name>r102a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="22">
+      <name>r103a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="23">
+      <name>r104a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="24">
+      <name>c1g2done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="25">
+      <name>c1d3done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="26">
+      <name>c1g3done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="27">
+      <name>c1d4done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="28">
+      <name>g101a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="29">
+      <name>r106a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="30">
+      <name>r107a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="31">
+      <name>g102a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="32">
+      <name>c1g6done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="33">
+      <name>r108a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="34">
+      <name>r109a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="35">
+      <name>r101a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="36">
+      <name>r105a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="37">
+      <name>c1g4done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="38">
+      <name>g103a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="39">
+      <name>g104a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="40">
+      <name>r111a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="41">
+      <name>r112a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="42">
+      <name>c1d7done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="43">
+      <name>gameTangcomplete</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="44">
+      <name>r110a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="45">
+      <name>c1g10badDone</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="46">
+      <name>c1g10GoodDone</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="47">
+      <name>c1g8done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="48">
+      <name>g105a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="49">
+      <name>g106a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="50">
+      <name>r113a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="51">
+      <name>r114a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="52">
+      <name>r115a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="53">
+      <name>isBusywMary</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="54">
+      <name>isBusywOlivia</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="55">
+      <name>isBusywTang</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="56">
+      <name>c3introDone</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="57">
+      <name>gameOliviacomplete</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="58">
+      <name>gameMarycomplete</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="59">
+      <name>gamecomplete</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="60">
+      <name>vIconMary</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="61">
+      <name>vIconOlivia</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="62">
+      <name>vMarySeated2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="63">
+      <name>vOliviaSeat</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="64">
+      <name>c1g1done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="65">
+      <name>c1d1aDone</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="66">
+      <name>g201a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="67">
+      <name>g202a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="68">
+      <name>vMarySeated</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="69">
+      <name>c2g7done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="70">
+      <name>vIconMarySeat</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="71">
+      <name>g301a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="72">
+      <name>g302a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="73">
+      <name>r306a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="74">
+      <name>c3g5done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="75">
+      <name>r308a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="76">
+      <name>r310a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="77">
+      <name>r309a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="78">
+      <name>r312a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="79">
+      <name>r313a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="80">
+      <name>r314a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="81">
+      <name>vIconOliviaTalk</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="82">
+      <name>c3d6done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="83">
+      <name>g303a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="84">
+      <name>g304a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="85">
+      <name>r315a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="86">
+      <name>r316a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="87">
+      <name>c2g12aComicDone</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="88">
+      <name>r235a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="89">
+      <name>r236a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="90">
+      <name>r237a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="91">
+      <name>c2g12done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="92">
+      <name>c2d10done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="93">
+      <name>g203a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="94">
+      <name>g204a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="95">
+      <name>r329a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="96">
+      <name>r330a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="97">
+      <name>r331a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="98">
+      <name>c3g12done</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="99">
+      <name>c1introDone</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="100">
+      <name>c2introDone</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="101">
+      <name>c1d5aDone</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="102">
+      <name>c1d5bDone</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="103">
+      <name>r215a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="104">
+      <name>c2d4aDone</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="105">
+      <name>r216a</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="106">
+      <name>c3d2aDone</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="107">
+      <name>c3d3aDone</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+  </ObjectiveItem>
+  <PropItem>
+    <item id="inventory24">
+      <name>PramSpawn</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab>Bootstrap_Pack/Items/baby_pram</prefab>
+      <trigger>item|inventory24</trigger>
+    </item>
+    <item id="inventory25">
+      <name>PramSpawnCashier</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab>Bootstrap_Pack/Items/baby_pram</prefab>
+      <trigger>item|inventory25</trigger>
+    </item>
+    <item id="inventory30">
+      <name>PramIntro</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description for your reward item.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab>Bootstrap_Pack/Items/baby_pram</prefab>
+      <trigger>item|inventory30</trigger>
+    </item>
+  </PropItem>
+</xml>

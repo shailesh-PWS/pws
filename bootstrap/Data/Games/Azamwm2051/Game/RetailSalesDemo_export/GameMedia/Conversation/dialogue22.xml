@@ -1,0 +1,5 @@
+<xml>
+  <dialog myid="3042017155556197289" id="1" multiplayerreward="" persistentreward="" reward="100" who="2" link="" nick=" " portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="target" cameraPosition="front" cameraRange="default" cameraPanState="interpolate" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="5" bgImage="IMG88.png" scale="fit" bgTransparent="true" panelColor="rgba(0,0,0,0)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[.]]></text>
+  </dialog>
+</xml>

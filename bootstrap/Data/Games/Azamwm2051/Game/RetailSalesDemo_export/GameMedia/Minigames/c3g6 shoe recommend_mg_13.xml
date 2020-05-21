@@ -1,0 +1,66 @@
+<xml>
+  <class>minigame</class>
+  <name>c3g6 shoe recommend</name>
+  <description/>
+  <MGame>
+    <Type>GROUPING ANALYSIS</Type>
+    <Question><![CDATA[Which pair(s) of shoes will you recommend to the customer? <br>(You can choose multiple)]]></Question>
+    <Title><![CDATA[Shoe to recommend]]></Title>
+    <showOnload><![CDATA[true]]></showOnload>
+    <Path>NA</Path>
+    <itemArray>
+      <selected>true</selected>
+      <text><![CDATA[Floral applique pumps]]></text>
+      <path><![CDATA[Minigames/images/IMG23.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>true</selected>
+      <text><![CDATA[Block heel pumps]]></text>
+      <path><![CDATA[Minigames/images/IMG24.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[Basic white pumps]]></text>
+      <path><![CDATA[Minigames/images/IMG25.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[T-Bar flats]]></text>
+      <path><![CDATA[Minigames/images/IMG26.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[Basic platform sandals]]></text>
+      <path><![CDATA[Minigames/images/IMG27.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[Textured slingback platforms]]></text>
+      <path><![CDATA[Minigames/images/IMG28.png]]></path>
+    </itemArray>
+    <CorrectFeedback><![CDATA[Good recommendation!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[The answer is incorrect.]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>true</ShowAnswer>
+  <ShowRetry>false</ShowRetry>
+  <score>1</score>
+  <Reward>
+    <greater>72</greater>
+    <greaterpersistent/>
+    <lesser>71</lesser>
+    <lesserpersistent/>
+    <sc>50</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>1</windowSize>
+  <windowPercentWSize>90</windowPercentWSize>
+  <windowPercentHSize>90</windowPercentHSize>
+  <windowPosition>0</windowPosition>
+  <transition>1</transition>
+  <transDuration>0.25</transDuration>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

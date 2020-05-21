@@ -1,0 +1,66 @@
+<xml>
+  <class>minigame</class>
+  <name>c1g7 recommendbag</name>
+  <description/>
+  <MGame>
+    <Type>GROUPING ANALYSIS</Type>
+    <Question><![CDATA[Which bag will you recommend to match the gem-encrusted stilettos? <br>(You can choose multiple bags)]]></Question>
+    <Title><![CDATA[Bags chosen]]></Title>
+    <showOnload><![CDATA[true]]></showOnload>
+    <Path>NA</Path>
+    <itemArray>
+      <selected>true</selected>
+      <text><![CDATA[Metallic handle clutch]]></text>
+      <path><![CDATA[Minigames/images/IMG5.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>true</selected>
+      <text><![CDATA[Tasselled envelope clutch]]></text>
+      <path><![CDATA[Minigames/images/IMG6.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[Metallic plate backpack]]></text>
+      <path><![CDATA[Minigames/images/IMG7.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[Two-way backpack]]></text>
+      <path><![CDATA[Minigames/images/IMG8.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[Camo print bucket bag]]></text>
+      <path><![CDATA[Minigames/images/IMG9.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[Quilted pouch]]></text>
+      <path><![CDATA[Minigames/images/IMG10.png]]></path>
+    </itemArray>
+    <CorrectFeedback><![CDATA[Good recommendation! Well done!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[The answer is incorrect.]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>true</ShowAnswer>
+  <ShowRetry>false</ShowRetry>
+  <score>1</score>
+  <Reward>
+    <greater>39</greater>
+    <greaterpersistent/>
+    <lesser>38</lesser>
+    <lesserpersistent/>
+    <sc>50</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>1</windowSize>
+  <windowPercentWSize>90</windowPercentWSize>
+  <windowPercentHSize>90</windowPercentHSize>
+  <windowPosition>0</windowPosition>
+  <transition>1</transition>
+  <transDuration>0.25</transDuration>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

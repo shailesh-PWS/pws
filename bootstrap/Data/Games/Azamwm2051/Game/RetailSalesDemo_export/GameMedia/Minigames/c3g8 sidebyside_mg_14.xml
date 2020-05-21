@@ -1,0 +1,50 @@
+<xml>
+  <class>minigame</class>
+  <name>c3g8 sidebyside</name>
+  <description/>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <AutoSubmit>true</AutoSubmit>
+    <Question><![CDATA[ ]]></Question>
+    <showOnload><![CDATA[false]]></showOnload>
+    <width><![CDATA[1280]]></width>
+    <height><![CDATA[720]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[false]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG29.jpg]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[856.2503473959202,98.82213438735178,423.3227724973598,622.5296442687747,Label]]]></Answer>
+    <triggers>
+      <x>1262.497915624479</x>
+      <y>-1.3517786561264822</y>
+      <width>17.786671113334446</width>
+      <height>14.940711462450594</height>
+    </triggers>
+    <CorrectFeedback><![CDATA[You are right!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[The answer is incorrect.]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>true</ShowAnswer>
+  <ShowRetry>false</ShowRetry>
+  <score>1</score>
+  <Reward>
+    <greater>84</greater>
+    <greaterpersistent/>
+    <lesser>83</lesser>
+    <lesserpersistent/>
+    <sc>50</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>1</windowSize>
+  <windowPercentWSize>90</windowPercentWSize>
+  <windowPercentHSize>90</windowPercentHSize>
+  <windowPosition>0</windowPosition>
+  <transition>3</transition>
+  <transDuration>0.25</transDuration>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

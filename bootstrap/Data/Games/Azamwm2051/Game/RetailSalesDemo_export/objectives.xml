@@ -1,0 +1,13 @@
+<xml>
+  <objective>
+    <id>0</id>
+    <name><![CDATA[objective]]></name>
+    <type>inventory</type>
+    <data>
+      <id>59</id>
+    </data>
+    <total>1</total>
+    <status>incomplete</status>
+    <title><![CDATA[ ]]></title>
+  </objective>
+</xml>

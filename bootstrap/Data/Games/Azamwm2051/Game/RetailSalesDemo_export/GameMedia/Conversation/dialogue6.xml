@@ -1,0 +1,11 @@
+<xml>
+  <dialog myid="83201713475707577" id="1" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="" portrait="image" imagepath="female24_talk.png" audiofile="sound26320171349393948732.ogg" audiotime="" gesture="11" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="shoulder" cameraPosition="right" cameraRange="default" cameraPanState="snap" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="1" usePreviousBG="false" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[Hi, I'm looking for your latest edition Gem-encrusted stilettos I saw online. Do you have it in size 36?]]></text>
+    <dialog myid="8312017134752721938" id="2" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" bgImage="IMG69.png" scale="fit" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[She shows a fashion blog post on her smartphone.]]></text>
+      <dialog myid="831201713482723225" id="3" multiplayerreward="" persistentreward="" reward="27" who="1" link="" nick="" portrait="image" imagepath="femaleboot_happy.png" audiofile="sound26320171532485222584.ogg" audiotime="" gesture="11" gestureLoop="true" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="shoulder" cameraPosition="left" cameraRange="default" cameraPanState="snap" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="1" usePreviousBG="false" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[Yes, please hold on.]]></text>
+      </dialog>
+    </dialog>
+  </dialog>
+</xml>

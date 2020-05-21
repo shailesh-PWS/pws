@@ -1,0 +1,17 @@
+<xml>
+  <dialog myid="8312017122357884529" id="1" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick=" " portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="twoshot" cameraPosition="right" cameraRange="default" cameraPanState="interpolate" cameraHeight="birdeye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="5" usePreviousBG="true" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[You see a customer looking at her mobile phone.]]></text>
+    <dialog myid="831201712247211972" id="2" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="" portrait="image" imagepath="femaleboot_expressionless.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="true" bgTransparent="true" panelColor="rgba(102,51,153,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Observe customer]]></text>
+      <dialog myid="8312017122626921418" id="3" multiplayerreward="" persistentreward="" reward="35" who="0" link="" nick="" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="true" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[You observe the customer.]]></text>
+      </dialog>
+    </dialog>
+    <dialog myid="8312017122410733847" id="4" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Your Custom Name" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="true" bgTransparent="true" panelColor="rgba(102,51,153,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Greet & approach]]></text>
+      <dialog myid="8312017122628366324" id="5" multiplayerreward="" persistentreward="" reward="21" who="0" link="" nick="" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="true" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[You decide to approach the customer.]]></text>
+      </dialog>
+    </dialog>
+  </dialog>
+</xml>

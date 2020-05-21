@@ -1,0 +1,5 @@
+<xml>
+  <dialog myid="832017133352818693" id="1" multiplayerreward="" persistentreward="" reward="23" who="1" link="" nick="" portrait="image" imagepath="femaleboot_happy.png" audiofile="sound26320171532252883827.ogg" audiotime="" gesture="11" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="2" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="twoshot" cameraPosition="right" cameraRange="default" cameraPanState="snap" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="0.5" usePreviousBG="false" bgTransparent="true" panelColor="rgba(0,0,0,0.8)" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[Hi, welcome to Charles & Keith!]]></text>
+  </dialog>
+</xml>

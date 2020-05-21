@@ -1,0 +1,22 @@
+<trigger>
+  <event type="1">
+    <logic>
+      <condition>
+        <property>InventoryCondition|28|1|0</property>
+        <property>InventoryCondition|101|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|dialog|dialogue24.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|31|1|0</property>
+        <property>InventoryCondition|101|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|dialog|dialogue24.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

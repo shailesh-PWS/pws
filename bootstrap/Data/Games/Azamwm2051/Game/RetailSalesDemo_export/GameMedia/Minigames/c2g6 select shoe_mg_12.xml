@@ -1,0 +1,66 @@
+<xml>
+  <class>minigame</class>
+  <name>c2g6 select shoe</name>
+  <description/>
+  <MGame>
+    <Type>GROUPING ANALYSIS</Type>
+    <Question><![CDATA[Which items will you recommend to the customer? <br>(You can take multiple)]]></Question>
+    <Title><![CDATA[Items chosen]]></Title>
+    <showOnload><![CDATA[true]]></showOnload>
+    <Path>NA</Path>
+    <itemArray>
+      <selected>true</selected>
+      <text><![CDATA[Grommet detail sneakers]]></text>
+      <path><![CDATA[Minigames/images/IMG17.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>true</selected>
+      <text><![CDATA[Floral applique sneakers (white)]]></text>
+      <path><![CDATA[Minigames/images/IMG18.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[Calf boot stilettos]]></text>
+      <path><![CDATA[Minigames/images/IMG19.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[Aviators]]></text>
+      <path><![CDATA[Minigames/images/IMG20.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[Laser cut strap heels]]></text>
+      <path><![CDATA[Minigames/images/IMG21.png]]></path>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[Buckle leather belt]]></text>
+      <path><![CDATA[Minigames/images/IMG22.png]]></path>
+    </itemArray>
+    <CorrectFeedback><![CDATA[Good recommendation! Well done!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[The answer is incorrect.]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>true</ShowAnswer>
+  <ShowRetry>false</ShowRetry>
+  <score>1</score>
+  <Reward>
+    <greater>67</greater>
+    <greaterpersistent/>
+    <lesser>66</lesser>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>1</windowSize>
+  <windowPercentWSize>90</windowPercentWSize>
+  <windowPercentHSize>90</windowPercentHSize>
+  <windowPosition>0</windowPosition>
+  <transition>1</transition>
+  <transDuration>0.25</transDuration>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>
