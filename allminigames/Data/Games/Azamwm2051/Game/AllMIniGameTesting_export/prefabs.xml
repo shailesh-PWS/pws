@@ -1,0 +1,29 @@
+<xml>
+  <assets>
+    <asset>Playware_Pack/Environments/kampungoutdoors</asset>
+    <asset>APS_Pack/Characters/R_noncustom_malechild03B</asset>
+    <asset>AnimationController/R/R_Child</asset>
+    <asset>Common/Misc/Icon</asset>
+    <asset>Playware_Pack/Characters/R_noncustom_malechild01</asset>
+    <asset>Playware_Pack/Characters/R_noncustom_malechild02</asset>
+    <asset>Playware_Pack/Characters/R_noncustom_malechild05</asset>
+    <asset>Playware_Pack/Characters/R_noncustom_malechild06</asset>
+    <asset>Playware_Pack/Characters/R_noncustom_malechildfat</asset>
+    <asset>JHS_Pack/Characters/R_noncustom_JHmalenurse02</asset>
+    <asset>AnimationController/R/R_MaleAdult</asset>
+    <asset>JHS_Pack/Characters/R_noncustom_JHmalenursePPE</asset>
+    <asset>JHS_Pack/Characters/R_noncustom_JHnursefem03</asset>
+    <asset>AnimationController/R/R_FemaleAdult</asset>
+    <asset>Playware_Pack/Characters/R_noncustom_femalechild06</asset>
+    <asset>Playware_Pack/Characters/R_noncustom_femalechild05</asset>
+    <asset>Playware_Pack/Characters/noncustom_male_policeman</asset>
+    <asset>Playware_Pack/Characters/R_noncustom_male_scientist</asset>
+    <asset>Playware_Pack/Characters/R_noncustomfemale_15</asset>
+    <asset>Playware_Pack/Characters/R_noncustomfemale_14</asset>
+    <asset>Playware_Pack/Characters/R_noncustom_snecRN1</asset>
+    <asset>Playware_Pack/Characters/noncustom_female_police</asset>
+    <asset>JHS_Pack/Characters/R_noncustom_JHnursefemPPE</asset>
+    <asset>Playware_Pack/Characters/R_noncustommale_12</asset>
+    <asset>Playware_Pack/Characters/noncustom_male_soldier01</asset>
+  </assets>
+</xml>

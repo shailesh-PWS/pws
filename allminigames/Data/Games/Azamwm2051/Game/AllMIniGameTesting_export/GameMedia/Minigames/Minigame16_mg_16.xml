@@ -1,0 +1,43 @@
+<xml>
+  <class>minigame</class>
+  <name>Minigame16</name>
+  <description/>
+  <MGame>
+    <Type>MEMORY GAME</Type>
+    <Question><![CDATA[Find the pair of the given images.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <itemArray>
+      <back>false</back>
+      <path><![CDATA[Minigames/images/IMG16.png]]></path>
+    </itemArray>
+    <itemArray>
+      <back>false</back>
+      <path><![CDATA[Minigames/images/IMG17.png]]></path>
+    </itemArray>
+    <itemArray>
+      <back>false</back>
+      <path><![CDATA[Minigames/images/IMG18.png]]></path>
+    </itemArray>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

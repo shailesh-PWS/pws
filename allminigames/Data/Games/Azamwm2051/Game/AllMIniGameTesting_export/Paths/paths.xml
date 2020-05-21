@@ -1,0 +1,22 @@
+<pathnodes>
+  <pathnode source="0">
+    <name>A</name>
+    <description>Enter a description for this path node</description>
+    <navPath destNode="1">
+      <breadcrumb pos="-17.221621621621626|1|36.32756756756758"/>
+      <breadcrumb pos="-19.060540540540522|1|38.455135135135116"/>
+      <breadcrumb pos="-16.10918918918918|1|38.810270270270266"/>
+      <breadcrumb pos="-17.367567567567562|1|41.873513513513544"/>
+    </navPath>
+  </pathnode>
+  <pathnode source="1">
+    <name>B</name>
+    <description>Enter a description for this path node</description>
+    <navPath destNode="0">
+      <breadcrumb pos="-17.367567567567562|1|41.873513513513544"/>
+      <breadcrumb pos="-16.10918918918918|1|38.810270270270266"/>
+      <breadcrumb pos="-19.060540540540522|1|38.455135135135116"/>
+      <breadcrumb pos="-17.221621621621626|1|36.32756756756758"/>
+    </navPath>
+  </pathnode>
+</pathnodes>

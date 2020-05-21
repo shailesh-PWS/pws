@@ -1,0 +1,242 @@
+<NpcInfo>
+  <npc id="0" name="Aiden" prefab="Playware_Pack/Characters/R_noncustom_malechild01">
+    <trigger>media|npctrigger0</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="1" name="Lucas" prefab="Playware_Pack/Characters/R_noncustom_malechild02">
+    <trigger>media|npctrigger1</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="2" name="Rahman" prefab="Playware_Pack/Characters/R_noncustom_malechild05">
+    <trigger>media|npctrigger2</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="3" name="Ravi" prefab="Playware_Pack/Characters/R_noncustom_malechild06">
+    <trigger>media|npctrigger3</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="4" name="Bobby" prefab="Playware_Pack/Characters/R_noncustom_malechildfat">
+    <trigger>media|npctrigger4</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="5" name="MrAron" prefab="JHS_Pack/Characters/R_noncustom_JHmalenurse02">
+    <trigger>media|npctrigger5</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="6" name="MrApron" prefab="JHS_Pack/Characters/R_noncustom_JHmalenursePPE">
+    <trigger>media|npctrigger6</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="7" name="MsBlueNurse" prefab="JHS_Pack/Characters/R_noncustom_JHnursefem03">
+    <trigger>media|npctrigger7</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="8" name="PurpleBaby" prefab="Playware_Pack/Characters/R_noncustom_femalechild06">
+    <trigger>media|npctrigger8</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="9" name="GirlWithCap" prefab="Playware_Pack/Characters/R_noncustom_femalechild05">
+    <trigger>media|npctrigger9</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="10" name="ThePolice" prefab="Playware_Pack/Characters/noncustom_male_policeman">
+    <trigger>media|npctrigger10</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="11" name="TheDoctor" prefab="Playware_Pack/Characters/R_noncustom_male_scientist">
+    <trigger>media|npctrigger11</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="12" name="PinkHairLady" prefab="Playware_Pack/Characters/R_noncustomfemale_15">
+    <trigger>media|npctrigger12</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="13" name="Juliana" prefab="Playware_Pack/Characters/R_noncustomfemale_14">
+    <trigger>media|npctrigger13</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="14" name="NurseWithMask" prefab="Playware_Pack/Characters/R_noncustom_snecRN1">
+    <trigger>media|npctrigger14</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="15" name="TheLadyPolice" prefab="Playware_Pack/Characters/noncustom_female_police">
+    <trigger>media|npctrigger15</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="16" name="NurseWithApron" prefab="JHS_Pack/Characters/R_noncustom_JHnursefemPPE">
+    <trigger>media|npctrigger16</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="17" name="ManWithBlackJacket" prefab="Playware_Pack/Characters/R_noncustommale_12">
+    <trigger>media|npctrigger17</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="18" name="MaleSolider" prefab="Playware_Pack/Characters/noncustom_male_soldier01">
+    <trigger>media|npctrigger18</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="19" name="shailesh" prefab="Playware_Pack/Characters/R_noncustom_malechild06">
+    <trigger>media|npctrigger19</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+</NpcInfo>

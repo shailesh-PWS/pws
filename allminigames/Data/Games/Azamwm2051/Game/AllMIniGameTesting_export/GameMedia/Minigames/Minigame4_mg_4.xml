@@ -1,0 +1,41 @@
+<xml>
+  <class>minigame</class>
+  <name>Minigame4</name>
+  <description/>
+  <MGame>
+    <Type>MATCHING TYPE</Type>
+    <Question><![CDATA[Macth the given objects above to the objects below.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <Answer><![CDATA[a,alphabet]]></Answer>
+    <Answer><![CDATA[pigon,bird]]></Answer>
+    <Answer><![CDATA[pepsi,drink]]></Answer>
+    <Answer><![CDATA[cow,animal]]></Answer>
+    <Answer><![CDATA[beer,alcohal]]></Answer>
+    <Path0><![CDATA[NA,NA]]></Path0>
+    <Path1><![CDATA[NA,NA]]></Path1>
+    <Path2><![CDATA[NA,NA]]></Path2>
+    <Path3><![CDATA[NA,NA]]></Path3>
+    <Path4><![CDATA[NA,NA]]></Path4>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

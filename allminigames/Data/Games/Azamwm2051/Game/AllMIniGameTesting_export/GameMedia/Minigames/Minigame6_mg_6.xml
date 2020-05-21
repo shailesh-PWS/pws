@@ -1,0 +1,37 @@
+<xml>
+  <class>minigame</class>
+  <name>Minigame6</name>
+  <description/>
+  <MGame>
+    <Type>JIGSAW PUZZLE</Type>
+    <Question><![CDATA[Drag the pieces to solve the puzzle]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[492]]></width>
+    <height><![CDATA[492]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG3.png]]></Path>
+    <Horizontal><![CDATA[3]]></Horizontal>
+    <Vertical><![CDATA[3]]></Vertical>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

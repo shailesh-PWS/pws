@@ -1,0 +1,61 @@
+<xml>
+  <class>minigame</class>
+  <name>Minigame8</name>
+  <description/>
+  <MGame>
+    <Type>GROUPING</Type>
+    <Question><![CDATA[Group the items.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <Group>
+      <Name>Animal</Name>
+      <Item><![CDATA[cow]]></Item>
+      <Item><![CDATA[Cat]]></Item>
+      <Path0><![CDATA[NA]]></Path0>
+      <Path1><![CDATA[NA]]></Path1>
+    </Group>
+    <Group>
+      <Name>Alphabets</Name>
+      <Item><![CDATA[a]]></Item>
+      <Item><![CDATA[b]]></Item>
+      <Item><![CDATA[c]]></Item>
+      <Path0><![CDATA[NA]]></Path0>
+      <Path1><![CDATA[NA]]></Path1>
+      <Path2><![CDATA[NA]]></Path2>
+    </Group>
+    <Group>
+      <Name>flower</Name>
+      <Item><![CDATA[rose]]></Item>
+      <Item><![CDATA[tulip]]></Item>
+      <Path0><![CDATA[NA]]></Path0>
+      <Path1><![CDATA[NA]]></Path1>
+    </Group>
+    <Group>
+      <Name>Human's Name</Name>
+      <Item><![CDATA[David]]></Item>
+      <Item><![CDATA[Rohan]]></Item>
+      <Path0><![CDATA[NA]]></Path0>
+      <Path1><![CDATA[NA]]></Path1>
+    </Group>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

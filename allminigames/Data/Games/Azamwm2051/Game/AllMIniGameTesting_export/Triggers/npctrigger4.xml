@@ -1,0 +1,9 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <action>
+        <property>ShowMediaAction|dialog|dialogue4.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>
