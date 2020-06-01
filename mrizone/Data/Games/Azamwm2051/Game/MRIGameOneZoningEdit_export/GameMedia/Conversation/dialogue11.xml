@@ -1,0 +1,11 @@
+<xml>
+  <dialog myid="194202010363954978" id="1" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="PC" portrait="image" imagepath="R2_NNI_scrubs_fem_neutral.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[Mr Syaiful, you may hear some loud sounds while the machine is scanning, so I’m going to help you put on earplugs and earphones. ]]></text>
+    <dialog myid="1942202010365391993" id="2" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="PC" portrait="image" imagepath="R2_NNI_scrubs_fem_neutral.png" audiofile="" audiotime="" gesture="32" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[(hands patient the call bell) ]]></text>
+      <dialog myid="1942202010375778936" id="3" multiplayerreward="" persistentreward="" reward="47" who="1" link="" nick="PC" portrait="image" imagepath="R2_NNI_scrubs_fem_neutral.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[Keep this in your hand. If you feel any pain or discomfort, just press the button and we will come and help you.]]></text>
+      </dialog>
+    </dialog>
+  </dialog>
+</xml>

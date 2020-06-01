@@ -1,0 +1,81 @@
+<xml>
+  <class>minigame</class>
+  <name>Zone3_BlackoutSequence</name>
+  <description/>
+  <MGame>
+    <Type>SLIDESHOW</Type>
+    <width><![CDATA[900]]></width>
+    <height><![CDATA[506]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <AutoSliding><![CDATA[false]]></AutoSliding>
+    <animationType><![CDATA[2]]></animationType>
+    <width><![CDATA[900]]></width>
+    <height><![CDATA[506]]></height>
+    <transparent><![CDATA[false]]></transparent>
+    <Items>
+      <duration>1</duration>
+      <delay>1</delay>
+      <backColor><![CDATA[rgba(0,0,0,1)]]></backColor>
+    </Items>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>PICTURE ANALYSIS</Type>
+    <width><![CDATA[1280]]></width>
+    <height><![CDATA[720]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG35.jpg]]></Path>
+    <Question><![CDATA[[YES, Press the quench button]]]></Question>
+    <Question><![CDATA[[NO, call the engineer]]]></Question>
+    <Correct><![CDATA[[NO, call the engineer]]]></Correct>
+    <CorrectFeedback><![CDATA[That is correct! There is no life in danger, sothere is no need to quench the magnet. Instead, call theengineer to ramp down the magnet strength]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[Oh no, that is incorrect. There is no life in danger and no fire in the MRI room. There is no need to activate a quench. Please try again.]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>SLIDESHOW</Type>
+    <width><![CDATA[900]]></width>
+    <height><![CDATA[506]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <AutoSliding><![CDATA[false]]></AutoSliding>
+    <animationType><![CDATA[2]]></animationType>
+    <width><![CDATA[900]]></width>
+    <height><![CDATA[506]]></height>
+    <transparent><![CDATA[false]]></transparent>
+    <Items>
+      <duration>1</duration>
+      <delay>1</delay>
+      <backColor><![CDATA[rgba(0,0,0,1)]]></backColor>
+      <image>
+        <bg>false</bg>
+        <path><![CDATA[Minigames/images/IMG36.jpg]]></path>
+        <width>901.1</width>
+        <height>506.85</height>
+        <xPos>0.25</xPos>
+        <yPos>-0.15</yPos>
+      </image>
+    </Items>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+    <correctReward>35</correctReward>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater>20</greater>
+    <greaterpersistent/>
+    <lesser>20</lesser>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

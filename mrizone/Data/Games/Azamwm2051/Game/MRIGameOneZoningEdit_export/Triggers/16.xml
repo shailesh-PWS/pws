@@ -1,0 +1,10 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition/>
+      <action>
+        <property>ShowMediaAction|minigame|Zone4_Objects_1_MRI Machine_mg_3.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

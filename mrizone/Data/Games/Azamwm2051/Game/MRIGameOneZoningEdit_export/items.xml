@@ -1,0 +1,628 @@
+<xml>
+  <ObjectiveItem>
+    <item id="0">
+      <name>PSA_Sequence_End</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="1">
+      <name>Zone2_Jasmine_Vis</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="2">
+      <name>OpeningDialogue_Played</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="3">
+      <name>JasmineDialogue_1_Played</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="4">
+      <name>PSA_Sequence_Begin</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="5">
+      <name>InfoTrigger_Zone2Portal_Visible</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="6">
+      <name>Helen_Dialogue_Zone2_GoToZone4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Checks whether Helens introduction for zone 2 has played]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="7">
+      <name>Zone4_ItemSortingGame_Completed</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Checks whether the player has completed the Zone 4 Item sorting minigame]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="8">
+      <name>Portal_Z3_Z1_vis</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="9">
+      <name>SyaifulZone2toZone3Vis</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="10">
+      <name>Zone3_Roger_Minigame3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="11">
+      <name>Zone1_Satish_Vis</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="12">
+      <name>Zone1_Rose_Vis</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="13">
+      <name>BlueWheelchair</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab>Starter_Pack/Items/WheelChair MR Unsafe</prefab>
+    </item>
+    <item id="14">
+      <name>Zone4_Item_Checked_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="15">
+      <name>Zone4_Item_Checked_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="16">
+      <name>Zone4_Item_Checked_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="17">
+      <name>Zone4_Item_Checked_4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="18">
+      <name>Zone4_Item_Checked_5</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="19">
+      <name>Zone4_Item_Checked_6</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="20">
+      <name>Zone3_BlackoutGame_Completed</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="21">
+      <name>Zone2_Roger_Minigame2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="22">
+      <name>Zone3_Roger_Dialogue3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="23">
+      <name>Zone2_Roger_Dialogue2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="24">
+      <name>PatSlide</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab>Starter_Pack/Items/first_aid_kit</prefab>
+    </item>
+    <item id="25">
+      <name>Scanner</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab>Starter_Pack/Items/first_aid_kit</prefab>
+    </item>
+    <item id="26">
+      <name>JasmineDialogue_2_Played</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="27">
+      <name>Wheelchair_Obtained</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="28">
+      <name>InfoTrigger_PSA_Visible</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="29">
+      <name>Helen_Keypad_Dialogue_Played</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Checks whether Helens keypad dialogue for zone 2 has played]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="30">
+      <name>Zone1_Satish_Dialogue</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="31">
+      <name>Zone4_IntroDialogue_Played</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="32">
+      <name>Helen_Dialogue_Zone2_Intro_Played</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Checks whether Helens introduction for zone 2 has played]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="33">
+      <name>Zone1_Rose_Minigame</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="34">
+      <name>Zone2_JasmineWheelchair_Minigame1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="35">
+      <name>Z1_Z2_Portal_SecondUse</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="36">
+      <name>Zone3_Helen_Intro_Played</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="37">
+      <name>Zone3_Item_Checked_1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="38">
+      <name>Zone3_Item_Checked_2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="39">
+      <name>Zone3_Item_Checked_3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="40">
+      <name>Zone3_Item_Checked_4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="41">
+      <name>Zone1_Satish_Minigame</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="42">
+      <name>Zone1_Rose_Dialogue</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="43">
+      <name>Zone2_Roger_Dialogue1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="44">
+      <name>Zone2_Roger_Minigame1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="45">
+      <name>SyaifulZone3toZone4Vis</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="46">
+      <name>Zone4_Roger_Minigame4</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="47">
+      <name>Zone4_Syaiful_Dialogue1</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="48">
+      <name>End</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+    <item id="49">
+      <name>Zone2_JasmineWheelchair_Dialogue3</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab/>
+    </item>
+  </ObjectiveItem>
+  <PropItem>
+    <item id="inventory4">
+      <name>Wheelchair_SpawnTrigger</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab>Starter_Pack/Items/WheelChair MR Unsafe</prefab>
+      <trigger>item|inventory4</trigger>
+    </item>
+    <item id="inventory34">
+      <name>PatSlideSpawn</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab>Starter_Pack/Items/first_aid_kit</prefab>
+      <trigger>item|inventory34</trigger>
+    </item>
+    <item id="inventory35">
+      <name>ScannerSpawn</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab>Starter_Pack/Items/first_aid_kit</prefab>
+      <trigger>item|inventory35</trigger>
+    </item>
+    <item id="inventory44">
+      <name>Wheelchair_ModelThatStays</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab>Starter_Pack/Items/WheelChair MR Unsafe</prefab>
+      <trigger>item|inventory44</trigger>
+    </item>
+    <item id="inventory46">
+      <name>Jasmine_WheelchairSpawn</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab>Starter_Pack/Items/prop_NNIpatient_wchair</prefab>
+      <trigger>item|inventory46</trigger>
+    </item>
+    <item id="inventory47">
+      <name>Jasmine_WheelchairSpawn_Zone2</name>
+      <theme/>
+      <image/>
+      <value>1</value>
+      <isScorable>false</isScorable>
+      <desc><![CDATA[Enter a description.]]></desc>
+      <npcValue>0</npcValue>
+      <statMod/>
+      <prefab>Starter_Pack/Items/prop_NNIpatient_wchair</prefab>
+      <trigger>item|inventory47</trigger>
+    </item>
+  </PropItem>
+</xml>

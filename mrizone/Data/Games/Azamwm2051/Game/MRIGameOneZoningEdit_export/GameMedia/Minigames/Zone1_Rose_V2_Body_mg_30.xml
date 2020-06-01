@@ -1,0 +1,38 @@
+<xml>
+  <class>minigame</class>
+  <name>Zone1_Rose_V2_Body</name>
+  <description/>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <Question><![CDATA[Find the objects in the world list and click on them to remove]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1024]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[true]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG66.jpg]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[702.6007559475283,-4.401581027667984,320.5644408211665,267.3581027667984,Underwired Bra,true],[673.9138812717706,331.5604743083004,195.11628251686062,308.3383399209486,Mobile Phone,true],[878.8201289557549,278.2102766798419,144.57274142147782,396.9770750988143,Wristwach,true]]]></Answer>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>false</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

@@ -1,0 +1,33 @@
+<xml>
+  <class>menu</class>
+  <closeOption>2</closeOption>
+  <disableOption>2</disableOption>
+  <description/>
+  <resize>fit</resize>
+  <width>1024</width>
+  <height>768</height>
+  <path>Minigames/images/IMG41.jpg</path>
+  <triggers>
+    <trigger>
+      <linkageID><![CDATA[Zone1_Syaiful_V2_Body_mg_26.xml]]></linkageID>
+      <xPos><![CDATA[0.3829129274799903]]></xPos>
+      <yPos><![CDATA[0.22451289514107847]]></yPos>
+      <width><![CDATA[0.21028377395100656]]></width>
+      <height><![CDATA[0.6684453068154256]]></height>
+    </trigger>
+    <trigger>
+      <linkageID><![CDATA[Zone1_Syaiful_V2_Head_mg_27.xml]]></linkageID>
+      <xPos><![CDATA[0.37624302692214406]]></xPos>
+      <yPos><![CDATA[0.046082949308755755]]></yPos>
+      <width><![CDATA[0.21780257094348773]]></width>
+      <height><![CDATA[0.1393807098391139]]></height>
+    </trigger>
+    <trigger>
+      <linkageID><![CDATA[Zone1_Syaiful_V2_Equipment_mg_28.xml]]></linkageID>
+      <xPos><![CDATA[0.19742905651224835]]></xPos>
+      <yPos><![CDATA[0.15773304228312715]]></yPos>
+      <width><![CDATA[0.12957797720106717]]></width>
+      <height><![CDATA[0.3050367855121675]]></height>
+    </trigger>
+  </triggers>
+</xml>

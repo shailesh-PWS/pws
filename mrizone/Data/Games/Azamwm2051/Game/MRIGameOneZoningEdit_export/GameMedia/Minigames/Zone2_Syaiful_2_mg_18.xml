@@ -1,0 +1,38 @@
+<xml>
+  <class>minigame</class>
+  <name>Zone2_Syaiful_2</name>
+  <description/>
+  <MGame>
+    <Type>STICKERS</Type>
+    <Question><![CDATA[Transfer the patient by dragging and dropping him onto an MR Safe bed]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1024]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG42.png]]></Path>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <snap><![CDATA[true]]></snap>
+    <Answer><![CDATA[[67.61906173571481,151.55098814229248,153.5279033572964,549.8940711462451,Minigames/images/IMG43.png,true,153.5279033572964,549.8940711462451]]]></Answer>
+    <CorrectFeedback><![CDATA[GOOD JOB! Your patient is ready to proceed to Zone 3.]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[TRY AGAIN!]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater>21</greater>
+    <greaterpersistent/>
+    <lesser>21</lesser>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

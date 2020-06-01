@@ -1,0 +1,17 @@
+<xml>
+  <dialog myid="194202010952140191" id="1" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="PC" portrait="image" imagepath="R2_NNI_scrubs_fem_neutral.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="twoshot" cameraPosition="right" cameraRange="close" cameraPanState="snap" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="1" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[Hello again, Mrs Lim. I have to transfer you to another wheelchair.]]></text>
+    <dialog myid="19422020101024726726" id="2" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="Jasmine" portrait="image" imagepath="R2_NNI_patient01.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Why do I need to move?]]></text>
+      <dialog myid="19422020101030805760" id="3" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="PC" portrait="image" imagepath="R2_NNI_scrubs_fem_neutral.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[I’m sorry for the inconvenience. However, this wheelchair is not safe to go near the MRI machine. ]]></text>
+        <dialog myid="1942202010104060687" id="4" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="PC" portrait="image" imagepath="R2_NNI_scrubs_fem_neutral.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+          <text><![CDATA[Please allow me to transfer you to another one. It’s for your own safety.]]></text>
+          <dialog myid="19422020101046601269" id="5" multiplayerreward="" persistentreward="" reward="49" who="2" link="" nick="Jasmine" portrait="image" imagepath="R2_NNI_patient01.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false" minigame="Zone2_Jasmine_mg_25.xml">
+            <text><![CDATA[Oh, I see. Okay. Thank you.]]></text>
+          </dialog>
+        </dialog>
+      </dialog>
+    </dialog>
+  </dialog>
+</xml>

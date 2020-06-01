@@ -1,0 +1,10 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition/>
+      <action>
+        <property>ShowMediaAction|minigame|Zone4_Objects_4_MRCONDITIONALStethoscope_mg_5.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

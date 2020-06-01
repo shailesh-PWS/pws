@@ -1,0 +1,10 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition/>
+      <action>
+        <property>ShowMediaAction|minigame|Zone3_Objects_3_mg_10.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

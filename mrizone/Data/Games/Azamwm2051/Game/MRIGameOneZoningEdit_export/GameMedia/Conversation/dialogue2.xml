@@ -1,0 +1,11 @@
+<xml>
+  <dialog myid="1242020163933541184" id="1" multiplayerreward="" persistentreward="" reward="26" who="2" link="" nick="Jasmine" portrait="image" imagepath="R2_NNI_patient01.png" audiofile="" audiotime="" gesture="2" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="2" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="twoshot" cameraPosition="left" cameraRange="close" cameraPanState="snap" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="1" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[Thank you. Now please help me to the REGISTRATION COUNTER.]]></text>
+    <dialog myid="23122020181048495432" id="2" multiplayerreward="" persistentreward="" reward="28" who="1" link="" nick="Helen" portrait="image" imagepath="R2_NNI_helen_happy.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Good Job!]]></text>
+      <dialog myid="2312202018051908939" id="3" multiplayerreward="" persistentreward="" reward="4" who="0" link="" nick="Helen" portrait="image" imagepath="R2_NNI_helen_happy.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[Locate the REGISTRATION COUNTER and walk towards it]]></text>
+      </dialog>
+    </dialog>
+  </dialog>
+</xml>

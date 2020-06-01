@@ -1,0 +1,14 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition>
+        <property>InventoryCondition|5|1|0</property>
+        <property>InventoryCondition|11|-1|1</property>
+        <property>InventoryCondition|12|-1|1</property>
+      </condition>
+      <action>
+        <property>TeleportAction|p80_2</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

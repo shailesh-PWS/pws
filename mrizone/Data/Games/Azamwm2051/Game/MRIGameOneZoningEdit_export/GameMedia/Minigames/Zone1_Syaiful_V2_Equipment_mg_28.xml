@@ -1,0 +1,38 @@
+<xml>
+  <class>minigame</class>
+  <name>Zone1_Syaiful_V2_Equipment</name>
+  <description/>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <Question><![CDATA[Find the objects by click on it.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1024]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[true]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG64.jpg]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[732.6536722745127,67.9209486166008,290.58741569702806,166.42529644268774,MR Unsafe Infusion Pump,true],[762.5548061958052,260.45217391304345,249.833839768769,369.65691699604747,MR Unsafe Oxygen Tank,true]]]></Answer>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>false</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater>44</greater>
+    <greaterpersistent/>
+    <lesser>44</lesser>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

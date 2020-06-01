@@ -1,0 +1,18 @@
+<trigger>
+  <event type="1">
+    <logic>
+      <condition>
+        <property>InventoryCondition|14|1|0</property>
+        <property>InventoryCondition|15|1|0</property>
+        <property>InventoryCondition|16|1|0</property>
+        <property>InventoryCondition|17|1|0</property>
+        <property>InventoryCondition|18|1|0</property>
+        <property>InventoryCondition|19|1|0</property>
+        <property>InventoryCondition|7|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|Zone4_MREquipmentSorting_mg_7.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

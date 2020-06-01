@@ -1,0 +1,14 @@
+<xml>
+  <dialog myid="1022020122739806404" id="1" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="Helen (Radiographer)" portrait="image" imagepath="female21_happy.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[Hi there! Welcome to the National Neuroscience Institute, Neuroradiology Department. So glad you could join us. My name is HELEN, and I am a radiographer here.]]></text>
+    <dialog myid="10222020122914135744" id="2" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="Helen (Radiographer)" portrait="image" imagepath="female21_happy.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Everyone has a role to play in MRI safety. The one thing you absolutely must remember at all times, is that THE MAGNET IS ALWAYS ON, 24 hours a day, 7 days a week, 365 days a year.]]></text>
+      <dialog myid="10222020123022467701" id="3" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Helen (Radiographer)" portrait="image" imagepath="female21_happy.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[To control access to the MR environment, there is a zoning system in place. So today, I'm going to walk you through all four zones of the MRI suite and talk about the various aspects of MRI safety.]]></text>
+        <dialog myid="10222020124130659283" id="4" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Helen (Radiographer)" portrait="image" imagepath="female21_happy.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+          <text><![CDATA[Right now, we are standing in Zone 1. This refers to all areas outside the MRI environment that are freely accessible to the general public, for example, the reception and waiting areas.]]></text>
+        </dialog>
+      </dialog>
+    </dialog>
+  </dialog>
+</xml>

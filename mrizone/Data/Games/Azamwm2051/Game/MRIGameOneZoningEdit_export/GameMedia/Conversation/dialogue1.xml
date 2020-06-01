@@ -1,0 +1,8 @@
+<xml>
+  <dialog myid="1022020155528156289" id="1" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="Jasmine" portrait="image" imagepath="R2_NNI_patient01.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="twoshot" cameraPosition="left" cameraRange="default" cameraPanState="snap" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="1" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[Excuse me, I'm having a problem with my hip and it's painful to walk. Would you mind helping me please?]]></text>
+    <dialog myid="1022202017315368849" id="2" multiplayerreward="" persistentreward="" reward="3" who="1" link="" nick="PC" portrait="image" imagepath="R2_NNI_scrubs_fem_neutral.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="twoshot" cameraPosition="left" cameraRange="default" cameraPanState="snap" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="1" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Of course. Let me find a wheelchair for you.]]></text>
+    </dialog>
+  </dialog>
+</xml>

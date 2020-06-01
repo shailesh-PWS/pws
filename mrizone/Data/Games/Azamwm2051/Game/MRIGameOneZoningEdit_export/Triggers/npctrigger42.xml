@@ -1,0 +1,32 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition>
+        <property>InventoryCondition|8|1|0</property>
+      </condition>
+      <action>
+        <property>RemoveInventoryItemAction|8|1</property>
+      </action>
+    </logic>
+  </event>
+  <event type="1">
+    <logic>
+      <condition>
+        <property>InventoryCondition|30|1|0</property>
+        <property>InventoryCondition|11|1|0</property>
+      </condition>
+      <action>
+        <property>RemoveInventoryItemAction|11|1</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|33|1|0</property>
+        <property>InventoryCondition|12|1|0</property>
+      </condition>
+      <action>
+        <property>RemoveInventoryItemAction|12|1</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

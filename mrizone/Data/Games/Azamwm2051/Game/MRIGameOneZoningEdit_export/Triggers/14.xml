@@ -1,0 +1,10 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition/>
+      <action>
+        <property>ShowMediaAction|minigame|Zone4_Objects_6_GaussLines_mg_1.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

@@ -1,0 +1,241 @@
+<NpcInfo>
+  <npc id="1" name="OpeningDialogueTrigger" prefab="Playware_Pack/Characters/R_noncustommale_03">
+    <trigger>media|npctrigger1</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="3" name="NPC_Patient_1_Jasmine" prefab="Playware_Pack/Characters/R2_NNI_patient01">
+    <trigger>media|npctrigger3</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>false</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="6" name="NPC_PSA" prefab="Playware_Pack/Characters/R2_NNI_PSA">
+    <trigger>media|npctrigger6</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="11" name="OpeningDialogueTrigger" prefab="Playware_Pack/Characters/R_noncustommale_03">
+    <trigger>media|npctrigger11</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="12" name="OpeningDialogueTrigger" prefab="Playware_Pack/Characters/R_noncustommale_03">
+    <trigger>media|npctrigger12</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="13" name="OpeningDialogueTrigger" prefab="Playware_Pack/Characters/R_noncustommale_03">
+    <trigger>media|npctrigger13</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="22" name="OpeningDialogueTrigger" prefab="Playware_Pack/Characters/R_noncustommale_03">
+    <trigger>media|npctrigger22</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="23" name="OpeningDialogueTrigger" prefab="Playware_Pack/Characters/R_noncustommale_03">
+    <trigger>media|npctrigger23</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="29" name="Syaiful" prefab="Playware_Pack/Characters/R2_NNI_patient03_m">
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="30" name="Satish" prefab="Playware_Pack/Characters/R2_BCLS_oldman01">
+    <trigger>media|npctrigger30</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="31" name="Rose" prefab="Playware_Pack/Characters/R2_NNI_patient02_casual">
+    <trigger>media|npctrigger31</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="32" name="Roger" prefab="Playware_Pack/Characters/R2_NNI_scrubs_male">
+    <trigger>media|npctrigger32</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="36" name="Roger" prefab="Playware_Pack/Characters/R2_NNI_scrubs_male">
+    <trigger>media|npctrigger36</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="38" name="Syaiful" prefab="Playware_Pack/Characters/R2_NNI_patient03_m">
+    <trigger>media|npctrigger38</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="40" name="Roger" prefab="Playware_Pack/Characters/R2_NNI_scrubs_male">
+    <trigger>media|npctrigger40</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="41" name="NPC_Patient_1_Jasmine" prefab="Playware_Pack/Characters/R2_NNI_patient01">
+    <trigger>media|npctrigger41</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="42" name="OpeningDialogueTrigger" prefab="Playware_Pack/Characters/R_noncustommale_03">
+    <trigger>media|npctrigger42</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>false</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="43" name="OpeningDialogueTrigger" prefab="Playware_Pack/Characters/R_noncustommale_03">
+    <trigger>media|npctrigger43</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>false</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="45" name="OpeningDialogueTrigger" prefab="Playware_Pack/Characters/R_noncustommale_03">
+    <trigger>media|npctrigger45</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+  <npc id="48" name="OpeningDialogueTrigger" prefab="Playware_Pack/Characters/R_noncustommale_03">
+    <trigger>media|npctrigger48</trigger>
+    <stat name="Health" type="int" value="100" desc="Health"/>
+    <stat name="Damage" type="int" value="2" desc="Strength"/>
+    <stat name="Range" type="float" value="2" desc="Strength Range"/>
+    <stat name="MovementSpeed" type="float" value="1" desc="Movement Speed"/>
+    <collider>true</collider>
+    <weapon/>
+    <drops/>
+    <behaviour/>
+    <trigger/>
+  </npc>
+</NpcInfo>

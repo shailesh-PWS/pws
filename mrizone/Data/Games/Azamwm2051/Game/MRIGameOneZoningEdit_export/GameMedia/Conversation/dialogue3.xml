@@ -1,0 +1,8 @@
+<xml>
+  <dialog myid="172202017286561598" id="1" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="PSA" portrait="image" imagepath="R2_NNI_PSA.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[Good day ma'am. Before we bring you in for your MRI, I need to verify your name and ID number.]]></text>
+    <dialog myid="1722202017303775880" id="2" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="Jasmine" portrait="image" imagepath="R2_NNI_patient01.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false" minigame="RegistrationCounter_mg_22.xml">
+      <text><![CDATA[Sure.]]></text>
+    </dialog>
+  </dialog>
+</xml>

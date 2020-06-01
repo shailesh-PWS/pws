@@ -1,0 +1,14 @@
+<xml>
+  <dialog myid="194202093423150926" id="1" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="PC" portrait="image" imagepath="R2_NNI_scrubs_fem_neutral.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[Mr Satish, I’m so sorry but I’m afraid we cannot allow your MRI scan to proceed. ]]></text>
+    <dialog myid="1942202093448890931" id="2" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="PC" portrait="image" imagepath="R2_NNI_scrubs_fem_neutral.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Your pacemaker is MR UNSAFE. We will have to refer you back to your requesting doctor to consider another method of scanning that is safe for your implant. ]]></text>
+      <dialog myid="1942202093459630224" id="3" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="PC" portrait="image" imagepath="R2_NNI_scrubs_fem_neutral.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[Please head back to the registration counter, and I’ll get someone to help you. Thank you for your patience.]]></text>
+        <dialog myid="1942202093541675311" id="4" multiplayerreward="" persistentreward="" reward="30" who="2" link="" nick="Satish" portrait="image" imagepath="R2_BCLS_oldman01.png" audiofile="" audiotime="" gesture="13" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+          <text><![CDATA[I see. Alright, thank you.]]></text>
+        </dialog>
+      </dialog>
+    </dialog>
+  </dialog>
+</xml>

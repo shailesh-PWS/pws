@@ -1,0 +1,14 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition>
+        <property>InventoryCondition|23|1|0</property>
+        <property>InventoryCondition|24|-1|1</property>
+      </condition>
+      <action>
+        <property>PickUpItemAction</property>
+        <property>AddInventoryItemAction|24|1</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

@@ -1,0 +1,33 @@
+<xml>
+  <class>menu</class>
+  <closeOption>2</closeOption>
+  <disableOption>2</disableOption>
+  <description/>
+  <resize>fit</resize>
+  <width>1024</width>
+  <height>768</height>
+  <path>Minigames/images/IMG59.jpg</path>
+  <triggers>
+    <trigger>
+      <linkageID><![CDATA[Zone1_Rose_V2_Head_mg_29.xml]]></linkageID>
+      <xPos><![CDATA[0.43190637885035166]]></xPos>
+      <yPos><![CDATA[0.018271485164524218]]></yPos>
+      <width><![CDATA[0.12794081979141403]]></width>
+      <height><![CDATA[0.1531247473522516]]></height>
+    </trigger>
+    <trigger>
+      <linkageID><![CDATA[Zone1_Rose_V2_Body_mg_30.xml]]></linkageID>
+      <xPos><![CDATA[0.4002546689303905]]></xPos>
+      <yPos><![CDATA[0.1839275608375778]]></yPos>
+      <width><![CDATA[0.18190637885035169]]></width>
+      <height><![CDATA[0.2134368178510793]]></height>
+    </trigger>
+    <trigger>
+      <linkageID><![CDATA[Zone1_Rose_V2_Legs_mg_31.xml]]></linkageID>
+      <xPos><![CDATA[0.4232355081251516]]></xPos>
+      <yPos><![CDATA[0.42072924246099114]]></yPos>
+      <width><![CDATA[0.1415231627455736]]></width>
+      <height><![CDATA[0.4038321610477807]]></height>
+    </trigger>
+  </triggers>
+</xml>

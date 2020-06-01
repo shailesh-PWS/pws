@@ -1,0 +1,21 @@
+<trigger>
+  <event type="1">
+    <logic>
+      <condition>
+        <property>InventoryCondition|2|-1|1</property>
+        <property>InventoryCondition|26|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|OpeningDialogueComic_mg_12.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|0|1|0</property>
+      </condition>
+      <action>
+        <property>RemoveInventoryItemAction|2|1</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

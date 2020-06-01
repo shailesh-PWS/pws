@@ -1,0 +1,21 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition>
+        <property>InventoryCondition|27|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|dialog|dialogue1.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|27|1|0</property>
+        <property>InventoryCondition|13|1|0</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|dialog|dialogue2.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

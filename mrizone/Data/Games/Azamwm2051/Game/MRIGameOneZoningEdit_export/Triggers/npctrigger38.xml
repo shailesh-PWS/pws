@@ -1,0 +1,30 @@
+<trigger>
+  <event type="1">
+    <logic>
+      <condition>
+        <property>InventoryCondition|46|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|Zone4_Syaiful_1_mg_20.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|46|1|0</property>
+        <property>InventoryCondition|47|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|dialog|dialogue11.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|47|1|0</property>
+        <property>InventoryCondition|48|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|End_mg_21.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

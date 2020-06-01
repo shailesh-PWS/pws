@@ -1,0 +1,25 @@
+<trigger>
+  <event type="1">
+    <logic>
+      <condition>
+        <property>InventoryCondition|37|1|0</property>
+        <property>InventoryCondition|38|1|0</property>
+        <property>InventoryCondition|39|1|0</property>
+        <property>InventoryCondition|40|1|0</property>
+        <property>InventoryCondition|20|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|Zone3_BlackoutSequence_mg_15.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|20|1|0</property>
+        <property>InventoryCondition|8|-1|1</property>
+      </condition>
+      <action>
+        <property>AddInventoryItemAction|8|1</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

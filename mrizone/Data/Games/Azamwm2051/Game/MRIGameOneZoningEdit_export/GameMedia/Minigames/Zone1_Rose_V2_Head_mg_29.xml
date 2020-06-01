@@ -1,0 +1,38 @@
+<xml>
+  <class>minigame</class>
+  <name>Zone1_Rose_V2_Head</name>
+  <description/>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <Question><![CDATA[Find the objects in the word list and click on them to remove.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1024]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[true]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG65.jpg]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[735.3857555769658,9.030830039525691,274.1949158823094,221.06561264822136,Gold Chain,true],[862.5035203438821,414.81106719367585,148.6708663751575,91.3707509881423,Earrings,true],[740.925813384718,540.5596837944664,245.5839324093975,193.6695652173913,Hearing Aid,true],[667.1595642184838,278.2102766798419,274.11902467946345,135.0830039525692,Hair Tie With a Metal Ring,true]]]></Answer>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>false</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

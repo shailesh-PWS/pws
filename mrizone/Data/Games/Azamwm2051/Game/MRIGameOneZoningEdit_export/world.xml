@@ -1,0 +1,486 @@
+<world>
+  <global>
+    <ui inventorybutton="true" objectivebutton="false" takepicturebutton="false" authbutton="false" authimagebutton="false"/>
+    <scoresystem>minigame</scoresystem>
+  </global>
+  <terrain>
+    <asset name="Playware_Pack/Environments/MRIZone1" pos="-112.62000000000002|0|-10.274999999999999" rot="0|0|0" scale="1|1|1"/>
+    <asset name="Playware_Pack/Environments/MRIZone2" pos="-128.45999999999998|0|-10.454999999999973" rot="0|0|0" scale="1|1|1"/>
+    <asset name="Playware_Pack/Environments/MRIZone4" pos="-142.08|0|-13.65" rot="0|0|0" scale="1|1|1"/>
+    <asset name="Playware_Pack/Environments/MRIZone3" pos="-143.4|0|-26.925" rot="0|0|0" scale="1|1|1"/>
+    <asset name="Playware_Pack/Environments/MRIZone3" pos="-128.52|0|2.8649999999999864" rot="0|0|0" scale="1|1|1"/>
+    <asset name="Playware_Pack/Environments/MRIZone4Plus" pos="-129.57|0|19.16999999999999" rot="0|0|0" scale="1|1|1"/>
+  </terrain>
+  <playerspawn pos="-108.97705882352939|0|-13.037647058823524" rot="0|318|0" model="Playware_Pack/Characters/R2_NNI_scrubs_fem" name="PC_Helen" scale="1|1|1" controller="FreeMovement" cameradistoffset="4" cameraheightoffset="1"/>
+  <items>
+    <item id="inventory4">
+      <data>
+        <instances>
+          <instance pos="-113.04551724137932|0|-7.528275862068938" rot="0|180|0" scale="1" radius="0.60"/>
+        </instances>
+      </data>
+    </item>
+    <item id="inventory34">
+      <data>
+        <instances>
+          <instance pos="-122.88972123579545|0|-10.454829545454544" rot="0|0|0" scale="1" radius="0.60"/>
+        </instances>
+      </data>
+    </item>
+    <item id="inventory35">
+      <data>
+        <instances>
+          <instance pos="-126.58888888888889|0|0.8933333333333451" rot="0|0|0" scale="1" radius="0.60"/>
+        </instances>
+      </data>
+    </item>
+    <item id="inventory44">
+      <data>
+        <instances>
+          <instance pos="-113.05317073170731|0|-7.519756097560958" rot="0|180|0" scale="1" radius="0.87"/>
+        </instances>
+      </data>
+    </item>
+    <item id="inventory46">
+      <data>
+        <filters>
+          <filter type="display" invlist="0"/>
+        </filters>
+        <instances>
+          <instance pos="-109.19882352941175|0|-13.629411764705878" rot="0|270|0" scale="1" radius="0.60"/>
+        </instances>
+      </data>
+    </item>
+    <item id="inventory47">
+      <data>
+        <filters>
+          <filter type="display" invlist="1"/>
+        </filters>
+        <instances>
+          <instance pos="-128.24470588235295|0|-8.01411764705881" rot="0|180|0" scale="1" radius="0.60"/>
+        </instances>
+      </data>
+    </item>
+  </items>
+  <triggers>
+    <media id="0">
+      <data>
+        <filters>
+          <filter type="display" invlist="2"/>
+        </filters>
+        <instances>
+          <instance displayname="" pos="-109.04355957297594|2|-7.2983713862697925" rot="0|90|0" scale="1" radius="0.60" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <media id="2">
+      <data>
+        <filters>
+          <filter type="display" invlist="3"/>
+        </filters>
+        <instances>
+          <instance displayname="" pos="-113.04482758620689|2|-7.528275862068938" rot="0|180|0" scale="1" radius="0.60" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <media id="5">
+      <data>
+        <filters>
+          <filter type="display" invlist="4"/>
+        </filters>
+        <instances>
+          <instance displayname="" pos="-112.46201200031169|2|-14.709654796228477" rot="0|270|0" scale="1" radius="0.60" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <media id="7">
+      <data>
+        <filters>
+          <filter type="display" invlist="5"/>
+        </filters>
+        <instances>
+          <instance displayname="" pos="-118.70884615384615|2|-8.924999999999983" rot="0|0|0" scale="1" radius="0.60" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <portal id="p80">
+      <data>
+        <filters>
+          <filter type="display" invlist="5"/>
+        </filters>
+        <instances>
+          <instance displayname="Portal_Z1_Z2" pos="-118.78119402985074|0|-8.097313432835819" rot="0|83|0" scale="1" radius="0.60" model="Common/Misc/DoorPortal"/>
+        </instances>
+      </data>
+    </portal>
+    <portal id="p80_2">
+      <data>
+        <filters>
+          <filter type="display" invlist="5"/>
+        </filters>
+        <instances>
+          <data displayname="Portal_Z1_Z2" pos="-124.26967741935485|0|-9.181935483870944" rot="0|270|0" scale="1" radius="1.5" model="Common/Misc/DoorPortal"/>
+        </instances>
+      </data>
+    </portal>
+    <media id="9">
+      <data>
+        <instances>
+          <instance displayname="" pos="-134.36764705882354|2|-9.357647058823545" rot="0|0|0" scale="1" radius="0.63" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <portal id="p100">
+      <data>
+        <filters>
+          <filter type="display" invlist="6"/>
+        </filters>
+        <instances>
+          <instance displayname="Portal_Z2_Z4" pos="-133.80870967741936|0|-10.199032258064534" rot="0|247|0" scale="1" radius="1.35" model="Common/Misc/DoorPortal"/>
+        </instances>
+      </data>
+    </portal>
+    <portal id="p100_2">
+      <data>
+        <filters>
+          <filter type="display" invlist="6"/>
+        </filters>
+        <instances>
+          <data displayname="Portal_Z2_Z4" pos="-145.67538461538462|0|-9.609230769230749" rot="0|160|0" scale="1" radius="1.5" model="Common/Misc/DoorPortal"/>
+        </instances>
+      </data>
+    </portal>
+    <media id="14">
+      <data>
+        <instances>
+          <instance displayname="" pos="-138.7404255319149|2|-14.451063829787245" rot="0|0|0" scale="1" radius="0.78" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <media id="15">
+      <data>
+        <instances>
+          <instance displayname="" pos="-138.11641791044775|2|-11.896119402985079" rot="0|0|0" scale="1" radius="0.72" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <media id="16">
+      <data>
+        <instances>
+          <instance displayname="" pos="-142.124776119403|2|-11.654328358208943" rot="0|0|0" scale="1" radius="0.60" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <media id="17">
+      <data>
+        <instances>
+          <instance displayname="" pos="-141.17724137931037|2|-9.07793103448276" rot="0|0|0" scale="1" radius="0.42" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <media id="18">
+      <data>
+        <instances>
+          <instance displayname="" pos="-146.04965517241382|2|-13.09517241379308" rot="0|0|0" scale="1" radius="0.69" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <media id="19">
+      <data>
+        <instances>
+          <instance displayname="" pos="-142.29241379310344|2|-9.00344827586207" rot="0|0|0" scale="1" radius="0.78" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <media id="20">
+      <data>
+        <instances>
+          <instance displayname="" pos="-147.429375|2|-12.38812500000003" rot="0|0|0" scale="1" radius="9.87" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <portal id="p210">
+      <data>
+        <filters>
+          <filter type="display" invlist="7"/>
+        </filters>
+        <instances>
+          <instance displayname="Portal_Z4_Z3" pos="-147.40526315789475|0|-12.36526315789476" rot="0|0|0" scale="1" radius="9.87" model="Common/Misc/DoorPortal"/>
+        </instances>
+      </data>
+    </portal>
+    <portal id="p210_2">
+      <data>
+        <filters>
+          <filter type="display" invlist="7"/>
+        </filters>
+        <instances>
+          <data displayname="Portal_Z4_Z3" pos="-141.38129032258064|0|-25.34225806451613" rot="0|225|0" scale="1" radius="1.5" model="Common/Misc/DoorPortal"/>
+        </instances>
+      </data>
+    </portal>
+    <media id="24">
+      <data>
+        <instances>
+          <instance displayname="" pos="-139.7225|2|-29.1008333333333" rot="0|0|0" scale="1" radius="0.57" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <media id="25">
+      <data>
+        <instances>
+          <instance displayname="" pos="-143.15333333333334|2|-29.445833333333326" rot="0|0|0" scale="1" radius="0.30" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <media id="26">
+      <data>
+        <instances>
+          <instance displayname="" pos="-143.7525|2|-28.78666666666669" rot="0|0|0" scale="1" radius="0.45" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <media id="27">
+      <data>
+        <instances>
+          <instance displayname="" pos="-146.295223880597|2|-28.028059701492566" rot="0|0|0" scale="1" radius="0.60" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <portal id="p280">
+      <data>
+        <filters>
+          <filter type="display" invlist="8"/>
+        </filters>
+        <instances>
+          <instance displayname="Portal_Z3_Z1" pos="-148.7923404255319|0|-27.808085106382975" rot="0|0|0" scale="1" radius="11.64" model="Common/Misc/DoorPortal"/>
+        </instances>
+      </data>
+    </portal>
+    <portal id="p280_2">
+      <data>
+        <filters>
+          <filter type="display" invlist="8"/>
+        </filters>
+        <instances>
+          <data displayname="Portal_Z3_Z1" pos="-116.02835820895523|0|-9.111044776119428" rot="0|90|0" scale="1" radius="1.5" model="Common/Misc/DoorPortal"/>
+        </instances>
+      </data>
+    </portal>
+    <portal id="p330">
+      <data>
+        <filters>
+          <filter type="display" invlist="9"/>
+        </filters>
+        <instances>
+          <instance displayname="SyaifulZone2toZone3" pos="-129.81483870967742|0|-14.863548387096785" rot="0|0|0" scale="1" radius="2.76" model="Common/Misc/DoorPortal"/>
+        </instances>
+      </data>
+    </portal>
+    <portal id="p330_2">
+      <data>
+        <filters>
+          <filter type="display" invlist="9"/>
+        </filters>
+        <instances>
+          <data displayname="SyaifulZone2toZone3" pos="-126.22421052631579|0|3.3157894736842195" rot="0|237|0" scale="1" radius="1.5" model="Common/Misc/DoorPortal"/>
+        </instances>
+      </data>
+    </portal>
+    <portal id="p370">
+      <data>
+        <filters>
+          <filter type="display" invlist="10"/>
+        </filters>
+        <instances>
+          <instance displayname="SyaifulZone3toZone4" pos="-130.77702127659575|0|3.1978723404255334" rot="0|0|0" scale="1" radius="8.49" model="Common/Misc/DoorPortal"/>
+        </instances>
+      </data>
+    </portal>
+    <portal id="p370_2">
+      <data>
+        <filters>
+          <filter type="display" invlist="10"/>
+        </filters>
+        <instances>
+          <data displayname="SyaifulZone3toZone4" pos="-131.99625|0|21.47437499999998" rot="0|93|0" scale="1" radius="1.5" model="Common/Misc/DoorPortal"/>
+        </instances>
+      </data>
+    </portal>
+    <media id="39">
+      <data>
+        <instances>
+          <instance displayname="EndObj" pos="-147.40535606971153|0|-22.695721153846165" rot="0|0|0" scale="1" radius="0.60" model=""/>
+        </instances>
+      </data>
+    </media>
+  </triggers>
+  <npcs>
+    <npc id="1">
+      <data>
+        <instances>
+          <instance pos="-109.3364705882353|0|-12.63529411764705" rot="0|90|0" scale="1" radius="1.84" model="Common/Misc/Icon" showModel="false"/>
+          <instance pos="-108.83194029850746|0|-8.354328358208988" rot="0|0|0" scale="1" radius="1.08" model="Common/Misc/Icon" showModel="false"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="3">
+      <data>
+        <filters>
+          <filter type="display" invlist="2"/>
+        </filters>
+        <instances>
+          <instance pos="-109.05506493506493|0|-7.313766233766245" rot="0|180|0" scale="1" radius="0.60" model="Common/Misc/Icon" showModel="true">
+            <aibehaviours>
+              <aibehaviour name="StateNPCIdle" gestureanimation="SIT" animloop="false" informalinteract="true"/>
+            </aibehaviours>
+          </instance>
+        </instances>
+      </data>
+    </npc>
+    <npc id="6">
+      <data>
+        <filters>
+          <filter type="display" invlist="4"/>
+        </filters>
+        <instances>
+          <instance pos="-112.02590976388997|0|-14.433920361567829" rot="0|90|0" scale="1" radius="3.33" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="11">
+      <data>
+        <instances>
+          <instance pos="-134.4058064516129|0|-9.385161290322543" rot="0|0|0" scale="1" radius="3.33" model="Common/Misc/Icon" showModel="false"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="12">
+      <data>
+        <instances>
+          <instance pos="-145.73769230769233|0|-9.278076923076924" rot="0|0|0" scale="1" radius="0.84" model="Common/Misc/Icon" showModel="false"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="13">
+      <data>
+        <instances>
+          <instance pos="-124.20716417910448|0|-8.869253731343292" rot="0|0|0" scale="1" radius="0.78" model="Common/Misc/Icon" showModel="false"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="22">
+      <data>
+        <instances>
+          <instance pos="-141.40083333333334|0|-25.29583333333335" rot="0|0|0" scale="1" radius="0.78" model="Common/Misc/Icon" showModel="false"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="23">
+      <data>
+        <instances>
+          <instance pos="-145.04166666666666|0|-26.80916666666664" rot="0|0|0" scale="1" radius="7.38" model="Common/Misc/Icon" showModel="false"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="29">
+      <data>
+        <instances>
+          <instance pos="-129.84870967741938|0|-13.419677419354826" rot="0|0|0" scale="1" radius="0.60" model="Common/Misc/Icon" showModel="true"/>
+          <instance pos="-129.0442105263158|0|3.145263157894732" rot="0|81|0" scale="1" radius="0.60" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="30">
+      <data>
+        <filters>
+          <filter type="display" invlist="11"/>
+        </filters>
+        <instances>
+          <instance pos="-111.43970149253731|0|-8.015820895522381" rot="0|180|0" scale="1" radius="0.60" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="31">
+      <data>
+        <filters>
+          <filter type="display" invlist="12"/>
+        </filters>
+        <instances>
+          <instance pos="-115.17582089552238|0|-4.957611940298506" rot="0|180|0" scale="1" radius="0.60" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="32">
+      <data>
+        <instances>
+          <instance pos="-129.0832258064516|0|-13.419677419354826" rot="0|0|0" scale="1" radius="0.60" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="36">
+      <data>
+        <instances>
+          <instance pos="-127.71894736842104|0|3.5989473684210793" rot="0|117|0" scale="1" radius="0.60" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="38">
+      <data>
+        <instances>
+          <instance pos="-129.5329411764706|0|20.117647058823536" rot="0|0|0" scale="1" radius="1.08" model="Common/Misc/Icon" showModel="false">
+            <aibehaviours>
+              <aibehaviour name="StateNPCIdle" gestureanimation="LieDown" animloop="false" informalinteract="false"/>
+            </aibehaviours>
+          </instance>
+        </instances>
+      </data>
+    </npc>
+    <npc id="40">
+      <data>
+        <instances>
+          <instance pos="-132.2888888888889|0|21.48888888888891" rot="0|0|0" scale="1" radius="0.60" model="Common/Misc/Icon" showModel="false"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="41">
+      <data>
+        <instances>
+          <instance pos="-128.2362162162162|0|-8.005945945945939" rot="0|180|0" scale="1" radius="0.60" model="Common/Misc/Icon" showModel="false">
+            <aibehaviours>
+              <aibehaviour name="StateNPCIdle" gestureanimation="SIT" animloop="false" informalinteract="false"/>
+            </aibehaviours>
+          </instance>
+        </instances>
+      </data>
+    </npc>
+    <npc id="42">
+      <data>
+        <instances>
+          <instance pos="-115.12656716417911|0|-6.8408955223880525" rot="0|0|0" scale="1" radius="5.01" model="Common/Misc/Icon" showModel="false"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="43">
+      <data>
+        <instances>
+          <instance pos="-128.24470588235295|0|-8.025294117647064" rot="0|0|0" scale="1" radius="0.75" model="Common/Misc/Icon" showModel="false"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="45">
+      <data>
+        <instances>
+          <instance pos="-113.05724137931034|0|-7.515172413793124" rot="0|0|0" scale="1" radius="0.87" model="Common/Misc/Icon" showModel="false"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="48">
+      <data>
+        <instances>
+          <instance pos="-128.20166666666665|0|5.160833333333329" rot="0|0|0" scale="1" radius="5.49" model="Common/Misc/Icon" showModel="false"/>
+        </instances>
+      </data>
+    </npc>
+  </npcs>
+</world>

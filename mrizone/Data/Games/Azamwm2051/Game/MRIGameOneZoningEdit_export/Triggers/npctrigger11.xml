@@ -1,0 +1,22 @@
+<trigger>
+  <event type="1">
+    <logic>
+      <condition>
+        <property>InventoryCondition|6|-1|1</property>
+        <property>InventoryCondition|29|1|0</property>
+        <property>InventoryCondition|30|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|dialog|dialogue4.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|8|1|0</property>
+      </condition>
+      <action>
+        <property>RemoveInventoryItemAction|8|1</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

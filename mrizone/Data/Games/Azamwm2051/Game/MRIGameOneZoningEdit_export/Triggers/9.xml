@@ -1,0 +1,10 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition/>
+      <action>
+        <property>ShowMediaAction|minigame|Zone2_Keypad_mg_0.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

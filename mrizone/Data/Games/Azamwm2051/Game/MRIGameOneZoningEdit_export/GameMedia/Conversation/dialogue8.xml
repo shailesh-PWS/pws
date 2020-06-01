@@ -1,0 +1,8 @@
+<xml>
+  <dialog myid="1942020101852696233" id="1" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="Roger" portrait="image" imagepath="R2_NNI_scrubs_male.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" shotType="shoulder" cameraPosition="left" cameraRange="close" cameraPanState="snap" cameraHeight="eye" cameraOffsetX="0" cameraOffsetY="0" cameraOffsetZ="0" cameraDuration="1" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[We have not yet done the screening for the patient. ]]></text>
+    <dialog myid="19422020101910191885" id="2" multiplayerreward="" persistentreward="" reward="43" who="2" link="" nick="Roger" portrait="image" imagepath="R2_NNI_scrubs_male.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[Please help him to remove all potentially hazardous items from his person. ]]></text>
+    </dialog>
+  </dialog>
+</xml>

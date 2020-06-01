@@ -1,0 +1,25 @@
+<xml>
+  <assets>
+    <asset>Playware_Pack/Environments/MRIZone1</asset>
+    <asset>Playware_Pack/Environments/MRIZone2</asset>
+    <asset>Playware_Pack/Environments/MRIZone4</asset>
+    <asset>Playware_Pack/Environments/MRIZone3</asset>
+    <asset>Playware_Pack/Environments/MRIZone4Plus</asset>
+    <asset>Playware_Pack/Characters/R2_NNI_scrubs_fem</asset>
+    <asset>AnimationController/R2/R2_FemaleAdult</asset>
+    <asset>Common/Misc/Icon</asset>
+    <asset>Common/Misc/DoorPortal</asset>
+    <asset>Playware_Pack/Characters/R_noncustommale_03</asset>
+    <asset>AnimationController/R/R_MaleAdult</asset>
+    <asset>Playware_Pack/Characters/R2_NNI_patient01</asset>
+    <asset>Playware_Pack/Characters/R2_NNI_PSA</asset>
+    <asset>Playware_Pack/Characters/R2_NNI_patient03_m</asset>
+    <asset>AnimationController/R2/R2_MaleAdult</asset>
+    <asset>Playware_Pack/Characters/R2_BCLS_oldman01</asset>
+    <asset>Playware_Pack/Characters/R2_NNI_patient02_casual</asset>
+    <asset>Playware_Pack/Characters/R2_NNI_scrubs_male</asset>
+    <asset>Starter_Pack/Items/WheelChair MR Unsafe</asset>
+    <asset>Starter_Pack/Items/first_aid_kit</asset>
+    <asset>Starter_Pack/Items/prop_NNIpatient_wchair</asset>
+  </assets>
+</xml>

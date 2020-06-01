@@ -1,0 +1,11 @@
+<xml>
+  <dialog myid="18320201205380707" id="1" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="Helen" portrait="image" imagepath="R2_NNI_helen_frown.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[This is Zone 4. It contains the MRI scanner, which uses a powerful magnetic field to generate images of the body’s organs. As such, this is apotentially hazardous area.]]></text>
+    <dialog myid="183220201223111969" id="2" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="Helen" portrait="image" imagepath="R2_NNI_helen_frown.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false" minigame="Zone4_Entrance_mg_23.xml">
+      <text><![CDATA[Objects made of metals that can be attracted to magnets, known as ferromagnetic objects, must NEVER be brought into this room. The magnet is so strong that ferromagnetic objects will fly towards it at high speed, and pose a serious danger to everyone in the room.]]></text>
+      <dialog myid="25322020104857350924" id="3" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Helen" portrait="image" imagepath="R2_NNI_helen_expressionless.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[You may now explore Zone 4. Look at each piece of equipment to learn more about it.]]></text>
+      </dialog>
+    </dialog>
+  </dialog>
+</xml>

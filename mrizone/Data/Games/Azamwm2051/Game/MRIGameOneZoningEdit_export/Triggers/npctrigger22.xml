@@ -1,0 +1,20 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition>
+        <property>InventoryCondition|7|1|0</property>
+      </condition>
+      <action>
+        <property>RemoveInventoryItemAction|7|1</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|36|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|Zone3_Intro_mg_14.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

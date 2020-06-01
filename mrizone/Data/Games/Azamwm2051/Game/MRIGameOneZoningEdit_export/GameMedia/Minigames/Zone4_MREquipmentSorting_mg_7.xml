@@ -1,0 +1,88 @@
+<xml>
+  <class>minigame</class>
+  <name>Zone4_MREquipmentSorting</name>
+  <description/>
+  <MGame>
+    <Type>STICKERS</Type>
+    <Question><![CDATA[Drag the images in the correct positions.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1024]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG7.png]]></Path>
+    <snap><![CDATA[true]]></snap>
+    <Answer><![CDATA[[770.447491291781,358.6529644268775,124.46157266730897,124.4584980237154,Minigames/images/IMG8.png,true,124.46157266730897,124.4584980237154],[767.7912991921738,355.92094861660075,124.46157266730897,124.4584980237154,Minigames/images/IMG9.png,true,124.46157266730897,124.4584980237154],[770.7510561031646,355.92094861660075,124.46157266730897,124.4584980237154,Minigames/images/IMG10.png,true,124.46157266730897,124.4584980237154],[112.24308900911585,96.3794466403162,124.46157266730897,124.4584980237154,Minigames/images/IMG11.png,true,124.46157266730897,124.4584980237154],[460.6596012747351,99.03557312252966,124.46157266730897,124.4584980237154,Minigames/images/IMG12.png,true,124.46157266730897,124.4584980237154],[210.67397910027424,612.5786561264822,124.46157266730897,124.4584980237154,Minigames/images/IMG13.png,true,124.46157266730897,124.4584980237154],[354.1083524790632,612.7304347826087,124.46157266730897,124.4584980237154,Minigames/images/IMG14.png,true,124.46157266730897,124.4584980237154],[513.935225672571,448.8094861660079,124.46157266730897,124.4584980237154,Minigames/images/IMG15.png,true,124.46157266730897,124.4584980237154],[64.5075224190321,612.7304347826087,124.46157266730897,124.4584980237154,Minigames/images/IMG16.png,true,124.46157266730897,124.4584980237154],[501.6408508115319,612.5786561264822,124.46157266730897,124.4584980237154,Minigames/images/IMG17.png,true,124.46157266730897,124.4584980237154]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <MGame>
+    <Type>SLIDESHOW</Type>
+    <width><![CDATA[900]]></width>
+    <height><![CDATA[506]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <AutoSliding><![CDATA[false]]></AutoSliding>
+    <animationType><![CDATA[3]]></animationType>
+    <width><![CDATA[900]]></width>
+    <height><![CDATA[506]]></height>
+    <transparent><![CDATA[false]]></transparent>
+    <Items>
+      <duration>1</duration>
+      <delay>1</delay>
+      <backColor><![CDATA[rgba(204,204,204,1)]]></backColor>
+      <image>
+        <bg>false</bg>
+        <path><![CDATA[Minigames/images/IMG18.png]]></path>
+        <width>419</width>
+        <height>576</height>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </image>
+      <textbox>
+        <text><![CDATA[<pre><FONT FACE="Arial" style="font-size:12.5px" COLOR="#000000" LETTERSPACING="0" KERNING="0">Well done! Now that you have learnt how to identify MRI safety labels,</FONT><br/><FONT FACE="Arial" style="font-size:12.5px" COLOR="#000000" LETTERSPACING="0" KERNING="0">and about the handling of MR equipment, you understand the need</FONT><br/><FONT FACE="Arial" style="font-size:12.5px" COLOR="#000000" LETTERSPACING="0" KERNING="0">for such stringent safety procedures. Equipment used in or near the MR</FONT><br/><FONT FACE="Arial" style="font-size:12.5px" COLOR="#000000" LETTERSPACING="0" KERNING="0">environment should be labelled as MR UNSAFE, MR CONDITIONAL or MR SAFE.</FONT>]]></text>
+        <dynamic>false</dynamic>
+        <xPos>358.35</xPos>
+        <yPos>127.4</yPos>
+      </textbox>
+    </Items>
+    <Items>
+      <duration>1</duration>
+      <delay>1</delay>
+      <backColor><![CDATA[rgba(204,204,204,1)]]></backColor>
+      <image>
+        <bg>false</bg>
+        <path><![CDATA[Minigames/images/IMG18.png]]></path>
+        <width>419</width>
+        <height>576</height>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </image>
+      <textbox>
+        <text><![CDATA[<pre><FONT FACE="Arial" style="font-size:22.5px" COLOR="#000000" LETTERSPACING="0" KERNING="0">You may continue to explore this</FONT><br/><FONT FACE="Arial" style="font-size:22.5px" COLOR="#000000" LETTERSPACING="0" KERNING="0">room. Once you feel ready, you may</FONT><br/><FONT FACE="Arial" style="font-size:22.5px" COLOR="#000000" LETTERSPACING="0" KERNING="0">move back into Zone 3.</FONT>]]></text>
+        <dynamic>false</dynamic>
+        <xPos>375.55</xPos>
+        <yPos>89.6</yPos>
+      </textbox>
+    </Items>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater>7</greater>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

@@ -1,0 +1,20 @@
+<xml>
+  <dialog myid="194202093739919589" id="1" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="PC" portrait="image" imagepath="R2_NNI_scrubs_fem_neutral.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[Hi there, Ms Rose Fernandez?]]></text>
+    <dialog myid="1942202093752976808" id="2" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="Rose" portrait="image" imagepath="R2_NNI_patient02_casual.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+      <text><![CDATA[That’s me.]]></text>
+      <dialog myid="194220209375433955" id="3" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="PC" portrait="image" imagepath="R2_NNI_scrubs_fem_neutral.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+        <text><![CDATA[I need you to change out of all your clothes into these robes, please. Make sure you take off all your jewellery as well. ]]></text>
+        <dialog myid="1942202093755326403" id="4" multiplayerreward="" persistentreward="" reward="42" who="1" link="" nick="PC" portrait="image" imagepath="R2_NNI_scrubs_fem_neutral.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false" minigame="Zone1_Rose_V2_Menu_mg_24.xml">
+          <text><![CDATA[There are lockers in the changing room where you may place your belongings.]]></text>
+          <dialog myid="2752202018032368871" id="5" multiplayerreward="" persistentreward="" reward="33" who="1" link="" nick="Helen" portrait="image" imagepath="R2_NNI_helen_happy.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+            <text><![CDATA[Well done! your patient is ready to proceed to zone 3!]]></text>
+            <dialog myid="7232020151129237626" id="6" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="Helen" portrait="image" imagepath="R2_NNI_helen_happy.png" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+              <text><![CDATA[Now you can go back to zone 2 to check the in-patients!]]></text>
+            </dialog>
+          </dialog>
+        </dialog>
+      </dialog>
+    </dialog>
+  </dialog>
+</xml>

@@ -1,0 +1,54 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition>
+        <property>InventoryCondition|20|1|0</property>
+        <property>InventoryCondition|30|1|0</property>
+        <property>InventoryCondition|33|1|0</property>
+        <property>InventoryCondition|34|1|0</property>
+        <property>InventoryCondition|43|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|dialog|dialogue8.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|24|1|0</property>
+        <property>InventoryCondition|21|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|Zone2_Syaiful_2_mg_18.xml</property>
+      </action>
+    </logic>
+  </event>
+  <event type="1">
+    <logic>
+      <condition>
+        <property>InventoryCondition|43|1|0</property>
+        <property>InventoryCondition|44|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|minigame|Zone1_Syaiful_V2_Menu_mg_17.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|44|1|0</property>
+        <property>InventoryCondition|23|-1|1</property>
+      </condition>
+      <action>
+        <property>ShowMediaAction|dialog|dialogue9.xml</property>
+      </action>
+    </logic>
+    <logic>
+      <condition>
+        <property>InventoryCondition|21|1|0</property>
+        <property>InventoryCondition|9|-1|1</property>
+      </condition>
+      <action>
+        <property>AddInventoryItemAction|9|1</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

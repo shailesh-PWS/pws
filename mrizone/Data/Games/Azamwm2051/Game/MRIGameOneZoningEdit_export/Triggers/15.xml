@@ -1,0 +1,10 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition/>
+      <action>
+        <property>ShowMediaAction|minigame|Zone4_Objects_2_MRISafePatientTransportEquipment_mg_2.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

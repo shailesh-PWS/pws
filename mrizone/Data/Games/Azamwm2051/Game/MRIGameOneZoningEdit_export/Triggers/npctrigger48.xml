@@ -1,0 +1,12 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <condition>
+        <property>InventoryCondition|9|1|0</property>
+      </condition>
+      <action>
+        <property>RemoveInventoryItemAction|9|1</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

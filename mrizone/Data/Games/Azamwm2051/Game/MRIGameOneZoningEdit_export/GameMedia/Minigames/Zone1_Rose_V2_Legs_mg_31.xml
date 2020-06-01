@@ -1,0 +1,38 @@
+<xml>
+  <class>minigame</class>
+  <name>Zone1_Rose_V2_Legs</name>
+  <description/>
+  <MGame>
+    <Type>HIDDEN OBJECTS</Type>
+    <Question><![CDATA[Find the objects by click on it.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1024]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <ShowList><![CDATA[true]]></ShowList>
+    <Path><![CDATA[Minigames/images/IMG67.jpg]]></Path>
+    <ChallengeType><![CDATA[none]]></ChallengeType>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <DeductValue><![CDATA[2]]></DeductValue>
+    <Answer><![CDATA[[682.1101311791299,137.5114624505929,124.15800785592529,121.42292490118578,Coins,true],[837.838879418958,159.3675889328063,189.65211591195435,166.42529644268774,Credit Card,true],[676.6459645742237,343.77865612648225,345.15319054324465,422.9312252964427,Exercise Leggings,true],[761.1887645445787,2.276679841897233,246.87408285777815,129.61897233201583,House Keys,true]]]></Answer>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>false</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

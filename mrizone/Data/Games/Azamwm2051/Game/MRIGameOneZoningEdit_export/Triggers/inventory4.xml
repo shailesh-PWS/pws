@@ -1,0 +1,10 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <action>
+        <property>PickUpItemAction</property>
+        <property>AddInventoryItemAction|13|1</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

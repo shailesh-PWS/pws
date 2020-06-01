@@ -1,0 +1,38 @@
+<xml>
+  <class>minigame</class>
+  <name>Zone2_Jasmine</name>
+  <description/>
+  <MGame>
+    <Type>STICKERS</Type>
+    <Question><![CDATA[Transfer the patiet by dragging and dropping her onto an MR Safe Wheelchair]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[1024]]></width>
+    <height><![CDATA[768]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG60.png]]></Path>
+    <ChallengeValue><![CDATA[30]]></ChallengeValue>
+    <snap><![CDATA[true]]></snap>
+    <Answer><![CDATA[[709.8104202178907,146.0110671936759,284.4402282665086,402.13754940711465,Minigames/images/IMG61.png,true,284.4402282665086,402.13754940711465]]]></Answer>
+    <CorrectFeedback><![CDATA[GOOD JOB!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[TRY AGAIN!]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater>34</greater>
+    <greaterpersistent/>
+    <lesser>34</lesser>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>
