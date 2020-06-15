@@ -12,7 +12,19 @@
     <script src="iframeController.js"></script>
     <script>
         unityInstance = UnityLoader.instantiate("unityContainer", "Build/UAT.json");
+
+        if (window.addEventListener) {
+            window.addEventListener('message',( function(msg)  {
+                UnityPostMessage(msg.data);
+            }), false);
+        } else if ( window.attachEvent ) { // ie8
+            window.attachEvent('onmessage',( function(msg)  {
+                UnityPostMessage(msg.data);
+            }));
+        }
+
         document.oncontextmenu = new Function("return false");
+        var jsonLog;
     </script>
 </head>
 <body>

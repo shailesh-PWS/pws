@@ -199,8 +199,8 @@ var minigameManager = new function(){
                 //strGameLoadedForSlide("D:/work/3DHive.mobi-Javascript/Game/Bug/GameMedia/contents/slideshow.html");
                 break;
             case "COMIC STRIP":
-                //$(".minigame-class").hide();
-                Utils.getStringFromFile("/GameMedia/contents/ComicStrip.html","strGameLoaded");
+                $(".minigame-class").hide();
+                Utils.getStringFromFile("/GameMedia/contents/ComicStrip.html","strGameLoadedForSlide");
                 break;
             case "MCQ":
                 console.log("wrapper size:"+$("#contentWrapper").width()+","+$("#contentWrapper").height());
@@ -327,11 +327,19 @@ function strGameLoadedForSlide(str){
 
 function strGameLoaded(str){
     str = str.replace(/"/g, "");
+    if(gameType=="RESULT PAGE")str = str.replace("@@@","---");
     str = str.replace(/@/g, "\"");
-    console.log(str);
+    if(gameType=="RESULT PAGE")str = str.replace("---","\"@\"");
+
+    // FIXME: if you see the an error here, then it is most probably due to the forward slashes "//" for comments
+    // as of now the parser for minigames does not support forward slashes. hence use the "/* */"
     $("#contentWrapper").html(str);
     $("#minigameWrapper").show();
     $("#submitBtnID").show();
+}
+
+function introGameLoaded(str){
+    Content.strGameLoaded(str);
 }
 
 function showTimer(){

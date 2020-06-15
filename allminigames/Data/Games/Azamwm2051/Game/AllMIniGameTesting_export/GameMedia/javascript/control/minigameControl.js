@@ -67,7 +67,8 @@ var minigameControl = new function(){
             console.log("CloseBtn");
 
             // HACK for slideshow onClose event
-            if(document.getElementById('slideShowWrapper').textContent != undefined && document.getElementById('slideShowWrapper').textContent != null)
+            if(document.getElementById('slideShowWrapper').textContent != undefined && document.getElementById('slideShowWrapper').textContent != null &&
+             document.getElementById('slideShowWrapper').textContent != "")
             {
                 onClose();
             }

@@ -111,14 +111,13 @@
         var resizeOption;
         var scaleValues;
         var transparentBG=false;
-        var autoSlideTo;
 
         function resize(){
             monitorResize();
         }
 
         $(document).ready(function(){
-            
+            console.log("SLIDESHOW STARTED");
             $("#startNavBtnID").off("mousedown");
 
             GivenImgHt = $($(currentXMLList).find("height")[0]).text();
@@ -578,12 +577,11 @@
                     break;
             }
         }
-        
-        function onClose(){
-            stopSoundMedia();
-            clearTimeout(autoSlideTo);
-            clearTimeout(mainTo);
+
+        function getTotal() {
+            onClose();
         }
+        
     </script>
 </head>
 <body>

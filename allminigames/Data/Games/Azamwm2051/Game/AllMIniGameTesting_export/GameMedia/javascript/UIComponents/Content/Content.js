@@ -57,6 +57,8 @@ var minigameClass;
 var minigameXmlName;
 var backToMenuBool=false;
 var background="";
+var autoSlideTo;
+
 var Content = new function()
 {
     this.TestBridge = function (obj) {
@@ -134,20 +136,32 @@ var Content = new function()
         var htmlTxt = '<div id="minigameWrapper"></div>';
         $("#mainContentWindow").html(htmlTxt);
         Utils.getXMLFromFile("GameMedia/Minigames/"+qid,init);
-    };
+    }
     this.Intro = function(){
-        var htmlTxt = '<div id="introWrapper"></iframe><iframe src="Minigames/Intro/index.html" id="introIframe" frameborder="0" scrolling="yes"></iframe><iframe src="contents/close.html" id="closeFrame" frameborder="0" scrolling="no"></div>';
+        debugger;
+        var htmlTxt = '<div id="introMainWrapper"><div id="introIframe"></div><img id="closeFrame" src="images/icons/ContentCloseButton.png"/></div>';
         $("#mainContentWindow").html(htmlTxt);
-        
+
         $("#closeFrame").css({
              width:$("#closeFrame").height()
         });
-        $("#closeFrame").load(function(){
-            $(this).contents().find("body").unbind().mousedown(function(){
-                ContentEvents.CloseWindow();
-            });
+        $("#closeFrame").unbind().mousedown(function(){
+            ContentEvents.CloseWindow();
         });
+
+        Utils.getStringFromFile("/GameMedia/Minigames/Intro/index.html","introGameLoaded");
     }
+    this.strGameLoaded=function(str){
+        str = str.replace(/"/g, "");
+        str = str.replace(/@/g, "\"");
+        $("#introIframe").html(str);
+    }
+}
+
+function onClose(){
+    stopSoundMedia();
+    clearTimeout(autoSlideTo);
+    clearTimeout(mainTo);
 }
 
 function closeIntro(){

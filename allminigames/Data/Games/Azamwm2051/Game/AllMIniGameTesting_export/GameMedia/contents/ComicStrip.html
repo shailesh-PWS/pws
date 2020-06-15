@@ -121,7 +121,6 @@
         var animationIndices=[];
         var scale1=1;
         var transparentBG=false;
-        var autoSlideTo;
 
         function resize(){
             monitorResize();
@@ -530,12 +529,6 @@
                 top:(eh-sh*scale)/2,
                 left:(ew-sw*scale)/2
             });
-        }
-
-        function onClose(){
-            stopSoundMedia();
-            clearTimeout(autoSlideTo);
-            clearTimeout(mainTo);
         }
     </script>
 </head>

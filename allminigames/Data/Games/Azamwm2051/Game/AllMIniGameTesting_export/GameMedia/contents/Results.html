@@ -346,7 +346,7 @@
             
             row+= '<tr id="row'+rowId+'" class="userRow">';
             row+='<td class="userCol Rank">'+(rowId+1)+'</td>';
-            if(user && user.UserCode)row+='<td class="userCol profileName">'+user.UserCode.split("@")[0]+'</td>';
+            if(user && user.UserCode)row+='<td class="userCol profileName">'+user.UserCode +'</td>';
             if(scoreSystem=="both")
             {
                 row+='<td class="userCol Score">'+user.TotalScore+'</td>' ;    
