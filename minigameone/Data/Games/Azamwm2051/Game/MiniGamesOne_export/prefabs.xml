@@ -1,0 +1,18 @@
+<xml>
+  <assets>
+    <asset>Playware_Pack/Environments/decayrium</asset>
+    <asset>Playware_Pack/Characters/blackfigure</asset>
+    <asset>AnimationController/R/R_MaleAdult</asset>
+    <asset>Playware_Pack/Characters/SD_redbloodcell_NH</asset>
+    <asset>APS_Pack/Characters/R_noncustom_malechild03B</asset>
+    <asset>AnimationController/R/R_Child</asset>
+    <asset>Playware_Pack/Characters/noncustom_male_soldier01</asset>
+    <asset>Playware_Pack/Characters/SD_whitebloodcell_NH</asset>
+    <asset>Playware_Pack/Characters/noncustom_male_soldier02</asset>
+    <asset>Playware_Pack/Characters/noncustom_male_soldier03</asset>
+    <asset>RWS_Pack/Characters/R_noncustommale_13B</asset>
+    <asset>Playware_Pack/Characters/R_noncustommale_16</asset>
+    <asset>Playware_Pack/Characters/noncustom_female_ica</asset>
+    <asset>AnimationController/R/R_FemaleAdult</asset>
+  </assets>
+</xml>

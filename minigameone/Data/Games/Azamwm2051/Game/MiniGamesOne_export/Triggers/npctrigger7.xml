@@ -1,0 +1,9 @@
+<trigger>
+  <event type="0">
+    <logic>
+      <action>
+        <property>ShowMediaAction|minigame|MG_Test_8_mg_7.xml</property>
+      </action>
+    </logic>
+  </event>
+</trigger>

@@ -1,0 +1,7 @@
+-target localplay
+-chaptername Azamwm2051
+-gamename MiniGamesOne_export
+-persistent Data
+-gamesPath Data\Games
+-assetsPath Data\Assets
+-gameDownloadDirectory https://gamescontent.3dhive.net/Games/WebGL/5634/27May2020/0daeec84-82c6-48af-96cf-24dcea11f8a0/GameMedia/index.html

@@ -1,0 +1,42 @@
+<xml>
+  <class>minigame</class>
+  <name>MG_Test_7</name>
+  <description/>
+  <MGame>
+    <Type>SPOT THE DIFFERENCE</Type>
+    <Question><![CDATA[Find the difference from the given objects by click on it.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[633]]></width>
+    <height><![CDATA[573]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG9.jpg]]></Path>
+    <Path1><![CDATA[Minigames/images/IMG10.jpg]]></Path1>
+    <Answer>[214.67742857142858,314.89678030303025,144.68571428571428,144.69696969696972]</Answer>
+  </MGame>
+  <MGame>
+    <Type>SEQUENCE</Type>
+    <Question><![CDATA[Arrange the pieces in sequence.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <NoOfItems><![CDATA[9]]></NoOfItems>
+    <Path><![CDATA[Minigames/images/IMG11.jpg]]></Path>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>false</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

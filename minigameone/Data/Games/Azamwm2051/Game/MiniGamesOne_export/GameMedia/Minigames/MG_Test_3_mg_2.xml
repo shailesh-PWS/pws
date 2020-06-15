@@ -1,0 +1,47 @@
+<xml>
+  <class>minigame</class>
+  <name>MG_Test_3</name>
+  <description/>
+  <MGame>
+    <Type>SORTING</Type>
+    <Question><![CDATA[Sort the items in ascending order.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <Answer><![CDATA[THING 1]]></Answer>
+    <Answer><![CDATA[THING 2]]></Answer>
+    <Answer><![CDATA[THING 3]]></Answer>
+    <Answer><![CDATA[THING 4]]></Answer>
+    <Answer><![CDATA[THING 5]]></Answer>
+    <Answer><![CDATA[THING 6]]></Answer>
+    <Answer><![CDATA[THING 7<br/>]]></Answer>
+  </MGame>
+  <MGame>
+    <Type>JIGSAW PUZZLE</Type>
+    <Question><![CDATA[Drag the pieces to solve the puzzle]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[700]]></width>
+    <height><![CDATA[692]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG4.jpg]]></Path>
+    <Horizontal><![CDATA[3]]></Horizontal>
+    <Vertical><![CDATA[3]]></Vertical>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>false</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

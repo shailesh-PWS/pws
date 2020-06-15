@@ -1,0 +1,67 @@
+<xml>
+  <class>minigame</class>
+  <name>MG_Test_4</name>
+  <description/>
+  <MGame>
+    <Type>MISSING PIECES</Type>
+    <Question><![CDATA[Drag the pieces to solve the puzzle]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[425]]></width>
+    <height><![CDATA[480]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG5.jpg]]></Path>
+    <Points>[179.67633928571428,140.53754940711462,147.56417410714286,40.93280632411067]</Points>
+  </MGame>
+  <MGame>
+    <Type>GROUPING</Type>
+    <Question><![CDATA[Group the items according to which group they belong in]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <Group>
+      <Name>Cool Stuff</Name>
+      <Item><![CDATA[Cool Stuff 1]]></Item>
+      <Item><![CDATA[Cool Stuff 2]]></Item>
+      <Path0><![CDATA[NA]]></Path0>
+      <Path1><![CDATA[NA]]></Path1>
+    </Group>
+    <Group>
+      <Name>Lame Stuff</Name>
+      <Item><![CDATA[Lame Stuff 1]]></Item>
+      <Item><![CDATA[Lame Stuff 2]]></Item>
+      <Path0><![CDATA[NA]]></Path0>
+      <Path1><![CDATA[NA]]></Path1>
+    </Group>
+    <Group>
+      <Name>Stuff</Name>
+      <Item><![CDATA[Stuff 1]]></Item>
+      <Item><![CDATA[Stuff 2]]></Item>
+      <Path0><![CDATA[NA]]></Path0>
+      <Path1><![CDATA[NA]]></Path1>
+    </Group>
+    <Group>
+      <Name>Just More Stuff</Name>
+      <Item><![CDATA[Just More Stuff 1]]></Item>
+      <Item><![CDATA[Just More Stuff 2]]></Item>
+      <Path0><![CDATA[NA]]></Path0>
+      <Path1><![CDATA[NA]]></Path1>
+    </Group>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>false</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

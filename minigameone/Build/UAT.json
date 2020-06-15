@@ -1,0 +1,17 @@
+{
+"companyName": "PlaywareStudios",
+"productName": "3DHive.mobi",
+"productVersion": "2.0.1",
+"dataUrl": "UAT.data.unityweb",
+"asmCodeUrl": "UAT.asm.code.unityweb",
+"asmMemoryUrl": "UAT.asm.memory.unityweb",
+"asmFrameworkUrl": "UAT.asm.framework.unityweb",
+"TOTAL_MEMORY": 1073741824,
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.21f1"
+}
