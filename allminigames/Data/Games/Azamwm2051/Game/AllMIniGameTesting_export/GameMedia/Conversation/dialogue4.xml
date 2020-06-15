@@ -1,0 +1,8 @@
+<xml>
+  <dialog myid="2532020101930397206" id="1" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="Shail" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
+    <text><![CDATA[Time to get the talking!]]></text>
+    <dialog myid="2532202010201719699" id="2" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="Bobby" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false" minigame="Minigame5_mg_5.xml">
+      <text><![CDATA[Yes you are right.]]></text>
+    </dialog>
+  </dialog>
+</xml>

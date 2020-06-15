@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>grouping</title>
+    
+    <style>
+        #templatemainwrapper{
+            position: absolute;
+            left:0px;
+            top:0px;
+            width:100%; 
+            height:100%;
+            text-align: center;
+            overflow: hidden;
+            font-family: arial;
+            font-size: 18px;
+        }
+
+        #templatemainwrapper table{
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+            border-collapse:collapse;
+            box-sizing: border-box;
+        }
+        
+        #row1ID{
+            width:100%;
+            height:50%;
+        }
+        
+        #row1ID td{
+            text-align: center;
+        }
+        
+        #row2ID{
+            width:100%;
+            height:50%;
+        }
+        
+        #row2ID td{
+            position: relative;
+            text-align: center;
+            vertical-align: top;
+        }
+        
+        .groupBoxClass{
+            border: 5px solid rgba(0,0,0,.6);
+            display: inline-block;
+            background-color: rgba(0,0,0,.6) ;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 18px;
+            position: relative;
+        }
+        
+        .mouseOverBoxEffect{
+            background-color: rgba(102,204,255,.6) ; 
+        }
+        
+        .groupBoxClass span{
+            position: absolute;
+            top: 0px;
+            left:0px;
+            width:100%;
+            background-color: black;
+            font-size: 16px;
+            color:white;
+            overflow: hidden;
+            height: 25%;
+        }
+        
+        .groupItemClass{
+            box-sizing: border-box;
+            background-color: rgba(0,0,0,.6);
+            display: inline-block;
+            border:5px solid rgba(0,0,0,0);
+            margin: 2px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+        }
+        
+        .listBoxWrapper{
+            position: absolute;
+            width:100%;
+            height: 75%;
+            bottom: 0px;
+            left:0px;
+            overflow-y: auto;
+            border: 1px solid rgba(255,255,255,0);
+            box-sizing: border-box;
+        }
+        .groupItemClass img{
+            width:10%;
+            float: right;
+            
+        }
+        .groupItemClass span{
+            float: left;
+            padding: 5px;
+            font-size: 18px;
+        }
+        .listItemClass{
+            position: relative;
+            width:100%;
+            box-sizing: border-box;
+            padding-left:20%;
+            padding-right: 10%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            background-color: white;
+            font-size: 18px;
+            border-collapse: collapse;
+            margin-top: 1px;
+            min-height: 20%;
+            text-align: left;
+            color:white;
+        }
+        
+        ._deleteBtnClass{
+            width:10%;
+            height:100%;
+            position: absolute;
+            right:0px;  
+            top:0px;
+            box-sizing: border-box;
+            background-image: url("images/minigames/delete.png");
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: center;
+        }
+        
+        ._imgBtnClass{
+            width:20%;
+            height:100%;
+            position: absolute;
+            left:0px;  
+            top:0px;
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var path="";
+        var autoSubmit;
+        var noOfGroups=1;
+        var divAr=[];
+        var rndNum=[];
+        var groupItemArray;
+        var currentClone;
+        var currentDragMC;
+        var colorAr = ["#68B8F9","#F8443A","#55B766","#C19611"];
+        var myscore=0;
+        var total=0;
+        $(document).ready(function(){
+            initializeMinigame(currentXMLList);
+            });
+        
+        function initializeMinigame(xml){
+            correctAnswers=[true];
+            currentAnswers=[];
+            groupItemArray=[];
+            question = $(xml).find("Question").text();
+            minigameControl.showInstruction(question);
+            noOfGroups = $(xml).find("Group").length;
+            
+            for(var i=0;i<noOfGroups;i++){
+                var div = $("<div class='groupBoxClass'><span style='border-top: 2px solid "+colorAr[i]+"'>"+$($(xml).find("Group")[i]).find("Name").text()+"</span><div class='listBoxWrapper'></div></div>");
+                div.data("group", $($(xml).find("Group")[i]).find("Name").text());
+                div.data("total",$($(xml).find("Group")[i]).find("Item").length);
+                div.data("color",colorAr[i]);
+                $("#row1ID td").append(div);
+                for(var j=0;j<$($(xml).find("Group")[i]).find("Item").length;j++){
+                    var obj={};
+                    obj.text = $($($(xml).find("Group")[i]).find("Item")[j]).text();
+                    obj.imagePath = $($(xml).find("Group")[i]).find("Path"+j).text();
+                    obj.group = $($(xml).find("Group")[i]).find("Name").text();
+                    groupItemArray.push(obj);
+                    total++;
+                }
+            }
+            
+            for(var i=0;i<groupItemArray.length;i++){
+                rndNum.push(i);
+                var div = $("<div class='groupItemClass'></div>");
+                div.data("group",groupItemArray[i].group);
+                div.data("text",groupItemArray[i].text);
+                div.data("imagePath",groupItemArray[i].imagePath);
+                if(groupItemArray[i].imagePath!="NA" && groupItemArray[i].imagePath!=""){
+                    div.css({
+                        backgroundImage:"url("+encodeURI(groupItemArray[i].imagePath)+")"
+                    });
+                    if(groupItemArray[i].text!=""){
+                        var div1 = $("<img src='images/minigames/info.png' alt=''/>");
+                        div.append(div1);
+                        div1.click(function(){
+                            if($($(this).parent()).css("background-image")!="none"){
+                                $($(this).parent()).css({
+                                    backgroundImage:"none"
+                                });
+                                $($(this).parent()).append("<span>"+$($(this).parent()).data("text")+"</span>");
+                                
+                                FontUtils.resize($(this).parent().children("span"));
+                            }
+                            else{
+                                $($(this).parent()).find("span").remove();
+                                $($(this).parent()).css({
+                                    backgroundImage:"url("+encodeURI($($(this).parent()).data("imagePath"))+")"
+                                });
+                            }
+                        });
+                    }
+                }
+                else{
+                    div.css({
+                        textAlign:"center"
+                    });
+                    div.html("<span>"+groupItemArray[i].text+"</span>");
+                }
+                $("#row2ID td").append(div);
+            }
+            
+            rndNum = strFuncs.arrayRandomize(rndNum);
+            
+            for(var i=0;i<$(".groupItemClass").length;i++)$("#row2ID td").append($($(".groupItemClass")[rndNum[i]]));
+                
+            $(".groupItemClass").draggable({
+                containment: '#templatemainwrapper',
+                start:function(){
+                    currentDragMC=this;
+                    $(currentDragMC).hide();
+                    
+                    $(".groupBoxClass").mouseover(function(){
+                        $(this).addClass("mouseOverBoxEffect");
+                    });
+                    $(".groupBoxClass").mouseout(function(){
+                        $(this).removeClass("mouseOverBoxEffect");
+                    });
+                },
+                stop:function(){
+                    $(".groupBoxClass").mouseout();
+                    $(".groupBoxClass").unbind("mouseover");
+                    $(".groupBoxClass").unbind("mouseout");
+                },
+                zIndex:999,
+                appendTo:'body',
+                revert:function(bool){
+                    if(!bool){
+                        $(this).show();
+                    }
+                },
+                helper:function(){
+                    currentClone = $(this).clone();
+                    $(currentClone).css({
+                        pointerEvents:"none"
+                    });
+                    return currentClone;
+                }
+            });
+            
+            $(".groupBoxClass").droppable({
+                drop:function(e,ui){
+                    var div = $("<div></div>");
+                    div.addClass("listItemClass");
+                    div.html($(ui.draggable).data("text"));
+                    div.data("text",$(ui.draggable).data("text"));
+                    div.data("group",$(ui.draggable).data("group"));
+                    div.data("imagePath",$(ui.draggable).data("imagePath"));
+                    div.data("object",$(ui.draggable));
+                    div.css({
+                       backgroundColor: $(this).data("color")
+                    });
+                    $(this).find("[class='listBoxWrapper']").append(div);
+                    
+                    FontUtils.resize(div);
+                    
+                    var div1=$("<div class='_deleteBtnClass'></div>");
+                    
+                    div1.click(function(){
+                       
+                       $(this).parent().data("object").show();
+                       $(this).parent().remove();
+                    });
+                    div.append(div1);
+                    
+                    if($(ui.draggable).data("imagePath")&&$(ui.draggable).data("imagePath")!="NA"){
+                        var div2=$("<div class='_imgBtnClass'></div>");
+                        div2.css({
+                            backgroundImage:"url("+encodeURI($(ui.draggable).data("imagePath"))+")"
+                        });
+                        div.append(div2);
+                        
+                        div2.css({
+                            width:$(div2).height()
+                        });
+                        
+                        div.css({
+                            paddingLeft:$(div2).height()+2
+                        });
+                    }
+                    else{
+                        div.css({
+                            paddingLeft:"2%"
+                        });
+                    }
+                    currentAnswers = [checkAnswer()];
+                }
+            });
+            
+            resize();
+            soundFile = ($(xml).find("audiofile").text() != "") ? $(xml).find("audiofile").text() : "";
+            soundDelay = ($(xml).find("audiodelay").text() != "") ? $(xml).find("audiodelay").text() : 0;
+ 
+            playSoundMedia(soundFile,soundDelay);
+        }
+        
+        function getScore(){
+            return myscore;
+        }
+        
+        function getTotal(){
+            return total;
+        }
+        
+        function checkAnswer(){
+            myscore=0;
+            var bool=true;
+            for(var i=0;i<$(".groupBoxClass").length;i++){
+                if($($(".groupBoxClass")[i]).data("total")!=$($(".groupBoxClass")[i]).find("[class='listBoxWrapper']").find("[class='listItemClass']").length)bool= false;
+                for(var j=0;j<$($(".groupBoxClass")[i]).find("[class='listBoxWrapper']").find("[class='listItemClass']").length;j++){
+                    if($($($(".groupBoxClass")[i]).find("[class='listBoxWrapper']").find("[class='listItemClass']")[j]).data("group")!=$($(".groupBoxClass")[i]).data("group")){
+                        if(bool)bool= false;
+                    }
+                    else{
+                        myscore++;
+                    }
+                }
+            }
+            return bool;
+        }
+
+        function resize(){
+            var _size;
+            $("#row1ID").css({
+                height:$("#templatemainwrapper").height()*.50
+            });
+            $("#row2ID").css({
+                height:$("#templatemainwrapper").height()*.50
+            });
+            if($("#row1ID").height()*noOfGroups<=$("#row1ID").width())_size = $("#row1ID").height();
+            else _size = $("#row1ID").width()/noOfGroups;
+            
+            $(".groupBoxClass").css({
+                width:_size,
+                height:_size
+            });  
+            
+            $(".listBoxWrapper").css({
+                height:$(".groupBoxClass").height()-$(".groupBoxClass span").height()+8
+            });
+            
+            console.log("==========$('#row2ID').height():"+$("#row2ID").height()+"====:$('#templatemainwrapper').height():"+$("#templatemainwrapper").height());
+            $(".groupItemClass").css({
+                width:$(".groupBoxClass").height()
+            }); 
+            
+            
+            for(var i=0;i<$(".groupItemClass").length;i++){
+                $($(".groupItemClass")[i]).css({
+                    height:$(".groupBoxClass").height()
+                }); 
+            }
+            
+            FontUtils.resize(".groupBoxClass span");
+            FontUtils.resize(".groupItemClass span");
+            
+        }
+        
+        function showCorrectAnswer(){
+            $(".listBoxWrapper").empty();
+            for(var i=0;i<$(".groupBoxClass").length;i++){
+                for(var j=0;j<$(".groupItemClass").length;j++){
+                    if($($(".groupBoxClass")[i]).data("group")==$($(".groupItemClass")[j]).data("group")){
+                        var div = $("<div></div>");
+                        div.css({
+                            backgroundColor:$($(".groupBoxClass")[i]).data("color")
+                        });
+                        div.addClass("listItemClass");
+                        div.html($($(".groupItemClass")[j]).data("text"));
+                        $($(".groupBoxClass")[i]).find("[class='listBoxWrapper']").append(div);
+
+                        if($($(".groupItemClass")[j]).data("imagePath")&&$($(".groupItemClass")[j]).data("imagePath")!="NA"){
+                            var div2=$("<div class='_imgBtnClass'></div>");
+                            div2.css({
+                                backgroundImage:"url("+encodeURI($($(".groupItemClass")[j]).data("imagePath"))+")"
+                            });
+                            div.append(div2);
+
+                            div2.css({
+                                width:$(div2).height()
+                            });
+
+                            div.css({
+                                paddingLeft:$(div2).height()+2
+                            });
+                        }
+                        else{
+                            div.css({
+                                paddingLeft:"2%"
+                            });
+                        }
+                        
+                    }
+                }
+            }
+            $(".groupItemClass").hide();
+            FontUtils.resize(".listItemClass");
+        }
+        
+        function getCorrectAnswer(){
+            return correctAnswers;
+        }
+        
+        function getAnswer(){
+            return currentAnswers;
+        }
+    </script>
+</head>
+<body>
+    <div id='templatemainwrapper'>
+        <table border='0' cellpadding='0' cellspacing='0'>
+            <tr id='row1ID'>
+                <td></td>
+            </tr>
+            <tr id='row2ID'>
+                <td></td>
+            </tr>
+        </table>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<xml>
+  <class>minigame</class>
+  <name>Minigame5</name>
+  <description/>
+  <MGame>
+    <Type>SORTING</Type>
+    <Question><![CDATA[Sort the items in ascending order.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <Answer><![CDATA[a]]></Answer>
+    <Answer><![CDATA[b]]></Answer>
+    <Answer><![CDATA[c]]></Answer>
+    <Answer><![CDATA[d]]></Answer>
+    <Answer><![CDATA[e]]></Answer>
+    <Answer><![CDATA[f]]></Answer>
+    <Answer><![CDATA[g]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

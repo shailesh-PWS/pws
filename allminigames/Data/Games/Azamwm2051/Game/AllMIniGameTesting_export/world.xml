@@ -1,0 +1,176 @@
+<world>
+  <global>
+    <ui inventorybutton="true" objectivebutton="true" takepicturebutton="true" authbutton="true" authimagebutton="true"/>
+    <scoresystem>minigame</scoresystem>
+  </global>
+  <terrain>
+    <asset name="Playware_Pack/Environments/kampungoutdoors" pos="-6.720000000000028|0|71.53500000000001" rot="0|0|0" scale="1|1|1"/>
+  </terrain>
+  <playerspawn pos="-17.232692307692304|0|33.495000000000005" rot="0|284|0" model="APS_Pack/Characters/R_noncustom_malechild03B" name="Player Character" scale="1|1|1" controller="FreeMovement"/>
+  <items/>
+  <triggers>
+    <media id="20">
+      <data>
+        <instances>
+          <instance displayname="" pos="-15.471738281249998|2|35.89936523437498" rot="0|0|0" scale="1" radius="0.60" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <media id="21">
+      <data>
+        <instances>
+          <instance displayname="" pos="-15.483529411764692|2|35.89294117647057" rot="0|0|0" scale="1" radius="0.60" model="Common/Misc/Icon"/>
+        </instances>
+      </data>
+    </media>
+    <media id="22">
+      <data>
+        <instances>
+          <instance displayname="TriggerObjective" pos="-14.7376600609756|0|35.73180640243902" rot="0|0|0" scale="1" radius="0.60" model=""/>
+        </instances>
+      </data>
+    </media>
+  </triggers>
+  <npcs>
+    <npc id="0">
+      <data>
+        <instances>
+          <instance pos="-19.197777777777787|0|35.099999999999994" rot="0|0|0" scale="1" radius="0.72" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="1">
+      <data>
+        <instances>
+          <instance pos="-20.50090909090909|0|36.75272727272727" rot="0|0|0" scale="1" radius="0.72" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="2">
+      <data>
+        <instances>
+          <instance pos="-21.672972972972985|0|38.931891891891894" rot="0|0|0" scale="1" radius="0.75" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="3">
+      <data>
+        <instances>
+          <instance pos="-20.697096774193568|0|41.504516129032254" rot="0|0|0" scale="1" radius="0.63" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="4">
+      <data>
+        <instances>
+          <instance pos="-19.56127659574466|0|43.0608510638298" rot="0|0|0" scale="1" radius="0.63" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="5">
+      <data>
+        <instances>
+          <instance pos="-18.597446808510625|0|44.8736170212766" rot="0|0|0" scale="1" radius="0.63" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="6">
+      <data>
+        <instances>
+          <instance pos="-17.701276595744673|0|46.113191489361725" rot="0|0|0" scale="1" radius="0.63" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="7">
+      <data>
+        <instances>
+          <instance pos="-15.819574468085136|0|46.503829787234025" rot="0|0|0" scale="1" radius="0.69" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="8">
+      <data>
+        <instances>
+          <instance pos="-14.144680851063839|0|46.96340425531915" rot="0|0|0" scale="1" radius="0.60" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="9">
+      <data>
+        <instances>
+          <instance pos="-11.71148936170215|0|44.94382978723405" rot="0|0|0" scale="1" radius="0.60" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="10">
+      <data>
+        <instances>
+          <instance pos="-12.148085106382979|0|43.13106382978725" rot="0|0|0" scale="1" radius="0.60" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="11">
+      <data>
+        <instances>
+          <instance pos="-12.744255319148948|0|41.22638297872339" rot="0|0|0" scale="1" radius="0.63" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="12">
+      <data>
+        <instances>
+          <instance pos="-13.317446808510653|0|39.78000000000003" rot="0|0|0" scale="1" radius="0.66" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="13">
+      <data>
+        <instances>
+          <instance pos="-13.684444444444438|0|38.05555555555554" rot="0|0|0" scale="1" radius="0.93" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="14">
+      <data>
+        <instances>
+          <instance pos="-12.046666666666681|0|36.575555555555525" rot="0|0|0" scale="1" radius="1.02" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="15">
+      <data>
+        <instances>
+          <instance pos="-10.848888888888894|0|34.18000000000001" rot="0|0|0" scale="1" radius="1.08" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="16">
+      <data>
+        <instances>
+          <instance pos="-8.001081081081054|0|35.638378378378405" rot="0|0|0" scale="1" radius="0.72" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="17">
+      <data>
+        <instances>
+          <instance pos="-6.601621621621604|0|37.38648648648646" rot="0|0|0" scale="1" radius="0.63" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="18">
+      <data>
+        <instances>
+          <instance pos="-5.406486486486472|0|39.6308108108108" rot="0|0|0" scale="1" radius="0.69" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+    <npc id="19">
+      <data>
+        <instances>
+          <instance pos="-5.172972972972957|0|42.22540540540538" rot="0|0|0" scale="1" radius="0.63" model="Common/Misc/Icon" showModel="true"/>
+        </instances>
+      </data>
+    </npc>
+  </npcs>
+</world>

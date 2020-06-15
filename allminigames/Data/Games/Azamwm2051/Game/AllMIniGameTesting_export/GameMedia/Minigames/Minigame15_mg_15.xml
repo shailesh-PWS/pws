@@ -1,0 +1,37 @@
+<xml>
+  <class>minigame</class>
+  <name>Minigame15</name>
+  <description/>
+  <MGame>
+    <Type>STICKERS</Type>
+    <Question><![CDATA[Drag the images in the correct positions.]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[492]]></width>
+    <height><![CDATA[492]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG12.png]]></Path>
+    <snap><![CDATA[true]]></snap>
+    <Answer><![CDATA[[201.0782608695652,208.95415019762845,72.3901185770751,72.3901185770751,Minigames/images/IMG13.png,true,72.3901185770751,72.3901185770751],[11.181818181818182,5.979841897233202,478.3873517786562,119.59683794466405,Minigames/images/IMG14.png,true,478.3873517786562,119.59683794466405],[369.97233201581025,188.53517786561264,119.59683794466405,239.1936758893281,Minigames/images/IMG15.png,false,119.59683794466405,239.1936758893281]]]></Answer>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

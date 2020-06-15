@@ -1,0 +1,53 @@
+<xml>
+  <class>minigame</class>
+  <name>Minigame17</name>
+  <description/>
+  <MGame>
+    <Type>GROUPING ANALYSIS</Type>
+    <Question><![CDATA[Drag items to the box on top which belongs to the group.]]></Question>
+    <Title><![CDATA[edible]]></Title>
+    <showOnload><![CDATA[true]]></showOnload>
+    <Path>NA</Path>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[apple]]></text>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[potato chips]]></text>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[snacks]]></text>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[water]]></text>
+    </itemArray>
+    <itemArray>
+      <selected>false</selected>
+      <text><![CDATA[Soda]]></text>
+    </itemArray>
+    <CorrectFeedback><![CDATA[Good Job!]]></CorrectFeedback>
+    <WrongFeedback><![CDATA[You can do it, try again!]]></WrongFeedback>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>true</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>
