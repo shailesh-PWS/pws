@@ -1,0 +1,87 @@
+<xml>
+  <class>minigame</class>
+  <name>MG_Test_1</name>
+  <description/>
+  <MGame>
+    <Type>SLIDESHOW</Type>
+    <width><![CDATA[900]]></width>
+    <height><![CDATA[506]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <AutoSliding><![CDATA[true]]></AutoSliding>
+    <animationType><![CDATA[3]]></animationType>
+    <width><![CDATA[900]]></width>
+    <height><![CDATA[506]]></height>
+    <transparent><![CDATA[false]]></transparent>
+    <Items>
+      <duration>1</duration>
+      <delay>1</delay>
+      <backColor><![CDATA[rgba(204,204,204,1)]]></backColor>
+      <image>
+        <bg>false</bg>
+        <path><![CDATA[Minigames/images/IMG0.png]]></path>
+        <width>419</width>
+        <height>576</height>
+        <xPos>-47.7</xPos>
+        <yPos>-69.3</yPos>
+      </image>
+      <textbox>
+        <text><![CDATA[<pre><FONT FACE="Arial" style="font-size:10.5px" COLOR="#000000" LETTERSPACING="0" KERNING="0">OH SO THATS HOW YOU MAKE COMICS DAYUM SON</FONT>]]></text>
+        <dynamic>false</dynamic>
+        <xPos>470.1</xPos>
+        <yPos>193.25</yPos>
+      </textbox>
+    </Items>
+    <Items>
+      <duration>1</duration>
+      <delay>1</delay>
+      <backColor><![CDATA[rgba(204,204,204,1)]]></backColor>
+      <image>
+        <bg>false</bg>
+        <path><![CDATA[Minigames/images/IMG1.png]]></path>
+        <width>419</width>
+        <height>576</height>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </image>
+      <textbox>
+        <text><![CDATA[<pre><FONT FACE="Arial" style="font-size:10.5px" COLOR="#000000" LETTERSPACING="0" KERNING="0">BBBBBBBBBBBBBBBBOOOOOOOOOOSSSSSSSSHHHHH</FONT>]]></text>
+        <dynamic>false</dynamic>
+        <xPos>536.6</xPos>
+        <yPos>212.1</yPos>
+      </textbox>
+    </Items>
+  </MGame>
+  <MGame>
+    <Type>MCQ</Type>
+    <Path>NA</Path>
+    <Question><![CDATA[ON A SCALE OF 1-10 HOW AWESOME WAS THAT COMIC]]></Question>
+    <Answer><![CDATA[10-ERONI]]></Answer>
+    <Answer><![CDATA[10/10 IGN RECCOMENDS]]></Answer>
+    <Answer><![CDATA[10 FOLD]]></Answer>
+    <Answer><![CDATA[10-TONICALLY 10]]></Answer>
+    <Correct>1,2,3,4</Correct>
+    <Path0>NA</Path0>
+    <Path1>NA</Path1>
+    <Path2>NA</Path2>
+    <Path3>NA</Path3>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>false</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>

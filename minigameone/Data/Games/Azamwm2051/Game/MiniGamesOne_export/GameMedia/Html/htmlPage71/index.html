@@ -1,0 +1,282 @@
+<html>
+<head>
+<title>menu Trigger Game</title>
+<style type="text/css">
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+	}
+	.grandTitle {
+		font-size: 22px;
+		font-weight: bold;
+	}		
+	.subhead {
+		font-size: 19px;
+		font-weight: bold;
+	}	
+	.rowslink {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 17px;
+		font-weight: bold;
+	}
+</style>
+
+
+<!-- <script type="text/javascript" src="assets/jquery-min.js"></script> -->
+<script type="text/javascript" src="assets/fastclick-min.js"></script>
+
+<script type="text/javascript">
+
+	//---- meta data to be filled by game designer ------------------------------
+	// --- ensure reward names are same as in your psm file, sequence im-material
+	// --- prefill all values below except levelRewardIndex --------------------
+	// -------------------------------------------------------------------------
+	var menu = {
+		"title": "Grand-Menu-Choice",
+		"backgroundImage" : "images/blank.png",
+		"subMenus" : [
+			{
+				"id" : "primary",
+				"displayHeading" : "PrimaryItems",
+			},			
+			{
+				"id" : "secondary",
+				"displayHeading" : "Secondary-Items-All",
+			},			
+			{
+				"id" : "trietary",
+				"displayHeading" : "Trietary-All",
+				
+			}		
+		],
+		"menuItems" : [
+			{
+				"subMenuId" : "primary",
+				"displayMenuName" : "primary-Item-1",
+				"rewardIndex": undefined,
+				"rewardType": "reward",
+				"rewardName": "primaryitem1",
+				"rewardIdentified": false,
+				"rewardQty": 1
+			},
+			{
+				"subMenuId" : "primary",
+				"displayMenuName" : "primary-Item-2",
+				"rewardIndex": undefined,
+				"rewardType": "reward",
+				"rewardName": "primaryitem2",
+				"rewardIdentified": false,
+				"rewardQty": 1
+			},
+			{
+				"subMenuId" : "primary",
+				"displayMenuName" : "primary-Item-3",
+				"rewardIndex": undefined,
+				"rewardType": "reward",
+				"rewardName": "primaryitem3",
+				"rewardIdentified": false,
+				"rewardQty": 1
+			},
+			{
+				"subMenuId" : "primary",
+				"displayMenuName" : "primary-Item-4",
+				"rewardIndex": undefined,
+				"rewardType": "reward",
+				"rewardName": "primaryitem4",
+				"rewardIdentified": false,
+				"rewardQty": 1
+			},
+			{
+				"subMenuId" : "secondary",
+				"displayMenuName" : "secondary-Item-1",
+				"rewardIndex": undefined,
+				"rewardType": "reward",
+				"rewardName": "secondaryitem1",
+				"rewardIdentified": false,
+				"rewardQty": 1
+			},			
+			{
+				"subMenuId" : "secondary",
+				"displayMenuName" : "secondary-Item-2",
+				"rewardIndex": undefined,
+				"rewardType": "reward",
+				"rewardName": "secondaryitem2",
+				"rewardIdentified": false,
+				"rewardQty": 1
+			},
+			{
+				"subMenuId" : "secondary",
+				"displayMenuName" : "secondary-Item-3",
+				"rewardIndex": undefined,
+				"rewardType": "reward",
+				"rewardName": "secondaryitem3",
+				"rewardIdentified": false,
+				"rewardQty": 1
+			},
+			{
+				"subMenuId" : "trietary",
+				"displayMenuName" : "trietary-Item-1",
+				"rewardIndex": undefined,
+				"rewardType": "reward",
+				"rewardName": "trietaryitem1",
+				"rewardIdentified": false,
+				"rewardQty": 1
+			},
+			{
+				"subMenuId" : "trietary",
+				"displayMenuName" : "trietary-Item-2",
+				"rewardIndex": undefined,
+				"rewardType": "reward",
+				"rewardName": "trietaryitem2",
+				"rewardIdentified": false,
+				"rewardQty": 1
+			}			
+		] 
+	};
+	
+	// -------- existing rewards or selection made by player gets filled ------- 
+	// ------'--none selected --" is displayed if no choice --------------------
+	// ------ do not prefill any data here, system will do it here -------------
+	// -------------------------------------------------------------------------
+	var globalSelected = {
+			
+				"menuOptionSelected": undefined,
+				"rewardName": "primary-item1",
+				"rewardQty": undefined
+						                               
+	};
+
+    $(document).ready(function(){		
+
+		// ------------- window resizing functions ---------------------------------------------
+		function reScale(){
+			bgWidth = $("#mlcContainer").width();
+			bgHeight = $("#mlcContainer").height();
+		
+			var currScale = Math.min($(this).width()/bgWidth,$(this).height()/bgHeight);
+			var newWidth = bgWidth*currScale;
+			var newHeight = bgHeight*currScale;
+			$("#mlcContainer").css({
+				transform: "scale(" + currScale + ")",
+				//backgroundImage:"url("+bgImage+")",
+			}); 
+		}
+
+		window.onresize = function(){
+			reScale();   
+		}
+
+		// ------------- unity side reward functions --------------------------------------------
+		function GetRewardId(rewardName){
+			var rewardId=undefined;
+			for(var i=0;i<ItemManager.itemJSON.length;i++){
+				if(ItemManager.itemJSON[i].name==rewardName){
+						rewardId = parseInt(ItemManager.itemJSON[i].id);
+						break;
+				}
+			}
+			return rewardId;
+		}
+
+		function GetRewardName(rewardId){
+			var rewardName=undefined;
+			for(var i=0;i<ItemManager.itemJSON.length;i++){
+				if(parseInt(ItemManager.itemJSON[i].id)==parseInt(rewardId)){
+						rewardName = ItemManager.itemJSON[i].name;
+						break;
+				}
+			}
+			return rewardName;
+		}
+
+		function awardCustomReward(){
+			debugger;
+			minigameReward=[];
+
+			var obj={};
+			obj.type="reward";
+			obj.id = GetRewardId(globalSelected.rewardName);
+			if(obj.id!=undefined)minigameReward.push(obj);
+		}
+
+		// ------------- custom game page prep/display functions ---------------------------------
+		function prepDefaultData(){
+			debugger;
+			console.log(Global.InventoryItemJSON);
+			var inventoryData = Global.InventoryItemJSON;
+			for(var k=0;k<inventoryData.length;k++){               
+				//--- check for each rewards present in there if they belong to prior rewards
+				var rewardName = GetRewardName(inventoryData[k].ItemId);
+				for(var i=0;i<menu.menuItems.length;i++){
+					if (menu.menuItems[i].rewardName === rewardName){
+							menu.menuItems[i].rewardIdentified  = true;
+					}
+				}
+			}
+
+			console.log(menu);
+		}
+
+		function prepPage(){
+			debugger;
+			
+			$("#mlcContainer").css({
+                    backgroundImage:"url("+menu.backgroundImage+")"
+			}); 
+
+			var titleHtml = '<tr class="rows"><td align="center"><font class="grandTitle" color="#f3ff37"><b>' + menu.title + '</b></font></td></tr>'
+			$("#menuTable").append(titleHtml);
+
+			for(var i=0;i<menu.subMenus.length;i++){
+				var subMenuHtml = '<tr class="rows"><td align="center"><font class="subhead" color="#ffffff"><b>' + menu.subMenus[i].displayHeading + '</font></td></tr>'
+				$("#menuTable").append(subMenuHtml);
+				var subMenuItems = menu.menuItems.filter(function (el) {
+									return el.subMenuId == menu.subMenus[i].id;
+								});
+				for(var j=0;j<subMenuItems.length;j++){
+					var menuItemHtml = '<tr><td align="center" bgcolor="#CCCCCC"><a href="#" class="rowslink" data-reward="' + subMenuItems[j].rewardName + '">'+ subMenuItems[j].displayMenuName +'</a></td></tr>';
+					$("#menuTable").append(menuItemHtml);
+				}
+			}
+		}		
+
+		// ---------- page element click/event interaction functions -----------------------------
+		$("#menuTable").on('click', '.rowslink', function (e){ 
+			debugger;
+			//alert('click' + $(this).data("reward"));
+			if ($(this).data("reward") !== undefined) {
+				globalSelected.rewardName = $(this).data("reward");
+				globalSelected.rewardQty = 1;
+				awardCustomReward();
+				//------- framework function called when invoked inside game play -------------
+				//--- reward is pushed as idempotent wherein existing rewrads are retained-----
+				verifyAnswer();	
+			}
+		});
+
+		// ----------- logic proper starts here for page load ---------------------------------------
+		prepDefaultData();
+        prepPage();
+
+	});
+</script>
+</head>
+
+<body>
+	<div id="mlcContainer">
+		<table width="100%" height="100%">
+			<tr>
+				<td width="70%" background="images/blank.png">&nbsp;</td>
+				<td width="30%" valign="top">
+					<table>
+						<table id="menuTable" width="100%" bgcolor="#047dc3" cellpadding="2" cellspacing="2" bordercolor="#06486e">
+							<!-- filled from json dynamically -->
+						</table>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+</html>

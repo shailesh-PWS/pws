@@ -1,0 +1,41 @@
+<xml>
+  <class>minigame</class>
+  <name>MG_Test_8</name>
+  <description/>
+  <MGame>
+    <Type>STICKERS</Type>
+    <Question><![CDATA[Drag the Placeholder image onto spongebob's forehead]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <width><![CDATA[633]]></width>
+    <height><![CDATA[573]]></height>
+    <resize><![CDATA[fit]]></resize>
+    <Path><![CDATA[Minigames/images/IMG12.jpg]]></Path>
+    <snap><![CDATA[true]]></snap>
+    <Answer><![CDATA[[227.1189730745147,-3.8501976284584982,193.93729313892115,115.39268774703558,Minigames/images/IMG13.jpg,true,193.93729313892115,115.39268774703558]]]></Answer>
+  </MGame>
+  <MGame>
+    <Type>HTML PAGE</Type>
+    <Question><![CDATA[This is to test the HTML]]></Question>
+    <showOnload><![CDATA[true]]></showOnload>
+    <folderName><![CDATA[htmlPage71]]></folderName>
+  </MGame>
+  <randomise>false</randomise>
+  <ShowFeedBack>false</ShowFeedBack>
+  <ShowAnswer>false</ShowAnswer>
+  <ShowRetry>true</ShowRetry>
+  <Exit>false</Exit>
+  <score>1</score>
+  <Reward>
+    <greater/>
+    <greaterpersistent/>
+    <lesser/>
+    <lesserpersistent/>
+    <sc>99</sc>
+  </Reward>
+  <WinText/>
+  <LoseText/>
+  <windowSize>0</windowSize>
+  <transition>0</transition>
+  <bgColor><![CDATA[rgba(255,255,255,1)]]></bgColor>
+  <hideCloseBtn><![CDATA[false]]></hideCloseBtn>
+</xml>
