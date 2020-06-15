@@ -1,8 +1,0 @@
-<xml>
-  <dialog myid="2532020101623301674" id="1" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="Shail" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
-    <text><![CDATA[Are you here ?]]></text>
-    <dialog myid="25322020101652716408" id="2" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="Rehman" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false" minigame="Minigame3_mg_3.xml">
-      <text><![CDATA[Yes.]]></text>
-    </dialog>
-  </dialog>
-</xml>

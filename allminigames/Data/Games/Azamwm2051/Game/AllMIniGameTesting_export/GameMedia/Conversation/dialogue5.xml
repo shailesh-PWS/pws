@@ -1,8 +1,0 @@
-<xml>
-  <dialog myid="2532020132514500815" id="1" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
-    <text><![CDATA[Time to get the talking walking!]]></text>
-    <dialog myid="25322020132538613243" id="2" multiplayerreward="" persistentreward="" reward="" who="0" link="" nick="Your Custom Name" portrait="" imagepath="" audiofile="" audiotime="" gesture="0" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false" minigame="Minigame6_mg_6.xml">
-      <text><![CDATA[Insert new dialog.]]></text>
-    </dialog>
-  </dialog>
-</xml>

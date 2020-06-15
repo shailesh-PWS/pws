@@ -1,14 +1,0 @@
-<xml>
-  <dialog myid="11320201044310901" id="1" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="Shail" portrait="image" imagepath="childmale03_expressionless.png" audiofile="sound22420201527162556850.ogg" audiotime="" gesture="11" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
-    <text><![CDATA[Hi, How are you doing?]]></text>
-    <dialog myid="1132202010598678" id="2" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="Aiden" portrait="image" imagepath="childmale02_talk.png" audiofile="sound2242020152750524265.ogg" audiotime="" gesture="11" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
-      <text><![CDATA[I am doing fine. and Whats about you?]]></text>
-      <dialog myid="11322020105301718" id="3" multiplayerreward="" persistentreward="" reward="" who="1" link="" nick="Shail" portrait="image" imagepath="childmale03_talk.png" audiofile="sound2242020152849549599.ogg" audiotime="" gesture="11" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false">
-        <text><![CDATA[After a long time I am meeting you. ]]></text>
-        <dialog myid="11322020121344546328" id="4" multiplayerreward="" persistentreward="" reward="" who="2" link="" nick="Your Custom Name" portrait="image" imagepath="childmale02_talk.png" audiofile="sound2242020152981714128.ogg" audiotime="" gesture="11" gestureLoop="false" gestureTiming="0" stopGesture="true" emotion="0" emotionTiming="0" stopEmotion="true" cameraeffect="0" usePreviousBG="false" bgTransparent="true" hint="false" textAnimate="true" textColor="rgba(255,255,255,1)" textAlign="left" hidePanel="false" minigame="Minigame1_mg_2.xml">
-          <text><![CDATA[Yah you are right. okay see you later then..]]></text>
-        </dialog>
-      </dialog>
-    </dialog>
-  </dialog>
-</xml>
